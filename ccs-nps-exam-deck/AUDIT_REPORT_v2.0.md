@@ -1,7 +1,7 @@
 # Part A — Audit Report: CCS (NPS) Rules flashcard draft → v2.0 revision deck
 
 **Draft audited:** `ccs_nps_rules_exam_flashcards (1).pdf` (51 pages, 152 cards, #001–#152)
-**Revision produced:** `CCS_NPS_Rules_Revision_Deck_v2.0_2026-11-01.md` (v2.2: 120 cards N-001–N-120 + 11 appendices A–K incl. exhaustive coverage checklist, 22 simplest-form case studies, and an obsolete→current table) **and its styled PDF edition** `CCS_NPS_Rules_Revision_Deck_v2.2_2026-11-01.pdf` (59 pages, bookmarked TOC/outline, print-ready A4).
+**Revision produced:** `CCS_NPS_Rules_Revision_Deck_v2.0_2026-11-01.md` (v2.2: 120 cards N-001–N-120 + 11 appendices A–K incl. exhaustive coverage checklist, 22 simplest-form case studies, and an obsolete→current table) **and its styled PDF editions** — `CCS_NPS_Rules_Revision_Deck_v2.2_2026-11-01.pdf` (59 pp) and, in the flashcard template you specified, `CCS_NPS_Rules_Revision_Deck_v2.3_2026-11-01.pdf` (71 pp, A4: blue `CARD #` header + rule, gray meta line, bold Q, answer with bold lead-ins, amber EXAM TRAP / KEY TAKEAWAY box, gray Source/Status · Linked footer; bookmarked TOC + PDF outline).
 **Law as on:** 01.11.2026 · **Verification method:** web cross-check against Gazette/DoPT/DoPPW/PFRDA/CPAO/PIB/press sources for every Gazette number, OM number, date, slab and 2025–2026 current-affairs claim.
 
 ## 1. Structural audit of the draft
