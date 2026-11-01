@@ -42,7 +42,7 @@
 | M9 | Invalidation, Disablement, Penalties & Death (Rules 16–20) | N-057 – N-064 |
 | M10 | Exit Processing, Deputation & Residual Rules (Rules 21–30) | N-065 – N-071 |
 | M11 | Statutory Forms (Form 1, 2, 3, 4-A to 4-E) | N-072 – N-077 |
-| M12 | OMs, Amendments & Sister Rules 2022–2026 (DoPPW, PFRDA, UPS, Gratuity, Railway, AIS, Income-tax) | N-078 – N-095 |
+| M12 | OMs, Amendments & Sister Rules 2022–2026 (DoPPW, PFRDA, UPS, Gratuity, Railway, AIS, Income-tax) | N-078 – N-098 |
 | App. A | Glossary of abbreviations | — |
 | App. B | Master timeline table (all deadlines) | — |
 | App. C | Master numerical thresholds table | — |
@@ -1159,6 +1159,36 @@ Key verified items: DoPPW OMs 25–28.10.2022 (8361 series) & 07/11/14/25.10.202
 
 ---
 
+### N-096 · CCS (UPS under NPS) Rules, 2025 — rule-by-rule map
+**Rule/Form/OM:** G.S.R. 599(E) dt. 02.09.2025 (all rules) · **Topic:** UPS rule map
+**Q:** Map the key rules of the UPS Rules, 2025 to their subjects.
+**A:** (verified against DFS subscriber FAQs and DoPPW OM dt. 29.10.2025 series): **Rule 1** short title/commencement; **Rule 2** application — applies to NPS-covered servants who **opt** for UPS; non-optees continue under the 2021 CCS (NPS) Rules [2(i)]; **Rule 10** option (OPS/EOP vs UPS) on death/invalidation/disablement during service; **Rule 11** one-time one-way switch back to NPS (12 months before superannuation / 3 months before deemed VRS date / at resignation or non-penal FR 56(j); barred in pending/contemplated proceedings and penalty cases; 4% differential at default pattern credited at exit); **Rule 13** VRS — 20 yrs regular service → pro-rata assured payout; ≥25 yrs qualifying service → full assured payout from the notional superannuation date; **Rule 14** superannuation lump sum (1/10th of monthly emoluments per completed 6 months); **Rule 15** resignation — UPS benefits cease; corpus per PFRDA; **Rule 16** absorption in PSU/AB — deemed retirement; <10 yrs → lump sum per PFRDA; ≥10 yrs → assured payout as on superannuation; **Rule 17** invalidation; **Rule 18** disablement; **Rule 19** death — family benefits (OM 57/03/2022-P&PW(B)/8361(7) dt. 29.10.2025); **Rule 21** dismissal/removal — assured payout forfeited, individual corpus paid lump sum; **Rule 22** pending proceedings at retirement. Death under UPS option: family gets 60% of the assured family payout to the legally wedded spouse (per DFS FAQ) [VERIFY against G.S.R. 599(E) Rule 19 text].
+**Exam trap:** UPS mirrors the 2021 NPS Rules' exit architecture (Rules 10–22) but substitutes the **assured payout** for the market-linked annuity.
+**Source/Status:** Bare Rules (UPS) — rule map verified via DFS FAQs/DoPPW OMs; [VERIFY] family-pension percentage detail
+**Linked cards:** N-086, N-087, N-094
+
+---
+
+### N-097 · CCS (Payment of Gratuity under NPS) Rules, 2021 — thematic map
+**Rule/Form/OM:** G.S.R. 658(E) dt. 23.09.2021; G.S.R. 258(E) dt. 24.04.2025 · **Topic:** Gratuity rule map
+**Q:** Map the Gratuity-under-NPS Rules, 2021 (as amended 2025) thematically.
+**A:** (i) short title/application — Central Govt servants covered under NPS; (ii) "gratuity" = retirement + death + residuary gratuity (2025 amendment); (iii) **withholding/withdrawal of gratuity — Rule 5** with mandatory **UPSC consultation** under the 1st proviso before the President withholds/withdraws (the EPFO 2025 Regulations switch this off for EPFO staff — N-007); grounds: grave misconduct/pecuniary loss/corruption, pending proceedings at retirement; (iv) retirement gratuity formula (¼ emoluments per 6 months, max 16½×, min 5 yrs; notional pay from retrospective revision counts — 2025 amendment); (v) death gratuity slabs (2×/6×/12×/20×/33×, cap ₹25 lakh); (vi) **resignation (non-technical) → no gratuity** [rule ref — VERIFY]; (vii) absorption/State Govt/AB-PSU service counting with combined-cap provisos; (viii) **Rule 4A (2025)** — no separate gratuity for re-employment spell, combined cap; (ix) penal compulsory retirement — ⅔ provisional gratuity if quantum order not simultaneous, final within 3 months with UPSC consultation where needed; (x) missing persons — retirement gratuity not before 6 months from FIR, death gratuity after 7-year presumption (Sec. 111 BSA 2023); (xi) delayed payment — interest + responsibility fixed like Rule 44 [VERIFY]; (xii) repeal & saving.
+**Exam trap:** UPSC consultation attaches to **gratuity withholding** (Rule 5 1st proviso), not to NPS corpus forfeiture (which does not happen under Rule 18 of the NPS Rules).
+**Source/Status:** Bare Rules (Gratuity) — verified items tagged; [VERIFY] internal rule numbers flagged
+**Linked cards:** N-064, N-085, N-090
+
+---
+
+### N-098 · Railway NPS Rules 2025 & AIS NPS Rules 2026 — thematic map
+**Rule/Form/OM:** G.S.R. 735(E) dt. 01.10.2025; G.S.R. 307(E) dt. 22.04.2026 · **Topic:** Sister-rule map
+**Q:** Map the sister rules thematically and note the differences from the CCS rules.
+**A:** Both largely mirror the 30-rule CCS (NPS) Rules, 2021 architecture (registration 3-3-3 chain; emoluments pay+NPA+DA; 10%/14%; Rule 10-type option with default OPS <15 yrs; VRS 20 yrs; resignation/absorption; invalidation/disablement; penalty exits; exit processing; relaxation; repeal). **Differences:** (1) enacting power — Railways: proviso to Art. 309 only; AIS: Sec. 3(1) AIS Act, 1951 after consultation with State Governments; (2) definitions adapted — "railway servant"/"member of AIS" replace "Government servant"; "Government" includes State Governments for AIS state-cadre officers; accounts officer replaces PAO/CDDO in AIS Rules [VERIFY]; (3) relaxation authority — Ministry of Railways with DoPPW concurrence / DoPT for AIS (AIS Rule 30) [VERIFY]; (4) AIS NE-cadre officers (Assam-Meghalaya, Manipur-Tripura, Nagaland, Sikkim) — 15-year VRS [VERIFY]; (5) Railway UPS Rules, 2026 (effective 21.09.2026) run the UPS option for railway servants [VERIFY Gazette no.].
+**Exam trap:** Rule 2(a)/(d) of the CCS rules exclude Railway/AIS servants precisely because these sister rules exist — quote the correct G.S.R. in answers.
+**Source/Status:** Bare Rules — G.S.R. numbers verified; [VERIFY] flagged cells
+**Linked cards:** N-009, N-010, N-088, N-094
+
+---
+
 # Appendix A — Glossary of abbreviations
 
 | Abbreviation | Expansion |
@@ -1667,8 +1697,73 @@ See **Appendix B** (master timeline, 34 entries with rule citations and card lin
 
 ## I.3 — Change log (draft #001–#152 → v2.0 N-001–N-095)
 
-- **Renumbered** all 152 draft cards sequentially as N-001–N-095 after merging duplicates; mapping of major merges: draft #010+#021→N-012; #011→N-013; #012+#022→N-014; #013+#023→N-015; #014→N-016; #015+#024→N-017; #016→N-018; #017→N-019; #026+#027→N-020; #018→N-009; #019→N-010; #020→N-011; #028→N-021; #029+#033→N-022; #030+#035→N-023; #031+#034+#036→N-024; #032→N-024; #037+#044→N-026; #038+#047+#053+#054→N-027; #039→N-028; #040+#043→N-029; #041+#042→N-030; #045+#064→N-031; #046+#055+#062→N-032; #047→N-033; #048+#058+#063→N-034; #049+#061→N-035; #050+#057+#059→N-036; #051+#056→N-037; #052+#060→N-038; #065→N-039; #066+#072→N-040; #067+#070→N-041; #068+#073→N-042; #069+#071→N-043; #074→N-044; #075+#083→N-045; #076→N-046; #077+#081+#084→N-047; #078+#082+#085→N-048; #079→N-049; #086→N-050; #087+#093→N-051; #088+#097+#099→N-052; #089+#094→N-053; #090→N-054; #091+#098→N-055; #092→N-056; #100+#112→N-057; #101+#106+#107+#110+#111→N-058; #102→N-059; #115→N-060; #103+#096→N-061; #104+#108→N-062; #105+#109+#113→N-063; #114→N-064; #116→N-065; #117→N-066; #118+#128→N-067; #119+#124→N-068; #120+#095→N-069; #121→N-070; #122+#125+#126+#127→N-071; #123→Appendix B; #131→N-072; #132→N-073; #133→N-074; #134→N-075; #135→N-076; #136→N-077; #137+#129→N-078; #138→N-079; #139→N-080; #140→N-081; #141→N-082; #142→N-083; #145→N-084; #143→N-085; #144+#149→N-086/N-087; #146→N-089; #147→N-090; #148→N-090; #150→N-090; #151→N-091; #152→N-094; #153-note→N-095. New cards added: N-007 (EPFO), N-093 (re-employment), N-095 (synthesis), appendices A–I.
+- **Renumbered** all 152 draft cards sequentially as N-001–N-095 after merging duplicates; mapping of major merges: draft #010+#021→N-012; #011→N-013; #012+#022→N-014; #013+#023→N-015; #014→N-016; #015+#024→N-017; #016→N-018; #017→N-019; #026+#027→N-020; #018→N-009; #019→N-010; #020→N-011; #028→N-021; #029+#033→N-022; #030+#035→N-023; #031+#034+#036→N-024; #032→N-024; #037+#044→N-026; #038+#047+#053+#054→N-027; #039→N-028; #040+#043→N-029; #041+#042→N-030; #045+#064→N-031; #046+#055+#062→N-032; #047→N-033; #048+#058+#063→N-034; #049+#061→N-035; #050+#057+#059→N-036; #051+#056→N-037; #052+#060→N-038; #065→N-039; #066+#072→N-040; #067+#070→N-041; #068+#073→N-042; #069+#071→N-043; #074→N-044; #075+#083→N-045; #076→N-046; #077+#081+#084→N-047; #078+#082+#085→N-048; #079→N-049; #086→N-050; #087+#093→N-051; #088+#097+#099→N-052; #089+#094→N-053; #090→N-054; #091+#098→N-055; #092→N-056; #100+#112→N-057; #101+#106+#107+#110+#111→N-058; #102→N-059; #115→N-060; #103+#096→N-061; #104+#108→N-062; #105+#109+#113→N-063; #114→N-064; #116→N-065; #117→N-066; #118+#128→N-067; #119+#124→N-068; #120+#095→N-069; #121→N-070; #122+#125+#126+#127→N-071; #123→Appendix B; #131→N-072; #132→N-073; #133→N-074; #134→N-075; #135→N-076; #136→N-077; #137+#129→N-078; #138→N-079; #139→N-080; #140→N-081; #141→N-082; #142→N-083; #145→N-084; #143→N-085; #144+#149→N-086/N-087; #146→N-089; #147→N-090; #148→N-090; #150→N-090; #151→N-091; #152→N-094; #153-note→N-095. New cards added in v2.0: N-007 (EPFO), N-093 (re-employment), N-095 (synthesis), appendices A–I; v2.1: N-096–N-098 + Appendix J.
 - **Corrections:** broken table cells in draft #108 ("Before-Superannuati on", "Compansat e") repaired; spelling standardised ("Invalidation", "Superannuation", "UPS optees", clause "3(1)(l)"); currency standardised to ₹ with lakh notation; the specific garbled strings listed in the brief (e.g., "Invallation", "Superanunation", "UPS opes", "&amp;amp;", "3(1)(1)") were **not present in the PDF text layer** — correct forms enforced throughout v2.0 regardless.
 - **Substantive fixes:** missing-employee rule corrected (family pension/arrears immediate on FIR; retirement gratuity after 6 months from FIR per G.S.R. 258(E); 20%/80% corpus split under PFRDA Dec 2025; Sec. 111 BSA 2023 replaces Sec. 108 Evidence Act from 01.07.2024); UPS VRS qualifying service flagged [VERIFY] (draft said 25 yrs); PFRDA Dec-2025 amendment date flagged [VERIFY] (12/15/16.12.2025; Gazette 8421 GI/2025); railway rules enacting power corrected (proviso to Art. 309 only); LC75/BLC dated (approved Oct 2025; DFS notfn 13.11.2025; CAB extension DoE OM 01.07.2026); income-tax renumbering presented with [VERIFY] on sub-clause mapping; ₹25 lakh gratuity ceiling tied to OM 30.05.2024 + Oct-2025 non-suo-moto clarification; FMA updated with DoE OM 16.04.2026 automatic CPPC payment.
 - **Verified as correct (kept):** G.S.R. 227(E) & enacting formula; Rule 2 exclusions; 3-3-3 chain; Rule 4(9) "later"; 10%/14% + next-higher-rupee; 20/25/last-working-day + March proviso; Rule 8 proviso citations; Sec. 201(1A); ₹54,000 medical-board threshold + 15/30 days; SVRS OM 25013/6/2001-Estt.(A) 28.02.2002; Rule 12/13/14/15/18/19/20 architecture; Forms 1–4-E mapping; OM 03.03.2023 (22.12.2003, option by 31.08.2023); OM 25.10.2024 8361(8); OM 14.10.2024 refund + MH 0071→8342-117; OM 28.04.2022 missing employees; G.S.R. 658(E), 258(E), 599(E), 735(E), 307(E), 868(E), 63(E); PFRDA Dec-2025 slabs & partial-withdrawal changes; PFRDA 13.07.2026 Reg. 4A; UPS 18.5%/50%/₹10,000/1-10th/4% switch; RBE 103/2025; Budget-2025 14% employer deduction in new regime.
 - **Card count:** 152 draft cards → 95 revised cards + 9 appendices; no card numbers missing or duplicated in v2.0 (N-001–N-095 sequential).
+
+---
+
+# Appendix J — Exhaustive coverage checklist (every rule / sub-rule / clause / proviso / explanation / form)
+
+Legend: ✔ = covered on the cited card(s). All 30 Rules of G.S.R. 227(E), all sub-rules, all lettered clauses, every proviso and Explanation, and all 8 Forms are mapped below.
+
+## J.1 — CCS (Implementation of NPS) Rules, 2021 (G.S.R. 227(E) dt. 30.03.2021) — bare Act
+
+| Rule | Sub-rules / clauses / provisos / explanations | Cards |
+|---|---|---|
+| Preamble (enacting formula) | proviso Art. 309 + Art. 148(5); C&AG consultation | ✔ N-001 |
+| Rule 1 | 1(1) short title; 1(2) commencement on Gazette publication | ✔ N-002 |
+| Rule 2 | opening words; exclusions (a) Railway, (b) casual/daily-rated, (c) contingency, (d) AIS, (e) locally recruited abroad, (f) contract, (g) Constitution/other law, (h) OPS-by-order | ✔ N-003, N-004, N-005, N-006, N-007, N-008, N-009, N-010, N-011 |
+| Rule 3 | 3(1)(a)–(v) all 22 clauses (matrix); 3(2) residuary definitions | ✔ N-012 – N-020 |
+| Rule 4 | 4(1); 4(2); 4(3); 4(4); 4(5); 4(6); 4(7); 4(8); 4(9) (+ opening no-delay sentence); 4(10); 4(11) | ✔ N-021 – N-025 |
+| Rule 5 | 5(1); 5(2); 5(3); 5(4); 5(5); 5(6); 5(7) | ✔ N-026 – N-030 |
+| Rule 6 | 6(1); 6(2) + proviso; 6(3); 6(4); 6(5); 6(6); 6(7); 6(8); 6(9); 6(10)(i), (ii) + proviso (March), (iii) | ✔ N-031 – N-035 |
+| Rule 7 | 7(1) + proviso (3 leave grounds); 7(2); 7(3) + 1st & 2nd provisos; 7(4); 7(5); 7(6) | ✔ N-031 – N-035 |
+| Rule 8 | 8(1)(i)–(iii) + 30-day rule + PPF rate + 2004–2012 proviso; 8(2)(i)–(iii) | ✔ N-036, N-037 |
+| Rule 9 | investment by PFRDA-notified pension funds | ✔ N-038 |
+| Rule 10 | 10(1) + 2nd sentence; 10(2); 10(3)(a)(i)–(ii), (b), (c), (d)(i)–(ii); 10(4)(i)–(iv); 10(5); 10(6)(i)–(iii); 10(7) | ✔ N-039 – N-043 |
+| Rule 11 | superannuation + extension | ✔ N-044 |
+| Rule 12 | 12(1) + proviso (i)–(iii) + Explanations (a)–(c); 12(2) + proviso; 12(3); 12(4) + proviso; 12(5)(a)–(b) + Explanation (appointing authority); 12(6); 12(7) | ✔ N-045 – N-048, N-050 |
+| Rule 13 | 13(1)(i)–(ii) + proviso (SVRS ex-gratia); 13(2) | ✔ N-049, N-050 |
+| Rule 14 | 14(1) + 1st/2nd/3rd provisos; 14(2) + 1st/2nd provisos; 14(3)(a)–(e); 14(4); 14(5) | ✔ N-051 – N-054 |
+| Rule 15 | 15(1) + 1st/2nd provisos; 15(2); 15(3); Explanation (1)(i)–(iii); Explanation (2) | ✔ N-055, N-056 |
+| Rule 16 | 16(1) + proviso (RPwD Sec. 20); 16(2) + 1st proviso (spouse/family) + 2nd proviso (counselling); 16(3) incl. (a)–(b) ₹54,000 + concluding para (age statement, endorsement); 16(4); 16(5); 16(6) lady doctor; 16(7) Form 3; 16(8) lower post; 16(9); 16(10); 16(11); 16(12) | ✔ N-057 – N-059 |
+| Rule 17 | 17(1); 17(2); 17(3); 17(4) | ✔ N-060 |
+| Rule 18 | 18(1) + proviso (same PRAN); 18(2) gratuity caveat | ✔ N-061 |
+| Rule 19 | 19(1); 19(2) gratuity withheld | ✔ N-062 |
+| Rule 20 | 20(1)(a)–(b) + proviso (EOP); 20(2); 20(3) | ✔ N-063 |
+| Rule 21 | 21(1)–(2) quarterly list; 21(3); 21(4) Directorate of Estates | ✔ N-065 |
+| Rule 22 | 22(1) NDC; 22(2) | ✔ N-066 |
+| Rule 23 | 23(1); 23(2) incl. online print-out sentence; 23(3) Claim ID | ✔ N-067 |
+| Rule 24 | 24(1) Forms 4-A–4-E table; 24(2); 24(3); 24(4) 15-day option + PFRDA Dec-2025 change | ✔ N-068 |
+| Rule 25 | 25(1) borrowing HOO; 25(2) lending HOO/cadre authority | ✔ N-069 |
+| Rule 26 | 26(a) Gazette notification; 26(b) office order; copy to PAO | ✔ N-070 |
+| Rule 27 | interpretation → MoPPGP | ✔ N-071 |
+| Rule 28 | relaxation + proviso (MoPPGP concurrence; reasons in writing) | ✔ N-071 |
+| Rule 29 | 29(1) residuary (CCS Pension/FR/SR/orders, non-repugnancy); 29(2) | ✔ N-071, N-093 |
+| Rule 30 | repeal & saving | ✔ N-071, N-091 |
+| Forms | Form 1 (+ acknowledgement note); Form 2 (Notes 1–5 incl. OM 1(23)-P&PW/91-E post-retirement proforma); Form 3 (incapacity / less laborious / intemperate habits / age ×2); Forms 4-A, 4-B, 4-C, 4-D, 4-E (Rule 24(1) table: signing, addressee, routing, internal branches) | ✔ N-072 – N-077, App. D |
+
+## J.2 — Sister instruments
+
+| Instrument | Coverage | Cards |
+|---|---|---|
+| CCS (Pension) Rules, 2021 (G.S.R. 868(E)) | as OPS comparator; cross-refs Rule 50(9), Rule 43, Rule 86, Form 6-A/Bhavishya | ✔ N-020, N-040, N-092, N-094, App. E.1 |
+| CCS (EOP) Rules, 2023 (G.S.R. 63(E)) | Categories A–E via Rule 17/20 proviso | ✔ N-060, N-063 [category % VERIFY] |
+| CCS (Payment of Gratuity under NPS) Rules, 2021 + Amendment 2025 (G.S.R. 658(E)/258(E)) | thematic rule map, formulas, slabs, ceiling, withholding/UPSC, Rule 4A, missing persons, delay | ✔ N-064, N-085, N-097, App. C |
+| CCS (UPS under NPS) Rules, 2025 (G.S.R. 599(E)) | rule-by-rule map Rules 1–22; contributions; assured payout; lump sum; switch; exits | ✔ N-086, N-087, N-094, N-096 |
+| Railway Services (Implementation of NPS) Rules, 2025 (G.S.R. 735(E)) + Railway UPS Rules 2026 | thematic map; enacting power; RBE 103/2025 | ✔ N-009, N-088, N-098 |
+| AIS (Implementation of NPS) Rules, 2026 (G.S.R. 307(E)) | thematic map; Sec. 3(1) AIS Act; NE cadres [VERIFY] | ✔ N-010, N-088, N-098 |
+| PFRDA (Exits & Withdrawals) Regulations, 2015 + Amendments (Dec 2025; 13.07.2026) | exit slabs Govt vs non-Govt; partial withdrawal; deferment to 85; missing 20/80; citizenship; Reg. 4A(2)–(4) | ✔ N-044, N-051, N-061, N-078, N-082, N-083, N-084 |
+| PFRDA UPS Regulations, 2025 (19.03.2025) | UPS operationalisation | ✔ N-086 |
+| Income-tax Act, 1961 / Income-tax Act, 2025 | 80CCD(1)/(1B)/(2), 10(12A)/(12B) → new Sec. 123/124/Sch. XV [VERIFY mapping]; 201(1A) | ✔ N-037, N-089 |
+| DoPPW/DoPT/CPAO/CGA OM series 2022–2026 | amendment tracker App. F.4 | ✔ N-005 – N-007, N-078 – N-081, N-090, N-091, N-093 |
+
+## J.3 — Residual gaps acknowledged (not bare-rule text, flagged [VERIFY])
+- Exact internal rule numbers inside the Gratuity Rules (resignation forfeiture, death gratuity, delay-interest rule) — see V19.
+- EOP Rules 2023 category percentages — see V27.
+- UPS family-pension percentage on death (60% of assured family payout per DFS FAQ) — verify G.S.R. 599(E) Rule 19.
+- AIS 2026 NE-cadre 15-year VRS; Railway UPS Rules 2026 Gazette no. — see V7/V8.
+- PFRDA Dec-2025 amendment exact notification date — see V12.
