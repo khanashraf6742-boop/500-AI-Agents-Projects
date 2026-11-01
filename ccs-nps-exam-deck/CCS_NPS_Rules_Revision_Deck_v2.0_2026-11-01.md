@@ -1,6 +1,6 @@
 # CCS (Implementation of NPS) Rules, 2021 & Official Updates — Exam-Ready Revision Deck
 
-**Version:** 2.0 (fully revised & audited)
+**Version:** 2.2 (fully revised & audited; v2.2 = PDF edition + Module 13 case studies N-099–N-120 + Appendix K obsolete→current table)
 **Law as on:** 01.11.2026 (1 November 2026)
 **Prepared for:** Indian departmental / SAS / AAO / UPSC LDCE-type exam aspirants
 **Scope:** CCS (Implementation of NPS) Rules, 2021 (G.S.R. 227(E)) — Rules 1–30 & Forms 1, 2, 3, 4-A to 4-E; CCS (Payment of Gratuity under NPS) Rules, 2021 & 2025 Amendment; CCS (Implementation of UPS under NPS) Rules, 2025; PFRDA Exit/Withdrawal Amendment Regulations (Dec 2025 & 13.07.2026); Railway Services (Implementation of NPS) Rules, 2025; AIS (Implementation of NPS) Rules, 2026; DoPPW/CPAO/CGA OMs 2022–2026; Income-tax Act, 1961 & Income-tax Act, 2025 (w.e.f. 01.04.2026).
@@ -52,6 +52,8 @@
 | App. G | Top 50 exam traps (consolidated) | — |
 | App. H | 50 practice MCQs with answer key | — |
 | App. I | Source appendix, [VERIFY] register, change log | — |
+| App. J | Exhaustive coverage checklist — every rule, sub-rule, clause, proviso, explanation, form → card | — |
+| App. K | Obsolete → Current table (what NOT to memorise as on 01.11.2026) | — |
 
 ---
 
@@ -1189,6 +1191,187 @@ Key verified items: DoPPW OMs 25–28.10.2022 (8361 series) & 07/11/14/25.10.202
 
 ---
 
+# Module 13 — Case Studies (simplest form)
+*Each case: Scenario → Question → Answer (one line) → Rule. All answers reflect the law as on 01.11.2026 (see App. K for obsolete values).*
+
+---
+
+### N-099 · Case: first salary before PRAN
+**Scenario:** A joins Central Govt on 02.05.2026 and submits CSRF + Form 1 + Form 2 the same day. CRA is slow; May salary is due.
+**Q:** Can the office stop May salary? When must the first contribution reach A's IPA?
+**A:** No — pay May salary after withholding 10%; when PRAN arrives, the withheld amount **plus PPF-rate interest (Rule 8)** is credited. First-credit deadline = 20 days (22.05) vs 31.05 → **31.05.2026** ("whichever is later", Rule 4(9)).
+**Rule:** 4(1), 4(9), 4(10), 8(1) · **Linked:** N-021 – N-025, N-036
+
+---
+
+### N-100 · Case: contribution maths for a medical officer
+**Scenario:** Basic ₹67,700 + NPA ₹13,540 + DA ₹43,057 + HRA ₹21,935 + TA ₹11,016.
+**Q:** Monthly 10% and 14%?
+**A:** Emoluments = 67,700+13,540+43,057 = **₹1,24,297** (HRA/TA out). 10% = 12,429.70 → **₹12,430**; 14% = 17,401.58 → **₹17,402** (always round UP to next rupee).
+**Rule:** 5(1), 6(1), 7(1), 7(5) · **Linked:** N-026, N-030, N-031
+
+---
+
+### N-101 · Case: suspension, opt-out, then "treated as duty"
+**Scenario:** B is suspended; he opts NOT to contribute. Later the suspension period is treated as duty.
+**Q:** Contributions?
+**A:** During suspension: employee ₹0 and Government ₹0 (1st proviso to 7(3)). On "treated as duty": both 10% and 14% are recalculated on full emoluments and the **difference + PPF interest** is credited. Had it stayed "not duty": nothing changes.
+**Rule:** 5(4), 6(2), 7(3) provisos · **Linked:** N-028, N-032
+
+---
+
+### N-102 · Case: EOL — medical vs private
+**Scenario:** C takes 2 months' EOL. (a) On a medical certificate; (b) for private affairs.
+**Q:** Employee and Government contributions?
+**A:** (a) Medical: employee ₹0 (Rule 6(3)); Government **14% of full notional emoluments** (Proviso to 7(1)). (b) Private: both ₹0 (Rule 7(2)). Same rule for HPL on medical grounds: employee 10% of half-pay drawn; Government 14% of full notional.
+**Rule:** 5(2)–(3), 6(3), 7(1) proviso, 7(2) · **Linked:** N-027, N-033
+
+---
+
+### N-103 · Case: deputation to State Govt vs PSU
+**Scenario:** X deputed to Karnataka State Govt (higher pay); Y deputed to NHAI (PSU, higher pay).
+**Q:** Whose emoluments count for NPS?
+**A:** X: **actual** pay drawn (Rule 5(5)). Y: **notional parent-cadre pay** — NHAI pay comes from non-Consolidated-Fund source = foreign service (Rules 3(1)(k), 5(6)).
+**Rule:** 5(5), 5(6), 3(1)(k) · **Linked:** N-017, N-029
+
+---
+
+### N-104 · Case: re-employed pensioner
+**Scenario:** Retired subscriber re-employed; pay fixed at ₹1,00,000 minus ₹30,000 pension.
+**Q:** NPS emoluments?
+**A:** ₹1,00,000 + ₹30,000 (pension element added back) + DA = emoluments (Rule 5(7)). No second gratuity for the re-employment spell (Gratuity Rule 4A, 2025).
+**Rule:** 5(7); Gratuity Rule 4A · **Linked:** N-030, N-093, N-097
+
+---
+
+### N-105 · Case: Form 1 finality — death vs invalidation
+**Scenario:** (a) M opted NPS in Form 1, dies in service in 2026. (b) M opted NPS, is invalidated in 2026 and is conscious at discharge.
+**Q:** Can the family / M change the option?
+**A:** (a) No — last option is **final** on death; family has no right (10(5)). (b) Yes — a **fresh option must be offered at discharge** (10(4)(ii)); if he can't opt, the earlier NPS option stands (10(4)(iii)).
+**Rule:** 10(4), 10(5) · **Linked:** N-041
+
+---
+
+### N-106 · Case: no Form 1 on record — default today
+**Scenario:** Joined 2008, never filed Form 1, dies in 2026. (Compare: died in 2023 with 10 years' service.)
+**Q:** Default option?
+**A:** 2026 case: ≥15 yrs service and the 3-year window closed 31.03.2024 → default = **NPS** (10(6)(iii)). 2023/10-yr case: default = **OPS/EOP** (10(6)(i)).
+**Rule:** 10(6) · **Linked:** N-042
+
+---
+
+### N-107 · Case: infructuous OPS option
+**Scenario:** Unmarried subscriber R opted OPS in Form 1; his only relative is an earning adult brother (ineligible for family pension). R dies in service.
+**Q:** What does the brother get?
+**A:** R's OPS option is **infructuous → deemed invalid** (Rule 10(7)): full NPS corpus (employee + Government shares + returns) to the legal heir under PFRDA regulations, **plus death gratuity** under the Gratuity Rules.
+**Rule:** 10(7), 20(2)–(3) · **Linked:** N-043, N-063
+
+---
+
+### N-108 · Case: VRS notice, silence, withdrawal
+**Scenario:** 22-year regular-service subscriber gives 3-month VRS notice on 01.06.2026 (retirement 01.09.2026). Authority stays silent. On 20.08.2026 he wants to withdraw.
+**Q:** Outcome?
+**A:** Retirement is **automatically effective 01.09.2026** (silence = deemed acceptance, 12(2) proviso). Withdrawal on 20.08.2026 fails — request needed ≥15 days before (by 17.08.2026) **plus specific approval** (12(4) proviso). Exit = **60:40** (12(6)).
+**Rule:** 12(2), 12(4), 12(6) · **Linked:** N-045 – N-048
+
+---
+
+### N-109 · Case: resignation, 90 days, death inside the window
+**Scenario:** K resigns (non-technical), effective 01.04.2026. (a) Alive on 15.05.2026 — can PAO pay the 20% lump sum? (b) K dies 15.05.2026.
+**Q:** Payout timing?
+**A:** (a) No — payment only after **90 days** (after 30.06.2026) (1st proviso to 14(1)). (b) Death within 90 days → **immediate** payout to eligible person (2nd proviso); and since he died *after* resignation, Rule 20 OPS family pension does **not** apply. K could also have continued the same PRAN as a non-Government subscriber (3rd proviso); gratuity = zero.
+**Rule:** 14(1) provisos · **Linked:** N-051, N-085
+
+---
+
+### N-110 · Case: technical resignation — NPS dept vs OPS State
+**Scenario:** Z resigns with proper permission from a Central Ministry. (a) Joins another NPS-covered Central dept. (b) Joins an OPS-covered State dept.
+**Q:** NPS treatment?
+**A:** (a) Same PRAN continues; deemed NPS member from first joining (14(2)). (b) **60:40 superannuation-level exit** (1st proviso) or continue same PRAN as non-Government subscriber (2nd proviso). Without proper permission it would be Rule 14(1) 20:80 after 90 days + zero gratuity.
+**Rule:** 14(2) + provisos · **Linked:** N-052, N-051
+
+---
+
+### N-111 · Case: absorption in PSU — with/without NPS; date of absorption
+**Scenario:** P absorbed in a Central PSU. (a) PSU has NPS. (b) PSU has no NPS. (c) P first went on foreign-service terms 01.01.2024; unqualified resignation accepted 01.07.2026.
+**Q:** Benefits / date of absorption?
+**A:** (a) Same PRAN **must** continue; no benefit at absorption (1st proviso to 15(1)). (b) 60:40 exit or continue same PRAN (2nd proviso). (c) Date of absorption = **01.07.2026** (resignation acceptance), not the 2024 deputation date (Explanation (1)(ii)).
+**Rule:** 15(1)–(3), Expl. (1) · **Linked:** N-055, N-056
+
+---
+
+### N-112 · Case: who examines — Medical Board or Civil Surgeon?
+**Scenario:** Invalidation applicants: (1) Gazetted, pay ₹47,600; (2) non-Gazetted, pay exactly ₹54,000; (3) non-Gazetted, pay ₹55,200.
+**Q:** Medical authority + timelines?
+**A:** (1) **Medical Board** (all Gazetted). (2) **Civil Surgeon/DMO** — ₹54,000 does not *exceed* ₹54,000. (3) **Medical Board** (pay exceeds ₹54,000). HOO/HOD request within **15 days**; examination within **30 days**; certificate in **Form 3**; lady doctor on the Board for a woman.
+**Rule:** 16(3)–(8) · **Linked:** N-058
+
+---
+
+### N-113 · Case: dismissal vs pending proceedings at retirement
+**Scenario:** (a) D dismissed for misconduct (order before retirement). (b) E retires on superannuation while a vigilance case is pending.
+**Q:** NPS corpus + gratuity?
+**A:** (a) Corpus **not forfeited** — premature exit 20:80 (100% if ≤₹5 lakh) (Rule 18(1)); gratuity **forfeited** (compassionate gratuity ≤⅔ possible). (b) Full **60:40 corpus paid** — pending proceedings cannot touch it (Rule 19(1)); only **gratuity withheld** (19(2)).
+**Rule:** 18, 19 · **Linked:** N-061, N-062, App. E.2
+
+---
+
+### N-114 · Case: death in service — two pots of money
+**Scenario:** F (OPS option in Form 1) dies in service. Family: widow + minor child. PRAN nomination: mother.
+**Q:** Who gets what?
+**A:** Widow/child get **family pension under CCS (Pension) Rules** (Form 2 priority — Rule 20(1)). From the NPS corpus: Government share + returns → Government account; **employee share + returns → lump sum to the PFRDA nominee (mother)** — not the Form 2 family (Rule 20(2)). If death attributable to service → EOP Rules, 2023 (proviso to 20(1)).
+**Rule:** 20(1)–(3) · **Linked:** N-063
+
+---
+
+### N-115 · Case: invalidation with only 3 years' service
+**Scenario:** G (NPS option) is boarded out on invalidation after 3 years.
+**Q:** NPS exit + gratuity?
+**A:** Superannuation-level **60:40** NPS exit (16(11)). Gratuity at **death-gratuity slabs — no 5-year minimum**: 1 to <5 yrs = **6× monthly emoluments** (OM 28.10.2022 + Gratuity Rules).
+**Rule:** 16(11); Gratuity Rules · **Linked:** N-059, N-064
+
+---
+
+### N-116 · Case: employee goes missing
+**Scenario:** H (NPS option) goes missing in 2026; FIR lodged.
+**Q:** Family benefits timeline?
+**A:** OPS option: family pension/arrears/leave encashment immediately on FIR + untraced report (OM 28.04.2022); retirement gratuity after **6 months from FIR**; PRAN suspended; after **7-year presumption of death (Sec. 111 BSA 2023)** final settlement. NPS option: **20% interim corpus**, remaining 80% after presumption of death (PFRDA Dec 2025).
+**Rule:** OM 28.04.2022; G.S.R. 258(E); PFRDA Dec 2025; BSA 111 · **Linked:** N-078
+
+---
+
+### N-117 · Case: exit slabs in practice (Govt sector, post Dec-2025)
+**Scenario:** At superannuation, corpus = (a) ₹7 lakh; (b) ₹10 lakh; (c) ₹15 lakh. On resignation, corpus = (d) ₹4 lakh; (e) ₹7 lakh.
+**Q:** Lump sum / annuity?
+**A:** (a) **100% lump sum** (≤₹8L). (b) Up to **₹6 lakh lump** + balance annuity/SUR min 6 yrs (or 60:40). (c) **60% lump + 40% annuity** (>₹12L). (d) **100%** (≤₹5L premature). (e) **20% lump + 80% annuity**. (80:20 above ₹12L is non-Govt only.)
+**Rule:** PFRDA Exit Amendment Dec 2025 · **Linked:** N-082, App. C
+
+---
+
+### N-118 · Case: partial withdrawals
+**Scenario:** Joined NPS 2020. Wants money in 2026 for daughter's marriage; again in 2028 for a course; again in 2029 to start a business.
+**Q:** Allowed?
+**A:** 2026 marriage: yes (≥3 yrs; ≤25% of own contributions; 1st of max **4** before age 60). 2028: no — needs **4-year gap** (next in 2030). 2029 start-up: **not allowed** — start-up/skill-development purposes were removed in Dec 2025. Loan against lien (≤25% own) is allowed as a purpose.
+**Rule:** PFRDA Reg. 8 (Dec 2025) · **Linked:** N-084
+
+---
+
+### N-119 · Case: UPS optee switching back to NPS
+**Scenario:** UPS optee wants to switch back to NPS 11 months before superannuation; a departmental proceeding is contemplated against him.
+**Q:** Can he switch? What about the 4% gap?
+**A:** **No** — switch must be ≥**12 months** before superannuation (or ≥3 months before deemed VRS, or at resignation/non-penal FR 56(j)), and is **barred** when proceedings are pending/contemplated or on penalty. If he had switched in time: future Govt contribution = 14%, and the **4% differential for the UPS period** (computed at default pattern) is credited to his NPS account **at exit**.
+**Rule:** UPS Rules 2025 Rule 11; MoF notification Aug-2025; OM 29.10.2025 · **Linked:** N-087, N-096
+
+---
+
+### N-120 · Case: gratuity numbers
+**Scenario:** (a) Retirement after 33 years — retirement gratuity? (b) Death after 30 years — death gratuity? (c) Re-employed ex-serviceman with military gratuity already paid — civil gratuity?
+**Q:** Amounts/caps?
+**A:** (a) ¼ emoluments per completed 6 months, max **16½×** emoluments. (b) ≥20 yrs: ½ emoluments per 6-monthly period, max **33×** — both capped at **₹25 lakh**. (c) Separate civil gratuity allowed, but military + civil ≤ combined-service amount on civil emoluments, and ≤ ₹25 lakh overall [OM 26.12.2025 — VERIFY].
+**Rule:** Gratuity Rules 2021/2025; OM 30.05.2024 · **Linked:** N-085, N-097, N-090
+
+---
+
 # Appendix A — Glossary of abbreviations
 
 | Abbreviation | Expansion |
@@ -1701,7 +1884,7 @@ See **Appendix B** (master timeline, 34 entries with rule citations and card lin
 - **Corrections:** broken table cells in draft #108 ("Before-Superannuati on", "Compansat e") repaired; spelling standardised ("Invalidation", "Superannuation", "UPS optees", clause "3(1)(l)"); currency standardised to ₹ with lakh notation; the specific garbled strings listed in the brief (e.g., "Invallation", "Superanunation", "UPS opes", "&amp;amp;", "3(1)(1)") were **not present in the PDF text layer** — correct forms enforced throughout v2.0 regardless.
 - **Substantive fixes:** missing-employee rule corrected (family pension/arrears immediate on FIR; retirement gratuity after 6 months from FIR per G.S.R. 258(E); 20%/80% corpus split under PFRDA Dec 2025; Sec. 111 BSA 2023 replaces Sec. 108 Evidence Act from 01.07.2024); UPS VRS qualifying service flagged [VERIFY] (draft said 25 yrs); PFRDA Dec-2025 amendment date flagged [VERIFY] (12/15/16.12.2025; Gazette 8421 GI/2025); railway rules enacting power corrected (proviso to Art. 309 only); LC75/BLC dated (approved Oct 2025; DFS notfn 13.11.2025; CAB extension DoE OM 01.07.2026); income-tax renumbering presented with [VERIFY] on sub-clause mapping; ₹25 lakh gratuity ceiling tied to OM 30.05.2024 + Oct-2025 non-suo-moto clarification; FMA updated with DoE OM 16.04.2026 automatic CPPC payment.
 - **Verified as correct (kept):** G.S.R. 227(E) & enacting formula; Rule 2 exclusions; 3-3-3 chain; Rule 4(9) "later"; 10%/14% + next-higher-rupee; 20/25/last-working-day + March proviso; Rule 8 proviso citations; Sec. 201(1A); ₹54,000 medical-board threshold + 15/30 days; SVRS OM 25013/6/2001-Estt.(A) 28.02.2002; Rule 12/13/14/15/18/19/20 architecture; Forms 1–4-E mapping; OM 03.03.2023 (22.12.2003, option by 31.08.2023); OM 25.10.2024 8361(8); OM 14.10.2024 refund + MH 0071→8342-117; OM 28.04.2022 missing employees; G.S.R. 658(E), 258(E), 599(E), 735(E), 307(E), 868(E), 63(E); PFRDA Dec-2025 slabs & partial-withdrawal changes; PFRDA 13.07.2026 Reg. 4A; UPS 18.5%/50%/₹10,000/1-10th/4% switch; RBE 103/2025; Budget-2025 14% employer deduction in new regime.
-- **Card count:** 152 draft cards → 95 revised cards + 9 appendices; no card numbers missing or duplicated in v2.0 (N-001–N-095 sequential).
+- **Card count:** 152 draft cards → 120 revised cards (N-001–N-120, sequential, no gaps/duplicates) + 11 appendices (A–K). v2.1: N-096–N-098 + Appendix J (coverage checklist); UPS VRS corrected per DFS FAQs. v2.2: Module 13 case studies N-099–N-120 + Appendix K (obsolete → current table).
 
 ---
 
@@ -1767,3 +1950,32 @@ Legend: ✔ = covered on the cited card(s). All 30 Rules of G.S.R. 227(E), all s
 - UPS family-pension percentage on death (60% of assured family payout per DFS FAQ) — verify G.S.R. 599(E) Rule 19.
 - AIS 2026 NE-cadre 15-year VRS; Railway UPS Rules 2026 Gazette no. — see V7/V8.
 - PFRDA Dec-2025 amendment exact notification date — see V12.
+
+---
+
+# Appendix K — Obsolete → Current (do NOT memorise the old values; law as on 01.11.2026)
+
+| # | Obsolete (old) | Current (as on 01.11.2026) | Source of change |
+|---|---|---|---|
+| 1 | Government NPS contribution 10% | **14% w.e.f. 01.04.2019** | MoF/DoE (verified) |
+| 2 | 100% lump-sum exit at ≤ ₹5 lakh (normal) / ≤ ₹2.5 lakh (premature) | **≤ ₹8 lakh (normal/death) / ≤ ₹5 lakh (premature)** | PFRDA Exit Amendment, Dec 2025 (verified) |
+| 3 | Middle slab absent | ₹8–12 lakh → up to ₹6 lakh lump + balance annuity/SUR (min 6 yrs) | PFRDA Dec 2025 (verified) |
+| 4 | Non-Govt exit > ₹12 lakh = 60:40 | Non-Govt > ₹12 lakh = **80:20** (Govt sector stays **60:40**) | PFRDA Dec 2025 (verified) |
+| 5 | Max exit/deferment age 70 (non-Govt) / 75 (Govt) | **85 for all** | PFRDA Dec 2025 (verified) |
+| 6 | Mandatory 15-day prior intimation for IPA continuation/deferment (bare Rule 24(4)) | 15-day intimation **removed**; automatic continuation up to 85 unless exit exercised | PFRDA Dec 2025 (verified) |
+| 7 | Partial withdrawal: 3 times, no gap; skill-development & start-up purposes allowed; specified-illness-only medical | **4 times before 60 (4-yr gap; 3-yr gap after 60)**; 25% of own contributions; skill-development/start-up **removed**; medical broadened; **loan-lien settlement added**; lien ≤25% own | PFRDA Dec 2025 (verified) |
+| 8 | Gratuity ceiling ₹20 lakh | **₹25 lakh w.e.f. 01.01.2024** (Central Civil Services only — not suo-moto PSUs/banks/RBI/ABs) | DoPPW OM 30.05.2024 + Oct-2025 clarification (verified) |
+| 9 | Rule 10 default OPS window "3 years from notification" treated as open | Window **closed 31.03.2024**; today, ≥15 yrs + no Form 1 → default **NPS** | Rule 10(6)(iii); OM 25.10.2024 8361(9) |
+| 10 | Entire NPS corpus to Government account on OPS/EOP election (OM 05.05.2009 practice) | Only **Government share + returns** retained; employee share + returns refunded (w.e.f. 01.01.2004) | Rules 16(10)/17(2)/20(2); OM 14.10.2024 (verified) |
+| 11 | Sec. 108, Indian Evidence Act, 1872 (7-year presumption of death) | **Sec. 111, Bharatiya Sakshya Adhiniyam, 2023** w.e.f. 01.07.2024 | BSA 2023 (verified) |
+| 12 | Missing employee: wait 7 years for any benefit | Family pension/arrears immediately on FIR + untraced report (OM 28.04.2022); gratuity after 6 months from FIR; NPS: 20% interim / 80% after presumption | OM 28.04.2022 (verified); G.S.R. 258(E); PFRDA Dec 2025 |
+| 13 | Central Govt investment choices: Default / Scheme G / LC25 / LC50 only | + **LC75 and BLC** (approved Oct 2025; DFS notification 13.11.2025; CABs from DoE OM 01.07.2026 [VERIFY]) | MoF/DFS/PFRDA (verified) |
+| 14 | UPS option window open | Closed — initially 30.09.2025, extended to 30.11.2025 [VERIFY]; only **new joiners (30 days from joining)** can still opt for UPS | DoPPW/PFRDA FAQs [VERIFY] |
+| 15 | Income-tax Act, 1961 sections (80C, 80CCD(1)/(1B)/(2), 10(12A)/(12B), 201(1A)) | **Income-tax Act, 2025 w.e.f. 01.04.2026**: own contributions → Sec. 123 + Sch. XV; 80CCD → Sec. 124; 201(1A) → Sec. 397(3) [VERIFY mapping]; lump-sum/partial-withdrawal exemptions continue | Income-tax Act, 2025 |
+| 16 | New tax regime: no NPS deduction except 80CCD(2) at 10% (private) | Employer NPS contribution up to **14% of Basic+DA deductible in new regime for ALL employers w.e.f. 01.04.2025** | Budget 2025 (verified) |
+| 17 | FMA only for OPS pensioners | NPS pensioners also get **FMA ₹1,000/month** (non-CGHS areas); automatic quarterly bank credit w.e.f. DoE OM 16.04.2026; November life certificate | OMs 07.02.2025 / 16.04.2026 (verified) |
+| 18 | Railway/AIS servants lumped with CCS rules | Separate rules: **Railway NPS Rules 2025 (G.S.R. 735(E))**; **AIS NPS Rules 2026 (G.S.R. 307(E))**; Railway UPS Rules 2026 [VERIFY] | Gazette (verified) |
+| 19 | Old 2021-Rules era: VRS exit feared as 20:80 premature | Rule 12 VRS / FR 56(j)/(k) / SVRS = **60:40 superannuation exit** (OM 11.10.2024) | Rules 12(6), 13(1) (verified) |
+| 20 | "Whichever is earlier" for Rule 4(9) | Rule 4(9) is "whichever is **LATER**" (first contribution); only Rule 23(2) claim uses "earlier" | Bare Rules (verified) |
+
+*Rule of thumb for exams: if an option/answer cites ₹5L/₹2.5L slabs, ₹20L gratuity, age 70/75, Sec. 108 Evidence Act, 3-times partial withdrawal, skill-development purpose, or 10% Government contribution as "current", it is obsolete — pick the current value from this table.*
