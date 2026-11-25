@@ -13,6 +13,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import visuals
 import powers
+import corrections
+import latest
 
 SRC, OUT = sys.argv[1], sys.argv[2]
 soup = BeautifulSoup(open(SRC, encoding='utf8').read(), 'lxml')
@@ -40,6 +42,9 @@ for c in list(soup.select('.rule-card')):
         LAST[id(top)] = c
 
 ALL_CARDS = soup.select('.rule-card')
+CORR_LOG = corrections.apply(soup, ws)
+json.dump(CORR_LOG, open(os.path.join(HERE, 'corrections_log.json'), 'w'), ensure_ascii=False, indent=1)
+print('corrections applied:', len(CORR_LOG), file=sys.stderr)
 print('cards:', len(ALL_CARDS), file=sys.stderr)
 
 # ---------------------------------------------------------------- 2. cleaning helpers
@@ -227,13 +232,14 @@ def render_card(k, src_card, extra_cls=''):
     visual_html = ''
     if vis:
         visual_html = f'<details class="visual" open><summary>📊 Visual summary — diagrams &amp; comparison</summary>{vis}</details>'
+    upd = ''.join(latest.CALLOUTS.get(k.rc, []))
     inner = ''.join(str(ch) for ch in body.children)
     inner += ''.join(clean_misc(x) for x in k.extra)
     return (f'<details class="card {extra_cls}" id="{k.id}" open>'
             f'<summary class="{k.color}"><span class="rtag">{esc(k.tag)}</span>'
             f'<div class="rinfo"><h2>{esc(k.title)}</h2><div class="rom">{esc(k.om)}</div></div>'
             f'<span class="cardtools"><button class="bBm" aria-label="Bookmark">☆</button><button class="bStudy">Mark studied</button></span></summary>'
-            f'<div class="cbody">{visual_html}{inner}</div></details>')
+            f'<div class="cbody">{visual_html}{upd}{inner}</div></details>')
 
 def render_qa(el, k):
     strip_attrs(el); convert_hinglish(el); mark_semantics(el); wrap_tables(el)
@@ -279,7 +285,7 @@ for P in parts:
     P['html'] = f'<div class="intro">{intro}</div>' + ''.join(out)
 
 about_html = ('<div class="notice-box"><h3>🔔 Currency &amp; obsolete content — read this first</h3><ul>'
-  '<li>The guide’s own text is current to <b>21 July 2026</b>. Orders reported later, or missing from it, are on the <a href="#verify">Verify tab</a> as <b>unverified</b> (e.g. OMs of 25.06.2026, 01.09.2026, 26.10.2026).</li>'
+  '<li>The original guide’s text was current to <b>21 July 2026</b>. Orders to <b>09.11.2026</b> were read in full and incorporated — see <a href="#latest">Latest orders</a> (e.g. OMs of 25.06.2026, 01.09.2026, 26.10.2026, 09.11.2026) — and wrong / obsolete figures were corrected with the old wording kept on that tab.</li>'
   '<li>Superseded rates and orders are NOT presented as current in the rule text; where the guide itself records a correction (e.g. hearing-aid rates, HoD ceiling) it is listed in the <a href="#changelog">changelog</a>.</li>'
   '<li>New: <a href="#powers">Who has the power?</a> — who appoints the AMA, delegation of powers, authority matrix and practice questions.</li></ul></div>') + ''.join(clean_misc(x) for x in about_items)
 
@@ -329,8 +335,13 @@ for k, t in extras['changelog']:
     if t[:100] in cl_seen: continue
     cl_seen.add(t[:100])
     cl.append(f'<div class="listitem">{esc(t[:520])}<div class="src">{card_link(k)}</div></div>')
+cl_new = ''.join(f'<div class="listitem"><span class="tag">New order</span><b>{d}</b> — {esc(subj)}<div class="src">{esc(fn)} · <a href="#latest">Latest orders tab</a></div></div>' for d, fn, subj, _k in latest.ORDERS)
+_cg = {}
+for c in CORR_LOG:
+    _cg[c['reason']] = _cg.get(c['reason'], 0) + 1
+cl_corr = ''.join(f'<div class="listitem"><span class="tag">Corrected · {n} places</span>{esc(r)}<div class="src"><a href="#latest">see old vs new</a></div></div>' for r, n in _cg.items())
 changelog_html = ('<div class="row"><input class="filterbox" data-filter="#v-changelog .listitem" placeholder="Filter…" aria-label="Filter changelog"></div>'
-    '<p class="lead">Every place the guide itself records an amendment, correction, supersession or obsolete item. Obsolete provisions are NOT presented as current in the body; they appear here as the source flags them.</p>' + ''.join(cl))
+    '<p class="lead">Every place the guide itself records an amendment, correction, supersession or obsolete item. Obsolete provisions are NOT presented as current in the body; they appear here as the source flags them.</p>' + '<h3>New orders incorporated (2026)</h3>' + cl_new + '<h3>Corrections to earlier text</h3>' + cl_corr + '<h3>Amendments recorded inside the original guide</h3>' + ''.join(cl))
 
 # verify
 MANUAL = [
@@ -349,20 +360,21 @@ for k, lab, t in extras['verify']:
     if (lab, t[:100]) in vseen: continue
     vseen.add((lab, t[:100]))
     vr.append(f'<div class="listitem auto"><span class="tag">{esc(lab)}</span>{esc(t[:480])}<div class="src">{card_link(k)}</div></div>')
-vr.append('<h3>Reported after / outside the guide — NOT verified</h3><p class="lead">These came from web-search result summaries only; the order text itself could not be opened in this session. Do not quote any figure from them until you have read the order.</p>')
-for a, b in [
-    ('OM dated 25.06.2026 — revised delegation of financial powers', 'Search results describe it as revising the delegation of financial powers for settling reimbursement claims and granting permission / ex-post-facto approval for CGHS beneficiaries (pensioners and serving employees). Its figures were not seen, so it is unknown whether it changes the Rs.10 lakh HoD ceiling (OM 16.02.2026) given in this guide. It is dated before the guide’s 21 July 2026 cut-off but is not mentioned in the guide.'),
-    ('OM dated 01.09.2026 — age relaxation for dependents', 'Reported as relaxing the age criterion for unmarried dependent sons and brothers with critical or terminal illness. Post-dates the guide; not in the Family definition sections.'),
-    ('OM dated 26.10.2026 — extension of CGHS facilities to such dependents', 'Reported as extending CGHS facilities to the dependents covered by the 01.09.2026 relaxation. Post-dates the guide.'),
-    ('Basis of the HoD’s power to appoint private AMAs', 'The guide cites no OM number. A CSIR policy document surfaced in search says that, under Supplementary Rule 2(10), even a private registered medical practitioner can be appointed AMA for a class of Central Government employees where an adequate number of doctors is unavailable. This is consistent with the guide, but the primary order was not read.'),
+vr.append('<h3>Still unverified</h3><p class="lead">Recent CGHS / CS(MA) orders (Jan–Nov 2026) were read in full — see the <a href="#latest">Latest orders</a> tab. What could not be confirmed:</p>')
+for a_, b_ in [
+    ('AMA appointment — OM number', 'The guide says the Head of Department appoints private practitioners as AMA (Rule 2(a) GD(2)) but cites no OM number. The CS(MA) Rules PDF and the MoHFW CS(MA) page (orders list, AMA re-verification OM, verification proforma) could not be opened from this environment (HTTP 502). A CSIR policy document found in search says Supplementary Rule 2(10) allows a private registered practitioner to be appointed AMA for a class of employees where adequate doctors are unavailable — consistent with the guide, but not read at the source.'),
+    ('Pensioners’ emergency claims', 'The guide says emergency claims within prescribed rates for pensioners are settled by the Head of the CGHS-covered city with no financial limit. OM 25.06.2026 gives the Additional Director / Director / AS&DG financial powers for CGHS claims generally and does not mention an “emergency, no limit” category; treat the “no limit” statement for pensioners as unconfirmed.'),
+    ('Pre-16.02.2026 statements', 'Statements in older sections that quote “Rs.5 lakh” for the HoD / IFD threshold have already been corrected in the guide; if you see one elsewhere, Rs.10 lakh (OM 16.02.2026) is the current HoD figure.'),
+    ('Orders after 09.11.2026', 'The search for new orders was made on 25.11.2026. Anything issued later, or not published on the sites searched, is not included.'),
 ]:
-    vr.append(f'<div class="listitem"><span class="tag">Unverified</span><b>{esc(a)}</b><br>{esc(b)}</div>')
-vr.append('<h3>Where to check</h3><div class="listitem">MoHFW — Central Services (Medical Attendance) page: <a href="https://www.mohfw.gov.in/documents/csma" rel="noopener">mohfw.gov.in/documents/csma</a> (orders, forms, archive). CGHS portal: <a href="https://cghs.gov.in" rel="noopener">cghs.gov.in</a>. Order texts are also mirrored by <a href="https://www.staffnews.in" rel="noopener">staffnews.in</a>.</div>')
+    vr.append(f'<div class="listitem"><span class="tag">Unverified</span><b>{esc(a_)}</b><br>{esc(b_)}</div>')
+vr.append('<h3>Where to check</h3><div class="listitem">MoHFW — Central Services (Medical Attendance) page: <a href="https://www.mohfw.gov.in/documents/csma" rel="noopener">mohfw.gov.in/documents/csma</a>. CGHS portal: <a href="https://cghs.gov.in" rel="noopener">cghs.gov.in</a>. Order texts are mirrored by <a href="https://www.staffnews.in" rel="noopener">staffnews.in</a> (used for the Latest orders tab).</div>')
 verify_html = ''.join(vr)
 
 # powers view
 RCMAP = {k.rc: k.id for k in CARDS if getattr(k, 'rc', None) is not None}
 powers_html = powers.build(lambda n: '#' + RCMAP[n])
+latest_html = latest.latest_view(CORR_LOG)
 
 # flashcards
 fc_json = json.dumps(extras['flash'], ensure_ascii=False).replace('</', '<\\/')
@@ -370,7 +382,7 @@ fc_json = json.dumps(extras['flash'], ensure_ascii=False).replace('</', '<\\/')
 # ---------------------------------------------------------------- 6. sidebar
 def nav_html():
     o = ['<h4>Study guide</h4>']
-    for v, label in [('about', '🏠 Overview & fact-check'), ('compare', '⚖️ CGHS vs CS(MA)'), ('powers', '🏛️ Who has the power? (AMA, delegation)')]:
+    for v, label in [('about', '🏠 Overview & fact-check'), ('compare', '⚖️ CGHS vs CS(MA)'), ('latest', '🆕 Latest orders (2026) & corrections'), ('powers', '🏛️ Who has the power? (AMA, delegation)')]:
         o.append(f'<a class="view" data-view="{v}" href="#{v}">{label}</a>')
     for P, label in [(P1, '🏥 PART 1 — CGHS'), (P2, '⚖️ PART 2 — CS(MA) Rules 1944')]:
         o.append(f'<h4>{label}</h4><a class="view" data-view="{P["key"]}" href="#{P["key"]}">Open part</a>')
@@ -413,6 +425,7 @@ page = f'''<!DOCTYPE html>
 <main>
 {view('about', '🏠 Overview, fact-check & how to use', f'{len(CARDS)} sections in two parts. Press <b>/</b> to search, <b>j / k</b> to jump between sections.', '<div class="intro">'+about_html+'</div>')}
 {view('compare', '⚖️ CGHS vs CS(MA) — at a glance', 'Comparison built only from figures stated in the guide.', comp_html)}
+{view('latest', '🆕 Latest orders (2026), verified & incorporated', 'Primary-text summaries of the newest CGHS / CS(MA) orders, plus the corrections made to earlier text.', latest_html)}
 {view('powers', '🏛️ Who has the power? — AMA appointment, delegation of powers, authority matrix', 'Appointing authorities, HoD / Controlling Officer / MoHFW / Central Government powers and money limits, with practice questions.', powers_html)}
 {view('cghs', '🏥 PART 1 — CGHS', f'{ncards1} sections', P1['html'], True)}
 {view('csma', '⚖️ PART 2 — CS(MA) Rules, 1944', f'{ncards2} sections (Rules 1–11, AMA, advance, family, non-admissible items)', P2['html'], True)}

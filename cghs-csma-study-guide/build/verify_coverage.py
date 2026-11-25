@@ -36,7 +36,15 @@ for e in src.select('li,p,td,th,h1,h2,h3,.otag,.htag,.ttag,.gdtag,.ktag,.atag,.r
     if len(t) > 2:
         leaves.append(t)
 leaves = sorted(set(leaves))
-missing = [t for t in leaves if alnum(t) not in hay]
+import json, os
+LOGF = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'corrections_log.json')
+corr = json.load(open(LOGF)) if os.path.exists(LOGF) else []
+old_all = alnum(' '.join(c['old'] for c in corr))
+new_ok = all(alnum(c['new'][:120]) in hay for c in corr)
+missing_raw = [t for t in leaves if alnum(t) not in hay]
+# a leaf that was intentionally corrected (its text sits inside a logged 'old' string) is not a gap
+corrected_leaves = [t for t in missing_raw if alnum(t) in old_all]
+missing = [t for t in missing_raw if alnum(t) not in old_all]
 
 # 2. key facts
 body = ws(src.body.get_text(' ', strip=True))
@@ -51,10 +59,15 @@ facts = {
 lines = ['# Coverage report', '', f'Source: `{SRC.split("/")[-1]}`  →  Output: `{OUT.split("/")[-1]}`', '']
 ok_all = True
 tot = len(leaves)
-lines.append(f'- Text blocks checked: **{tot}**, present: **{tot-len(missing)}** ({100*(tot-len(missing))/tot:.2f}%)')
+lines.append(f'- Text blocks checked: **{tot}**, present unchanged: **{tot-len(missing_raw)}**, intentionally corrected (obsolete/wrong text replaced, old text logged): **{len(corrected_leaves)}**, unexplained gaps: **{len(missing)}**')
+lines.append(f'- Corrections logged: **{len(corr)}**; replacement text present in output: **{"yes" if new_ok else "NO"}**')
+if not new_ok:
+    ok_all = False
 for k, items in facts.items():
-    miss = [i for i in items if alnum(i) not in hay]
-    lines.append(f'- {k}: **{len(items)-len(miss)}/{len(items)}** present' + (f' — missing: {miss[:20]}' if miss else ''))
+    absent = [i for i in items if alnum(i) not in hay]
+    replaced = [i for i in absent if alnum(i) in old_all]
+    miss = [i for i in absent if i not in replaced]
+    lines.append(f'- {k}: **{len(items)-len(absent)}/{len(items)}** present' + (f'; {len(replaced)} intentionally replaced (obsolete): {replaced}' if replaced else '') + (f' — MISSING: {miss[:20]}' if miss else ''))
     if miss:
         ok_all = False
 if missing:

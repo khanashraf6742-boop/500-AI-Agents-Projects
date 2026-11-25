@@ -24,7 +24,7 @@ OVERVIEW = fig('CGHS vs CS(MA) Rules 1944 — side-by-side (figures as stated in
      ['Consultation cap', 'Max <b>6 consultations</b>, max <b>3 specialists</b> per 3-month referral', '<b>4 consultations within 10 days</b> per spell of illness (AYUSH/Homoeopathy: up to 40 days)'],
      ['Where serving employees claim', 'Own Department/Ministry (not CGHS office); pensioners → AD, CGHS of city of registration', 'Controlling Authority (Rule 9); appeal within <b>45 days</b> to Central Government'],
      ['IPD advance', '90% of approved CGHS package rates', '90% (same framework); TB: 80% or Rs.36,000 whichever is less'],
-     ['HoD settlement ceiling', 'Up to <b>Rs.10 lakh</b> (OM 16.02.2026; earlier Rs.5L, Rs.2L)', 'Same ceiling applies (CGHS/CS(MA) delegation OM)'],
+     ['Financial powers to settle claims', 'Serving employees: HoD up to <b>Rs.10 lakh</b> without IFD (OM 16.02.2026). CGHS administration: AD Rs.15 lakh · Director Rs.25 lakh · AS&amp;DG Rs.50 lakh (OM 25.06.2026)', 'HoD up to <b>Rs.10 lakh</b> without IFD (OM 16.02.2026); above → Ministry with IFD; relaxation → MoHFW'],
      ['Family income test', 'Dependent: income &lt; Rs.9,000 + DA / month', 'Same (OM 08.11.2016 extends it to CS(MA))'],
      ['Parents / Parents-in-law', 'One-time irrevocable choice [OM 13.05.2026]', 'Extended to CS(MA) [OM 28.03.2024]; one-time choice [OM 13.05.2026]'],
      ['Legal basis', 'Executive scheme — no separate statute; governed by MoHFW guidelines, OMs, circulars (established 1954)', 'Statutory Rules (notified 1 Jan 1944) — legally enforceable rights'],
@@ -112,10 +112,10 @@ V[9] = (fig('Medical reimbursement claim (CGHS) — process', vflow([
     ('Settlement', 'g')], 'CGHS MRC process', bh=54, gap=26, bw=700))
   + fig('Competent authority & monetary limit', cmp(['Scenario', 'Authority', 'Limit'], [
     ['Emergency (within prescribed rates) — serving', 'Head of Ministry/Dept/Office', 'No financial limit'],
-    ['Emergency — pensioners', 'Head of CGHS covered city', 'No financial limit'],
+    ['Emergency — pensioners', 'Head of CGHS covered city', 'No financial limit (as stated in the guide; not confirmed by OM 25.06.2026 — see Verify tab)'],
     ['General MRC — serving', 'Head of Ministry/Dept/Office', 'Up to Rs.10 lakh (OM 16.02.2026; earlier Rs.5L, Rs.2L)'],
-    ['General MRC — pensioners', 'Head of CGHS covered city', 'Up to Rs.10 lakh'],
-    ['Per rate list but above Rs.10 lakh', 'Ministry/Dept with IFD consultation', '&gt; Rs.10 lakh'],
+    ['General MRC — pensioners / CGHS beneficiaries', 'Additional Director, CGHS city/zone (OM 25.06.2026)', 'Up to Rs.15 lakh; Director, CGHS Rs.25 lakh; AS&amp;DG, CGHS Rs.50 lakh; above Rs.50 lakh → MoHFW with IFD'],
+    ['Per rate list but above Rs.10 lakh — serving employees (HoD route)', 'Ministry/Dept with IFD consultation', '&gt; Rs.10 lakh'],
     ['Rule relaxation · Air travel / ex-post facto', 'MoHFW', 'As needed'] ])))
 
 # ---------- RULE 4: TA ----------

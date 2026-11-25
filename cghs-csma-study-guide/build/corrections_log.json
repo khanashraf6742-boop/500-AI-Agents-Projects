@@ -1,0 +1,194 @@
+[
+ {
+  "old": "This master file merges the two companion batches — CGHS (the scheme for the ~80 CGHS-covered cities) and CS(MA) Rules, 1944 (the statutory rules for non-CGHS areas) — into a single document with zero content omitted from either source file. Both batches were independently fact-checked against primary MoHFW/DoPT/DoE sources before merging (see the verification notices retained inside each section below). All DA-linked figures have been updated to reflect the current DA/DR rate of 63% (effective 1 July 2026 — confirmed by June-2026 CPI-IW; Cabinet approval & formal notification expected Sept–Oct 2026 with arrears from 01.07.2026); these are formula-based thresholds that move at every DA revision, so the computed rupee figures are flagged as dynamic, not final.",
+  "new": "This master file merges the two companion batches — CGHS (the scheme for the ~80 CGHS-covered cities) and CS(MA) Rules, 1944 (the statutory rules for non-CGHS areas) — into a single document with zero content omitted from either source file. Both batches were independently fact-checked against primary MoHFW/DoPT/DoE sources before merging (see the verification notices retained inside each section below). All DA-linked figures have been updated to reflect the current DA/DR rate of 63% (effective 1 July 2026 — Department of Expenditure OM No. 1/2(i)/2026-E.II(B) dated 29.10.2026 raised DA from 60% to 63%); these are formula-based thresholds that move at every DA revision, so the computed rupee figures are flagged as dynamic, not final.",
+  "reason": "DA 63% from 01.07.2026 is no longer “expected”: it was notified by DoE OM dated 29.10.2026.",
+  "kind": "text"
+ },
+ {
+  "old": "Rs.5,35,000",
+  "new": "Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual), incl. GST [OM 09.11.2026]",
+  "reason": "Cochlear implant ceiling Rs.5,35,000 is obsolete: OM 09.11.2026 (F. No. S-367/2026/CGHSHQ/R&H/EHS(8410942)) revised it to Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual) incl. GST and superseded earlier cochlear orders.",
+  "kind": "text"
+ },
+ {
+  "old": "Hinglish: Hearing aids ki ceiling rates [MoHFW OM No. S.11011/37/2019-EHS dated 01.12.2020 — purane 2012 rates supersede]. Digital BTE (Behind-The-Ear) = Rs.8,000 per ear. Digital ITC (In-The-Canal)/CIC = Rs.9,000 per ear. Body-worn/Pocket type aur Analogue BTE = OBSOLETE / NOT REIMBURSABLE — yeh types band hain, inka koi ceiling rate nahi; SIRF Digital BTE aur Digital ITC/CIC hi reimbursable hain. Cochlear Implant = Rs.5,35,000. Yani reimbursement sirf digital categories mein, per-ear ceiling ke saath.",
+  "new": "Hinglish: Hearing aids ki ceiling rates [MoHFW OM No. S.11011/37/2019-EHS dated 01.12.2020 — purane 2012 rates supersede]. Digital BTE (Behind-The-Ear) = Rs.8,000 per ear. Digital ITC (In-The-Canal)/CIC = Rs.9,000 per ear. Body-worn/Pocket type aur Analogue BTE = OBSOLETE / NOT REIMBURSABLE — yeh types band hain, inka koi ceiling rate nahi; SIRF Digital BTE aur Digital ITC/CIC hi reimbursable hain. Cochlear Implant = Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual), incl. GST [OM 09.11.2026]. Yani reimbursement sirf digital categories mein, per-ear ceiling ke saath.",
+  "reason": "Cochlear implant ceiling Rs.5,35,000 is obsolete: OM 09.11.2026 (F. No. S-367/2026/CGHSHQ/R&H/EHS(8410942)) revised it to Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual) incl. GST and superseded earlier cochlear orders.",
+  "kind": "text"
+ },
+ {
+  "old": "Hinglish: Hearing aid ke rule ka yeh hissa: Yeh table ke column headings hain: hearing aid ki type; ceiling rate (adhiktam reimbursement). Neeche ki har row mein in headings ke hisaab se value di gayi hai - har row ko uske column ke matlab ke saath padho. Exam trap: sirf Digital BTE (Rs.8K) aur Digital ITC/CIC (Rs.9K) reimbursable; body-worn/analogue bilkul NAHI. Cochlear = Rs.5,35,000.",
+  "new": "Hinglish: Hearing aid ke rule ka yeh hissa: Yeh table ke column headings hain: hearing aid ki type; ceiling rate (adhiktam reimbursement). Neeche ki har row mein in headings ke hisaab se value di gayi hai - har row ko uske column ke matlab ke saath padho. Exam trap: sirf Digital BTE (Rs.8K) aur Digital ITC/CIC (Rs.9K) reimbursable; body-worn/analogue bilkul NAHI. Cochlear = Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual), incl. GST [OM 09.11.2026].",
+  "reason": "Cochlear implant ceiling Rs.5,35,000 is obsolete: OM 09.11.2026 (F. No. S-367/2026/CGHSHQ/R&H/EHS(8410942)) revised it to Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual) incl. GST and superseded earlier cochlear orders.",
+  "kind": "text"
+ },
+ {
+  "old": "Hinglish: Hearing aid ke rule ka yeh hissa: 🔧 CORRECTED [MoHFW (Swasthya Mantralaya) OM (Office Memorandum - sarkari aadesh) No. S.11011/37/2019-EHS dated 01.12.2020 — ko replace (supersede) kar deta hai pehle 2012 rates (dar)] Exam trap: sirf Digital BTE (Rs.8K) aur Digital ITC/CIC (Rs.9K) reimbursable; body-worn/analogue bilkul NAHI. Cochlear = Rs.5,35,000. Important figures/dates: 01.12.2020.",
+  "new": "Hinglish: Hearing aid ke rule ka yeh hissa: 🔧 CORRECTED [MoHFW (Swasthya Mantralaya) OM (Office Memorandum - sarkari aadesh) No. S.11011/37/2019-EHS dated 01.12.2020 — ko replace (supersede) kar deta hai pehle 2012 rates (dar)] Exam trap: sirf Digital BTE (Rs.8K) aur Digital ITC/CIC (Rs.9K) reimbursable; body-worn/analogue bilkul NAHI. Cochlear = Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual), incl. GST [OM 09.11.2026]. Important figures/dates: 01.12.2020.",
+  "reason": "Cochlear implant ceiling Rs.5,35,000 is obsolete: OM 09.11.2026 (F. No. S-367/2026/CGHSHQ/R&H/EHS(8410942)) revised it to Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual) incl. GST and superseded earlier cochlear orders.",
+  "kind": "text"
+ },
+ {
+  "old": "Hinglish: Hearing aid ke rule ka yeh hissa: hearing aid ki type: Digital BTE (Behind--Ear); ceiling rate (adhiktam reimbursement): Rs.8,000 har kaan ke liye Exam trap: sirf Digital BTE (Rs.8K) aur Digital ITC/CIC (Rs.9K) reimbursable; body-worn/analogue bilkul NAHI. Cochlear = Rs.5,35,000. Important figures/dates: Rs.8,000.",
+  "new": "Hinglish: Hearing aid ke rule ka yeh hissa: hearing aid ki type: Digital BTE (Behind--Ear); ceiling rate (adhiktam reimbursement): Rs.8,000 har kaan ke liye Exam trap: sirf Digital BTE (Rs.8K) aur Digital ITC/CIC (Rs.9K) reimbursable; body-worn/analogue bilkul NAHI. Cochlear = Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual), incl. GST [OM 09.11.2026]. Important figures/dates: Rs.8,000.",
+  "reason": "Cochlear implant ceiling Rs.5,35,000 is obsolete: OM 09.11.2026 (F. No. S-367/2026/CGHSHQ/R&H/EHS(8410942)) revised it to Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual) incl. GST and superseded earlier cochlear orders.",
+  "kind": "text"
+ },
+ {
+  "old": "Hinglish: Hearing aid ke rule ka yeh hissa: hearing aid ki type: Digital ITC (mein--Canal) / CIC; ceiling rate (adhiktam reimbursement): Rs.9,000 har kaan ke liye Exam trap: sirf Digital BTE (Rs.8K) aur Digital ITC/CIC (Rs.9K) reimbursable; body-worn/analogue bilkul NAHI. Cochlear = Rs.5,35,000. Important figures/dates: Rs.9,000.",
+  "new": "Hinglish: Hearing aid ke rule ka yeh hissa: hearing aid ki type: Digital ITC (mein--Canal) / CIC; ceiling rate (adhiktam reimbursement): Rs.9,000 har kaan ke liye Exam trap: sirf Digital BTE (Rs.8K) aur Digital ITC/CIC (Rs.9K) reimbursable; body-worn/analogue bilkul NAHI. Cochlear = Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual), incl. GST [OM 09.11.2026]. Important figures/dates: Rs.9,000.",
+  "reason": "Cochlear implant ceiling Rs.5,35,000 is obsolete: OM 09.11.2026 (F. No. S-367/2026/CGHSHQ/R&H/EHS(8410942)) revised it to Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual) incl. GST and superseded earlier cochlear orders.",
+  "kind": "text"
+ },
+ {
+  "old": "Hinglish: Hearing aid ke rule ka yeh hissa: hearing aid ki type: Body-worn/Pocket type & Analogue BTE; ceiling rate (adhiktam reimbursement): Purana (obsolete) / reimbursable NAHI (paisa wapas NAHI milega) — band kar diya gaya; sirf Digital BTE aur Digital ITC/CIC hain reimbursable (kharcha wapas milne layak) (no ceiling (adhiktam seema) applies) Exam trap: sirf Digital BTE (Rs.8K) aur Digital ITC/CIC (Rs.9K) reimbursable; body-worn/analogue bilkul NAHI. Cochlear = Rs.5,35,000.",
+  "new": "Hinglish: Hearing aid ke rule ka yeh hissa: hearing aid ki type: Body-worn/Pocket type & Analogue BTE; ceiling rate (adhiktam reimbursement): Purana (obsolete) / reimbursable NAHI (paisa wapas NAHI milega) — band kar diya gaya; sirf Digital BTE aur Digital ITC/CIC hain reimbursable (kharcha wapas milne layak) (no ceiling (adhiktam seema) applies) Exam trap: sirf Digital BTE (Rs.8K) aur Digital ITC/CIC (Rs.9K) reimbursable; body-worn/analogue bilkul NAHI. Cochlear = Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual), incl. GST [OM 09.11.2026].",
+  "reason": "Cochlear implant ceiling Rs.5,35,000 is obsolete: OM 09.11.2026 (F. No. S-367/2026/CGHSHQ/R&H/EHS(8410942)) revised it to Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual) incl. GST and superseded earlier cochlear orders.",
+  "kind": "text"
+ },
+ {
+  "old": "Original Table row 6: Cochlear Implant | Rs.5,35,000",
+  "new": "Original Table row 6: Cochlear Implant | Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual), incl. GST [OM 09.11.2026]",
+  "reason": "Cochlear implant ceiling Rs.5,35,000 is obsolete: OM 09.11.2026 (F. No. S-367/2026/CGHSHQ/R&H/EHS(8410942)) revised it to Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual) incl. GST and superseded earlier cochlear orders.",
+  "kind": "text"
+ },
+ {
+  "old": "Hinglish: Hearing aid ke rule ka yeh hissa: hearing aid ki type: Cochlear implant (sunne ka surgical implant); ceiling rate (adhiktam reimbursement): Rs.5,35,000 Exam trap: sirf Digital BTE (Rs.8K) aur Digital ITC/CIC (Rs.9K) reimbursable; body-worn/analogue bilkul NAHI. Cochlear = Rs.5,35,000. Important figures/dates: Rs.5,35,000.",
+  "new": "Hinglish: Hearing aid ke rule ka yeh hissa: hearing aid ki type: Cochlear implant (sunne ka surgical implant); ceiling rate (adhiktam reimbursement): Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual), incl. GST [OM 09.11.2026] Exam trap: sirf Digital BTE (Rs.8K) aur Digital ITC/CIC (Rs.9K) reimbursable; body-worn/analogue bilkul NAHI. Cochlear = Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual), incl. GST [OM 09.11.2026]. Important figures/dates: Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual), incl. GST [OM 09.11.2026].",
+  "reason": "Cochlear implant ceiling Rs.5,35,000 is obsolete: OM 09.11.2026 (F. No. S-367/2026/CGHSHQ/R&H/EHS(8410942)) revised it to Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual) incl. GST and superseded earlier cochlear orders.",
+  "kind": "text"
+ },
+ {
+  "old": "Cochlear Implants: Rs.5,35,000 ceiling",
+  "new": "Cochlear Implants: Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual), incl. GST [OM 09.11.2026] ceiling",
+  "reason": "Cochlear implant ceiling Rs.5,35,000 is obsolete: OM 09.11.2026 (F. No. S-367/2026/CGHSHQ/R&H/EHS(8410942)) revised it to Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual) incl. GST and superseded earlier cochlear orders.",
+  "kind": "text"
+ },
+ {
+  "old": "Hinglish: Neuro-implants ki revised rates [OM 09.09.2024]. Deep Brain Stimulation (DBS) Implant: revised rates ke hisaab se. Intra-Thecal Baclofen Pump: revised rates ke hisaab se. Cochlear Implants: Rs.5,35,000 ceiling. Yani neurological devices ka reimbursement naye OM ke rates par milta hai, aur cochlear implant ki fixed ceiling Rs.5.35 lakh hai.",
+  "new": "Hinglish: Neuro-implants ki revised rates [OM 09.09.2024]. Deep Brain Stimulation (DBS) Implant: revised rates ke hisaab se. Intra-Thecal Baclofen Pump: revised rates ke hisaab se. Cochlear Implants: Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual), incl. GST [OM 09.11.2026] ceiling. Yani neurological devices ka reimbursement naye OM ke rates par milta hai, aur cochlear implant ki fixed ceiling Rs.7 lakh (pre-lingual) / Rs.6 lakh (post-lingual) [OM 09.11.2026] hai.",
+  "reason": "Cochlear implant ceiling Rs.5,35,000 is obsolete: OM 09.11.2026 (F. No. S-367/2026/CGHSHQ/R&H/EHS(8410942)) revised it to Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual) incl. GST and superseded earlier cochlear orders. Same cochlear ceiling correction (OM 09.11.2026).",
+  "kind": "text"
+ },
+ {
+  "old": "Hinglish: Neuro-implant ka yeh point: Deep Brain Stimulation (DBS - dimaag ka implant) Implant: ke hisaab se naye (sanshodhit) rates OM (Office Memorandum - sarkari aadesh) 09.09.2024 Exam point: DBS aur Baclofen pump = OM 09.09.2024 revised rates; Cochlear = Rs.5,35,000 ceiling. Important figures/dates: 09.09.2024.",
+  "new": "Hinglish: Neuro-implant ka yeh point: Deep Brain Stimulation (DBS - dimaag ka implant) Implant: ke hisaab se naye (sanshodhit) rates OM (Office Memorandum - sarkari aadesh) 09.09.2024 Exam point: DBS aur Baclofen pump = OM 09.09.2024 revised rates; Cochlear = Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual), incl. GST [OM 09.11.2026] ceiling. Important figures/dates: 09.09.2024.",
+  "reason": "Cochlear implant ceiling Rs.5,35,000 is obsolete: OM 09.11.2026 (F. No. S-367/2026/CGHSHQ/R&H/EHS(8410942)) revised it to Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual) incl. GST and superseded earlier cochlear orders.",
+  "kind": "text"
+ },
+ {
+  "old": "Hinglish: Neuro-implant ka yeh point: Intra-Thecal Baclofen Pump (machines ka implant): ke hisaab se naye (sanshodhit) rates Exam point: DBS aur Baclofen pump = OM 09.09.2024 revised rates; Cochlear = Rs.5,35,000 ceiling.",
+  "new": "Hinglish: Neuro-implant ka yeh point: Intra-Thecal Baclofen Pump (machines ka implant): ke hisaab se naye (sanshodhit) rates Exam point: DBS aur Baclofen pump = OM 09.09.2024 revised rates; Cochlear = Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual), incl. GST [OM 09.11.2026] ceiling.",
+  "reason": "Cochlear implant ceiling Rs.5,35,000 is obsolete: OM 09.11.2026 (F. No. S-367/2026/CGHSHQ/R&H/EHS(8410942)) revised it to Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual) incl. GST and superseded earlier cochlear orders.",
+  "kind": "text"
+ },
+ {
+  "old": "Original Sub-point 3: Cochlear Implants: Rs.5,35,000 ceiling",
+  "new": "Original Sub-point 3: Cochlear Implants: Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual), incl. GST [OM 09.11.2026] ceiling",
+  "reason": "Cochlear implant ceiling Rs.5,35,000 is obsolete: OM 09.11.2026 (F. No. S-367/2026/CGHSHQ/R&H/EHS(8410942)) revised it to Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual) incl. GST and superseded earlier cochlear orders.",
+  "kind": "text"
+ },
+ {
+  "old": "Hinglish: Neuro-implant ka yeh point: Cochlear Implants: Rs.5,35,000 ceiling (adhiktam seema) Exam point: DBS aur Baclofen pump = OM 09.09.2024 revised rates; Cochlear = Rs.5,35,000 ceiling. Important figures/dates: Rs.5,35,000.",
+  "new": "Hinglish: Neuro-implant ka yeh point: Cochlear Implants: Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual), incl. GST [OM 09.11.2026] ceiling (adhiktam seema) Exam point: DBS aur Baclofen pump = OM 09.09.2024 revised rates; Cochlear = Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual), incl. GST [OM 09.11.2026] ceiling. Important figures/dates: Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual), incl. GST [OM 09.11.2026].",
+  "reason": "Cochlear implant ceiling Rs.5,35,000 is obsolete: OM 09.11.2026 (F. No. S-367/2026/CGHSHQ/R&H/EHS(8410942)) revised it to Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual) incl. GST and superseded earlier cochlear orders.",
+  "kind": "text"
+ },
+ {
+  "old": "\"Cochlear implant = Rs.3 lakh\" — WRONG! Rs.5,35,000",
+  "new": "\"Cochlear implant = Rs.3 lakh\" — WRONG! Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual), incl. GST [OM 09.11.2026]",
+  "reason": "Cochlear implant ceiling Rs.5,35,000 is obsolete: OM 09.11.2026 (F. No. S-367/2026/CGHSHQ/R&H/EHS(8410942)) revised it to Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual) incl. GST and superseded earlier cochlear orders.",
+  "kind": "text"
+ },
+ {
+  "old": "Rs.5,35,000",
+  "new": "Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual), incl. GST [OM 09.11.2026]",
+  "reason": "Cochlear implant ceiling Rs.5,35,000 is obsolete: OM 09.11.2026 (F. No. S-367/2026/CGHSHQ/R&H/EHS(8410942)) revised it to Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual) incl. GST and superseded earlier cochlear orders.",
+  "kind": "text"
+ },
+ {
+  "old": "Rs.5,35,000",
+  "new": "Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual), incl. GST [OM 09.11.2026]",
+  "reason": "Cochlear implant ceiling Rs.5,35,000 is obsolete: OM 09.11.2026 (F. No. S-367/2026/CGHSHQ/R&H/EHS(8410942)) revised it to Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual) incl. GST and superseded earlier cochlear orders.",
+  "kind": "text"
+ },
+ {
+  "old": "Max stents: 3 | Cochlear: Rs.5,35,000 | IVF: 3 cycles, Rs.65K/cycle",
+  "new": "Max stents: 3 | Cochlear: Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual), incl. GST [OM 09.11.2026] | IVF: 3 cycles, Rs.65K/cycle",
+  "reason": "Cochlear implant ceiling Rs.5,35,000 is obsolete: OM 09.11.2026 (F. No. S-367/2026/CGHSHQ/R&H/EHS(8410942)) revised it to Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual) incl. GST and superseded earlier cochlear orders.",
+  "kind": "text"
+ },
+ {
+  "old": "Rs.5,35,000/-",
+  "new": "Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual), incl. GST [OM 09.11.2026]",
+  "reason": "Cochlear implant ceiling Rs.5,35,000 is obsolete: OM 09.11.2026 (F. No. S-367/2026/CGHSHQ/R&H/EHS(8410942)) revised it to Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual) incl. GST and superseded earlier cochlear orders.",
+  "kind": "text"
+ },
+ {
+  "old": "Hinglish: Hearing aids & artificial appliances [GD under Rule 8(2)] — sabse detailed GD. HoD reimbursement karta hai CS(MA)/CGHS rules ke hisaab se. Rates [OM 01.12.2020]: Digital BTE = Rs.8,000/ear; Digital ITC/CIC = Rs.9,000/ear; Body-worn/Analogue BTE = OBSOLETE/NOT REIMBURSABLE (sirf digital types reimbursable); Cochlear Implant = Rs.5,35,000. Artificial Electronic Larynx aur Artificial Limbs: prescribed rate par. IOL (cataract): revised ceiling rates. Knee/Hip implants: CGHS rates. Oxygen Concentrator: guidelines [OM 22.01.2025]. CPAP/BiPAP: 5 saal baad replacement (condemnation certificate). Pacemaker + pulse generator: CGHS rates, AICD NOT covered. Heart valves: CGHS rates. Coronary Stents: max 3 + costliest DES ceiling Rs.29,000 [OM 24.03.2023]. DBS implant & Baclofen pump: revised rates [OM 09.09.2024].",
+  "new": "Hinglish: Hearing aids & artificial appliances [GD under Rule 8(2)] — sabse detailed GD. HoD reimbursement karta hai CS(MA)/CGHS rules ke hisaab se. Rates [OM 01.12.2020]: Digital BTE = Rs.8,000/ear; Digital ITC/CIC = Rs.9,000/ear; Body-worn/Analogue BTE = OBSOLETE/NOT REIMBURSABLE (sirf digital types reimbursable); Cochlear Implant = Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual), incl. GST [OM 09.11.2026]. Artificial Electronic Larynx aur Artificial Limbs: prescribed rate par. IOL (cataract): revised ceiling rates. Knee/Hip implants: CGHS rates. Oxygen Concentrator: guidelines [OM 22.01.2025]. CPAP/BiPAP: 5 saal baad replacement (condemnation certificate). Pacemaker + pulse generator: CGHS rates, AICD NOT covered. Heart valves: CGHS rates. Coronary Stents: max 3 + costliest DES ceiling Rs.29,000 [OM 24.03.2023]. DBS implant & Baclofen pump: revised rates [OM 09.09.2024].",
+  "reason": "Cochlear implant ceiling Rs.5,35,000 is obsolete: OM 09.11.2026 (F. No. S-367/2026/CGHSHQ/R&H/EHS(8410942)) revised it to Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual) incl. GST and superseded earlier cochlear orders.",
+  "kind": "text"
+ },
+ {
+  "old": "Original Table row 6: Cochlear Implant | Rs.5,35,000/-",
+  "new": "Original Table row 6: Cochlear Implant | Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual), incl. GST [OM 09.11.2026]",
+  "reason": "Cochlear implant ceiling Rs.5,35,000 is obsolete: OM 09.11.2026 (F. No. S-367/2026/CGHSHQ/R&H/EHS(8410942)) revised it to Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual) incl. GST and superseded earlier cochlear orders.",
+  "kind": "text"
+ },
+ {
+  "old": "Hinglish: Device ka yeh row: device (yantra): Cochlear implant (sunne ka surgical implant); ceiling/dar: Rs.5,35,000/- Exam trap: body-worn/analogue NOT reimbursable; sirf Digital BTE (Rs.8K) + Digital ITC/CIC (Rs.9K); AICD excluded; max 3 stents. Important figures/dates: Rs.5,35,000/-.",
+  "new": "Hinglish: Device ka yeh row: device (yantra): Cochlear implant (sunne ka surgical implant); ceiling/dar: Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual), incl. GST [OM 09.11.2026] Exam trap: body-worn/analogue NOT reimbursable; sirf Digital BTE (Rs.8K) + Digital ITC/CIC (Rs.9K); AICD excluded; max 3 stents. Important figures/dates: Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual), incl. GST [OM 09.11.2026].",
+  "reason": "Cochlear implant ceiling Rs.5,35,000 is obsolete: OM 09.11.2026 (F. No. S-367/2026/CGHSHQ/R&H/EHS(8410942)) revised it to Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual) incl. GST and superseded earlier cochlear orders.",
+  "kind": "text"
+ },
+ {
+  "old": "🔧 Digital BTE Rs.8K/ear; Digital ITC/CIC Rs.9K/ear [OM 01.12.2020]; body-worn/analogue NOT reimbursable; Cochlear Rs.5.35L; Max 3 stents (costliest DES ceiling Rs.29,000 [OM 24.03.2023]); AICD excluded",
+  "new": "🔧 Digital BTE Rs.8K/ear; Digital ITC/CIC Rs.9K/ear [OM 01.12.2020]; body-worn/analogue NOT reimbursable; Cochlear Rs.7L pre-lingual / Rs.6L post-lingual [OM 09.11.2026]; Max 3 stents (costliest DES ceiling Rs.29,000 [OM 24.03.2023]); AICD excluded",
+  "reason": "Same cochlear ceiling correction (OM 09.11.2026).",
+  "kind": "text"
+ },
+ {
+  "old": "\"Cochlear implant = Rs.3 lakh\" — WRONG! Rs.5,35,000/-",
+  "new": "\"Cochlear implant = Rs.3 lakh\" — WRONG! Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual), incl. GST [OM 09.11.2026]",
+  "reason": "Cochlear implant ceiling Rs.5,35,000 is obsolete: OM 09.11.2026 (F. No. S-367/2026/CGHSHQ/R&H/EHS(8410942)) revised it to Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual) incl. GST and superseded earlier cochlear orders.",
+  "kind": "text"
+ },
+ {
+  "old": "Rs.5,35,000/- [Government Decision / OM under Rule 8(2)]",
+  "new": "Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual), incl. GST [OM 09.11.2026] [Government Decision / OM under Rule 8(2)]",
+  "reason": "Cochlear implant ceiling Rs.5,35,000 is obsolete: OM 09.11.2026 (F. No. S-367/2026/CGHSHQ/R&H/EHS(8410942)) revised it to Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual) incl. GST and superseded earlier cochlear orders.",
+  "kind": "text"
+ },
+ {
+  "old": "🔄 DA/DR is revised twice yearly (1 Jan & 1 July). Current: 63% (effective 01.07.2026 — confirmed by June-2026 CPI-IW; Cabinet approval & formal notification expected Sept–Oct 2026, with arrears from 01.07.2026). Next revision due 01.01.2027, typically notified March–April. Recompute the Rs.9,000+DA threshold whenever DA changes.",
+  "new": "🔄 DA/DR is revised twice yearly (1 Jan & 1 July). Current: 63% (effective 01.07.2026 — Department of Expenditure OM No. 1/2(i)/2026-E.II(B) dated 29.10.2026 raised DA from 60% to 63%). Next revision due 01.01.2027, typically notified March–April. Recompute the Rs.9,000+DA threshold whenever DA changes.",
+  "reason": "DA 63% from 01.07.2026 is no longer “expected”: it was notified by DoE OM dated 29.10.2026.",
+  "kind": "text"
+ },
+ {
+  "old": "Cochlear implant: Rs. 5,35,000",
+  "new": "Cochlear implant: Rs. 7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual), incl. GST [OM 09.11.2026]",
+  "reason": "Cochlear implant ceiling Rs.5,35,000 is obsolete: OM 09.11.2026 (F. No. S-367/2026/CGHSHQ/R&H/EHS(8410942)) revised it to Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual) incl. GST and superseded earlier cochlear orders.",
+  "kind": "text"
+ },
+ {
+  "old": "🔧 General MRC — pensioners [corrected] | Head of CGHS covered city | Up to | Rs.10 lakhs",
+  "new": "🔧 General MRC — pensioners [corrected] | Additional Director, CGHS city/zone [OM 25.06.2026] | Up to Rs.15 lakh (Director, CGHS: Rs.25 lakh; Additional Secretary & DG, CGHS: Rs.50 lakh; above Rs.50 lakh → MoHFW with IFD concurrence)",
+  "reason": "The guide showed pensioners’ general MRC settled by “Head of CGHS covered city up to Rs.10 lakh”. The Rs.10 lakh HoD ceiling (OM 16.02.2026) is for Heads of Departments of Ministries/Departments. For CGHS pensioners and other eligible CGHS beneficiaries the financial powers are those in CGHS OM No. Z.15025/14/2/DIR/CGHS dated 25.06.2026: Additional Director, CGHS city/zone Rs.15 lakh; Director, CGHS Rs.25 lakh; Additional Secretary & DG, CGHS Rs.50 lakh; above Rs.50 lakh → MoHFW with IFD concurrence.",
+  "kind": "row"
+ },
+ {
+  "old": "Original Table row 5: 🔧 General MRC — pensioners [corrected] | Head of CGHS covered city | Up to Rs.10 lakhs",
+  "new": "Original Table row 5: 🔧 General MRC — pensioners [corrected] | Additional Director, CGHS city/zone [OM 25.06.2026] | Rs.15 lakh tak (Director Rs.25L; AS&DG Rs.50L; upar MoHFW+IFD)",
+  "reason": "The guide showed pensioners’ general MRC settled by “Head of CGHS covered city up to Rs.10 lakh”. The Rs.10 lakh HoD ceiling (OM 16.02.2026) is for Heads of Departments of Ministries/Departments. For CGHS pensioners and other eligible CGHS beneficiaries the financial powers are those in CGHS OM No. Z.15025/14/2/DIR/CGHS dated 25.06.2026: Additional Director, CGHS city/zone Rs.15 lakh; Director, CGHS Rs.25 lakh; Additional Secretary & DG, CGHS Rs.50 lakh; above Rs.50 lakh → MoHFW with IFD concurrence.",
+  "kind": "hinglish"
+ },
+ {
+  "old": "Hinglish: Monetary limit ka yeh scenario: case (paristhiti): 🔧 General MRC (ilaaj kharcha wapasi daava) — pensioners (seva-nivrutt karmchari) [corrected]; competent authority (kaun sanction karega): Head of CGHS covered (shaamil) city; paiso ki seema: Tak Rs.10 lakhs Exam trap: emergency = NO financial limit; general MRC = Rs.10 lakh (16.02.2026 se); Rs.10L se upar = IFD consultation. Important figures/dates: Rs.10.",
+  "new": "Hinglish: Monetary limit ka yeh scenario: case (paristhiti): 🔧 General MRC (ilaaj kharcha wapasi daava) — pensioners (seva-nivrutt karmchari) [corrected]; competent authority (kaun sanction karega): Additional Director, CGHS city/zone [OM 25.06.2026]; paiso ki seema: Rs.15 lakh tak (Director Rs.25L; AS&DG Rs.50L; upar MoHFW+IFD) Exam trap: emergency = NO financial limit; general MRC = Rs.10 lakh (16.02.2026 se); Rs.10L se upar = IFD consultation. Important figures/dates: Rs.10.",
+  "reason": "The guide showed pensioners’ general MRC settled by “Head of CGHS covered city up to Rs.10 lakh”. The Rs.10 lakh HoD ceiling (OM 16.02.2026) is for Heads of Departments of Ministries/Departments. For CGHS pensioners and other eligible CGHS beneficiaries the financial powers are those in CGHS OM No. Z.15025/14/2/DIR/CGHS dated 25.06.2026: Additional Director, CGHS city/zone Rs.15 lakh; Director, CGHS Rs.25 lakh; Additional Secretary & DG, CGHS Rs.50 lakh; above Rs.50 lakh → MoHFW with IFD concurrence.",
+  "kind": "hinglish"
+ }
+]

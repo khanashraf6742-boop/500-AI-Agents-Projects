@@ -14,10 +14,8 @@ def build(ref):
     r2, r3, r5, r6, r8, r9, r11 = R(18, 'Rule 2'), R(19, 'Rule 3'), R(21, 'Rule 5'), R(22, 'Rule 6'), R(24, 'Rule 8'), R(25, 'Rule 9'), R(27, 'Rule 11')
     ama, adv, mrc, para8 = R(28, 'AMA guidelines'), R(29, 'Advance & MRC (CS(MA))'), R(9, 'MRC (CGHS)'), R(7, 'Referral (CGHS)')
 
-    banner = ('<div class="notice-box"><h3>📅 Currency check</h3><p>This tab follows the guide’s own text, which states it is current to <b>21 July 2026</b>. '
-              'Orders reported after that date, or not reproduced in the guide, are listed in the <a href="#verify">Verify tab</a> as <b>unverified</b> — '
-              'check them on the MoHFW CS(MA) page and the CGHS site before quoting any figure in an exam answer. '
-              'In particular, the HoD monetary limits below are as given in the guide (OM 16.02.2026).</p></div>')
+    banner = ('<div class="notice-box"><h3>📅 Currency check</h3><p>Figures here combine the guide’s text with the primary orders read on 25.11.2026: <b>OM 16.02.2026</b> (HoD Rs.10 lakh), <b>OM 25.06.2026</b> (CGHS authorities’ powers) and <b>OM 01.09.2026</b> (decentralised STC approvals) — see <a href="#latest">Latest orders</a>. '
+              'The MoHFW CS(MA) page and the CS(MA) Rules PDF could not be opened, so the AMA-appointment order number is still unverified (<a href="#verify">Verify tab</a>).</p></div>')
 
     # ---- who appoints the AMA
     who = fig('Who appoints the AMA? — Rule 2(a)', spine([
@@ -29,18 +27,29 @@ def build(ref):
     ], 'Who appoints the AMA', sw=360, side_w=470, bh=70, gap=36, size=13),
         'Annual re-verification of every appointed AMA is mandatory. Honorary medical officers outside hospital precincts are treated as private practitioners and are NOT AMAs (Note 5; Andhra States exception). The AMA is fixed by the PLACE where the patient falls ill (Note 4).')
 
-    # ---- delegation ladder
-    ladder = fig('Delegation of powers — who settles what (as given in the guide)', spine([
+    # ---- delegation ladders
+    ladder = fig('Ministries / Departments — HoD route (OM 16.02.2026)', spine([
         dict(t='Emergency treatment, within prescribed rates', k='n',
-             side=('Head of Ministry/Dept/Office (serving) · Head of CGHS-covered city (pensioners) — NO financial limit', 'g', 'Level 1')),
+             side=('Head of Ministry/Dept/Office (serving) — NO financial limit', 'g', 'Level 1')),
         dict(t='Ordinary claim per rate list, no relaxation of rules, up to Rs.10 lakh (permission cases and post-facto approvals included)', k='n',
-             side=('HoD / Head of Ministry/Dept/Office; Head of CGHS city for pensioners — WITHOUT IFD consultation [OM 16.02.2026]', 'g', 'Level 2')),
+             side=('HoD / Head of Ministry/Dept/Office — WITHOUT IFD consultation', 'g', 'Level 2')),
         dict(t='Per rate list but ABOVE Rs.10 lakh', k='n',
              side=('Ministry/Department WITH Internal Finance Division (IFD) consultation', 'a', 'Level 3')),
         dict(t='Relaxation of rules · air travel for treatment / ex-post facto', k='n',
              side=('MoHFW', 'r', 'Level 4')),
-    ], 'Delegation of financial powers ladder', sw=420, side_w=420, bh=70, gap=30, size=13),
+    ], 'HoD delegation ladder', sw=420, side_w=420, bh=70, gap=30, size=13),
         'Ceiling history: Rs.2 lakh (original) → Rs.5 lakh (OM 23.11.2016) → Rs.10 lakh (OM 16.02.2026, File No. S.11030/4/2026-EHS).')
+    ladder += fig('CGHS administration — pensioners and other CGHS beneficiaries (CGHS OM 25.06.2026)', spine([
+        dict(t='Claims / hospital bills at approved rates — up to Rs.15 lakh; unlisted items up to Rs.2 lakh; permissions & ex-post facto for non-empanelled hospitals and procedural lapses', k='n',
+             side=('Additional Director, CGHS city / zone (earlier: Rs.7 lakh; unlisted Rs.1 lakh)', 'g', 'Level 1')),
+        dict(t='Up to Rs.25 lakh; unlisted items up to Rs.5 lakh', k='n',
+             side=('Director, CGHS (earlier: Rs.15 lakh; unlisted Rs.3 lakh)', 'g', 'Level 2')),
+        dict(t='Up to Rs.50 lakh; unlisted items up to Rs.10 lakh', k='n',
+             side=('Additional Secretary & DG, CGHS (earlier: Rs.25 lakh; unlisted Rs.5 lakh)', 'a', 'Level 3')),
+        dict(t='Above Rs.50 lakh (unlisted: above Rs.10 lakh) · any case involving relaxation of rules', k='n',
+             side=('MoHFW with concurrence of IFD', 'r', 'Level 4')),
+    ], 'CGHS delegation ladder', sw=440, side_w=400, bh=78, gap=30, size=13),
+        'Reimbursement stays restricted to CGHS package / ceiling rate or actual, whichever is less. Powers are case-by-case and supersede earlier instructions only to the extent of these financial delegations.')
 
     # ---- authority matrix
     rows = [
@@ -53,8 +62,13 @@ def build(ref):
         ['Decide the hospital when AMA opinion cannot be obtained (ill away from headquarters)', 'Head of the nearest Government hospital', 'Rule 6(1)(c)', r6],
         ['Permit indoor treatment at a recognised private hospital (employee already at a Govt hospital)', '<b>Head of Department</b>', 'On the basis of AMA’s medical prescription', r6 + ' GD(3)'],
         ['Decide “emergency” cases / post-facto approval', 'HoD (delegated); Head of Ministry/Dept/Office (serving), Head of CGHS city (pensioners)', 'No financial limit, within prescribed rates', r6 + ' GD(4), ' + adv],
-        ['Settle ordinary reimbursement claims', 'HoD / Head of Ministry/Dept/Office; Head of CGHS city for pensioners', 'Up to Rs.10 lakh, no relaxation of rules, without IFD (OM 16.02.2026)', adv + ', ' + mrc],
-        ['Claims above Rs.10 lakh', 'Ministry/Dept', 'With IFD consultation', adv],
+        ['Settle reimbursement claims — serving employees', 'HoD / Head of Ministry/Dept/Office', 'Up to Rs.10 lakh, no relaxation of rules, without IFD (OM 16.02.2026); above → Ministry with IFD', adv + ', ' + mrc],
+        ['Settle claims — pensioners and other CGHS beneficiaries', 'Additional Director, CGHS city/zone → Director, CGHS → Additional Secretary &amp; DG, CGHS', 'Rs.15 lakh → Rs.25 lakh → Rs.50 lakh; above Rs.50 lakh MoHFW with IFD (OM 25.06.2026)', mrc + ', <a href="#latest">Latest orders</a>'],
+        ['Unlisted investigations / procedures / implants (no package or ceiling rate)', 'AD Rs.2 lakh · Director Rs.5 lakh · AS&amp;DG Rs.10 lakh', 'Above Rs.10 lakh: Ministry with IFD (OM 25.06.2026)', '<a href="#latest">Latest orders</a>'],
+        ['Permission / ex-post facto: non-empanelled hospital, procedural lapse', 'Additional Director, CGHS city/zone', 'Reimbursement restricted to CGHS rates or actual, whichever less (OM 25.06.2026)', '<a href="#latest">Latest orders</a>'],
+        ['Approve STC-type cases (transplants, listed devices, restricted medicines, unlisted items, cancer robotic surgery)', 'Additional Director, CGHS — after three-member Local Technical Committee', 'Within delegated powers; 1 Government Specialist or 2 specialists of 2 empanelled hospitals; decided ordinarily in 15 working days (OM 01.09.2026)', R(7, 'Referral (CGHS)') + ', <a href="#latest">Latest orders</a>'],
+        ['Assess dependent son / brother with critical or terminal illness', 'CGHS: LTC at AD office on Government Specialist advice (OM 26.10.2026); CS(MA): DGHS', 'Cover for life; card issued annually first (OM 01.09.2026 / 26.10.2026)', '<a href="#latest">Latest orders</a>'],
+        ['Approve cochlear implant', 'CGHS: Additional Director (Category 2); CS(MA): Ministry/Dept → DGHS', 'Rs.7,00,000 pre-lingual / Rs.6,00,000 post-lingual (OM 09.11.2026)', '<a href="#latest">Latest orders</a>'],
         ['Relax rules · interpretation · air travel ex-post facto', 'MoHFW', 'Doubtful / relaxation cases are referred to MoHFW', r9 + ', ' + adv],
         ['Reject a claim that fails genuineness / other requirements', '<b>Controlling Officer</b>', 'Fully empowered — without consulting MoHFW', r3 + ' GD(3), ' + r9],
         ['Counter-sign AMA certificates and claims', 'Controlling Officer', 'Claim within 6 months of discharge / treatment (CS(MA))', r9],
@@ -67,7 +81,7 @@ def build(ref):
         ['Authorise treatment abroad without prior approval; amend the Rule 11(3) Table', '<b>Central Government</b>', '11(7): only where prior approval was not feasible (e.g. emergency abroad); 11(4): additions / deletions by Gazette notification', r11],
         ['Sponsor a CGHS card application', 'Head of Department / Head of Office', 'Card issued by the Additional Director (AD), CGHS of the city', R(4, 'Para 5')],
         ['Issue a CGHS specialist referral', 'Medical Officer of a CGHS Wellness Centre', 'Valid 3 months; ≤ 3 specialists; ≤ 6 consultations; no referral needed at Govt hospitals', para8],
-        ['Settle a pensioner’s CGHS claim', 'AD (Additional Director), CGHS city of registration', 'Claim within 3 months of treatment', mrc],
+        ['Receive a pensioner’s CGHS claim', 'AD (Additional Director), CGHS city of registration', 'Claim within 3 months of treatment', mrc],
     ]
     matrix = ('<div class="row"><input class="filterbox" data-filter="#powtab tbody tr" placeholder="Filter: e.g. HoD, MoHFW, appeal, Rs.10 lakh…" aria-label="Filter authority matrix"></div>'
               '<div class="tblwrap"><table id="powtab" class="cmp"><caption>Authority matrix — who decides what</caption><thead><tr><th scope="col">Decision / power</th><th scope="col">Authority</th><th scope="col">Condition / limit</th><th scope="col">Section</th></tr></thead><tbody>'
@@ -94,7 +108,13 @@ def build(ref):
         ('Who can permit an employee at a Government hospital to take indoor treatment in a private hospital?',
          'The Head of Department, on the basis of the AMA’s medical prescription, for a hospital recognised under CGHS / CS(MA) [Rule 6 GD(3)].', 22),
         ('Up to what amount can a HoD settle a medical-reimbursement claim?',
-         'Up to <b>Rs.10 lakh</b> without IFD consultation, where no relaxation of rules is involved and entitlement is worked out strictly at prescribed CGHS / CS(MA) rates — OM File No. S.11030/4/2026-EHS dated 16.02.2026 (earlier Rs.5 lakh by OM 23.11.2016, originally Rs.2 lakh). It covers permission cases and post-facto approvals. Above Rs.10 lakh: Ministry/Department with IFD consultation.', 29),
+         'Up to <b>Rs.10 lakh</b> without IFD consultation, where no relaxation of rules is involved and entitlement is worked out strictly at prescribed CGHS / CS(MA) rates — OM File No. S.11030/4/2026-EHS(8385264) dated 16.02.2026 (earlier Rs.5 lakh by OM 23.11.2016, originally Rs.2 lakh). It covers permission cases and post-facto approvals. Above Rs.10 lakh: Ministry/Department with IFD consultation.', 29),
+        ('What financial powers do CGHS authorities have for pensioners and other CGHS beneficiaries?',
+         'CGHS OM No. Z.15025/14/2/DIR/CGHS dated 25.06.2026: claims at approved rates — Additional Director, CGHS city/zone <b>Rs.15 lakh</b> (earlier 7), Director, CGHS <b>Rs.25 lakh</b> (earlier 15), Additional Secretary &amp; DG, CGHS <b>Rs.50 lakh</b> (earlier 25); above Rs.50 lakh → MoHFW with IFD concurrence. Unlisted investigations / procedures / implants: AD Rs.2 lakh, Director Rs.5 lakh, AS&amp;DG Rs.10 lakh; above → Ministry with IFD. Relaxation-of-rules cases are outside the delegation. Trap: the Rs.10 lakh figure belongs to HoDs of Ministries, not to the CGHS Additional Director.', 9),
+        ('Who can grant permission or ex-post facto approval for treatment at a non-empanelled hospital?',
+         'The <b>Additional Director of the concerned CGHS city / zone</b> (pensioners, ex-MPs, freedom fighters, serving CGHS employees etc.), with reimbursement restricted to CGHS package rates or actual expenditure, whichever is less. The same authority considers elective treatment in empanelled hospitals done without Government Specialist / CMO recommendation or prior permission (procedural lapse) [OM 25.06.2026].', 9),
+        ('Who approves unlisted procedures, restricted medicines and similar STC-type cases now?',
+         'The concerned <b>Additional Director, CGHS</b>, within delegated powers, after scrutiny by a three-member Local Technical Committee, supported by one Government Specialist’s recommendation (or two specialists of two different empanelled hospitals). All earlier OMs requiring Standing Technical Committee examination stand superseded [OM 01.09.2026]. Emergencies still go through the emergency / NHA route in the referral section.', 7),
         ('Who decides emergency cases, and is there a monetary limit?',
          'Head of Ministry/Dept/Office for serving employees and Head of the CGHS-covered city for pensioners — <b>no financial limit</b>, within prescribed rates. HoDs have been delegated the power to decide “emergency” cases [Rule 6 GD(4)].', 29),
         ('Who can reject a medical claim, and does he need MoHFW’s permission?',
