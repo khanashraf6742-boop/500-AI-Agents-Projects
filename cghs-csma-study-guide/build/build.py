@@ -12,6 +12,7 @@ from bs4 import BeautifulSoup, NavigableString, Tag
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import visuals
+import powers
 
 SRC, OUT = sys.argv[1], sys.argv[2]
 soup = BeautifulSoup(open(SRC, encoding='utf8').read(), 'lxml')
@@ -277,7 +278,10 @@ for P in parts:
     intro = ''.join(clean_misc(x) for x in P['intro'])
     P['html'] = f'<div class="intro">{intro}</div>' + ''.join(out)
 
-about_html = ''.join(clean_misc(x) for x in about_items)
+about_html = ('<div class="notice-box"><h3>🔔 Currency &amp; obsolete content — read this first</h3><ul>'
+  '<li>The guide’s own text is current to <b>21 July 2026</b>. Orders reported later, or missing from it, are on the <a href="#verify">Verify tab</a> as <b>unverified</b> (e.g. OMs of 25.06.2026, 01.09.2026, 26.10.2026).</li>'
+  '<li>Superseded rates and orders are NOT presented as current in the rule text; where the guide itself records a correction (e.g. hearing-aid rates, HoD ceiling) it is listed in the <a href="#changelog">changelog</a>.</li>'
+  '<li>New: <a href="#powers">Who has the power?</a> — who appoints the AMA, delegation of powers, authority matrix and practice questions.</li></ul></div>') + ''.join(clean_misc(x) for x in about_items)
 
 # ---------------------------------------------------------------- 5. derived views
 def card_link(k):
@@ -345,7 +349,20 @@ for k, lab, t in extras['verify']:
     if (lab, t[:100]) in vseen: continue
     vseen.add((lab, t[:100]))
     vr.append(f'<div class="listitem auto"><span class="tag">{esc(lab)}</span>{esc(t[:480])}<div class="src">{card_link(k)}</div></div>')
+vr.append('<h3>Reported after / outside the guide — NOT verified</h3><p class="lead">These came from web-search result summaries only; the order text itself could not be opened in this session. Do not quote any figure from them until you have read the order.</p>')
+for a, b in [
+    ('OM dated 25.06.2026 — revised delegation of financial powers', 'Search results describe it as revising the delegation of financial powers for settling reimbursement claims and granting permission / ex-post-facto approval for CGHS beneficiaries (pensioners and serving employees). Its figures were not seen, so it is unknown whether it changes the Rs.10 lakh HoD ceiling (OM 16.02.2026) given in this guide. It is dated before the guide’s 21 July 2026 cut-off but is not mentioned in the guide.'),
+    ('OM dated 01.09.2026 — age relaxation for dependents', 'Reported as relaxing the age criterion for unmarried dependent sons and brothers with critical or terminal illness. Post-dates the guide; not in the Family definition sections.'),
+    ('OM dated 26.10.2026 — extension of CGHS facilities to such dependents', 'Reported as extending CGHS facilities to the dependents covered by the 01.09.2026 relaxation. Post-dates the guide.'),
+    ('Basis of the HoD’s power to appoint private AMAs', 'The guide cites no OM number. A CSIR policy document surfaced in search says that, under Supplementary Rule 2(10), even a private registered medical practitioner can be appointed AMA for a class of Central Government employees where an adequate number of doctors is unavailable. This is consistent with the guide, but the primary order was not read.'),
+]:
+    vr.append(f'<div class="listitem"><span class="tag">Unverified</span><b>{esc(a)}</b><br>{esc(b)}</div>')
+vr.append('<h3>Where to check</h3><div class="listitem">MoHFW — Central Services (Medical Attendance) page: <a href="https://www.mohfw.gov.in/documents/csma" rel="noopener">mohfw.gov.in/documents/csma</a> (orders, forms, archive). CGHS portal: <a href="https://cghs.gov.in" rel="noopener">cghs.gov.in</a>. Order texts are also mirrored by <a href="https://www.staffnews.in" rel="noopener">staffnews.in</a>.</div>')
 verify_html = ''.join(vr)
+
+# powers view
+RCMAP = {k.rc: k.id for k in CARDS if getattr(k, 'rc', None) is not None}
+powers_html = powers.build(lambda n: '#' + RCMAP[n])
 
 # flashcards
 fc_json = json.dumps(extras['flash'], ensure_ascii=False).replace('</', '<\\/')
@@ -353,7 +370,7 @@ fc_json = json.dumps(extras['flash'], ensure_ascii=False).replace('</', '<\\/')
 # ---------------------------------------------------------------- 6. sidebar
 def nav_html():
     o = ['<h4>Study guide</h4>']
-    for v, label in [('about', '🏠 Overview & fact-check'), ('compare', '⚖️ CGHS vs CS(MA)')]:
+    for v, label in [('about', '🏠 Overview & fact-check'), ('compare', '⚖️ CGHS vs CS(MA)'), ('powers', '🏛️ Who has the power? (AMA, delegation)')]:
         o.append(f'<a class="view" data-view="{v}" href="#{v}">{label}</a>')
     for P, label in [(P1, '🏥 PART 1 — CGHS'), (P2, '⚖️ PART 2 — CS(MA) Rules 1944')]:
         o.append(f'<h4>{label}</h4><a class="view" data-view="{P["key"]}" href="#{P["key"]}">Open part</a>')
@@ -396,6 +413,7 @@ page = f'''<!DOCTYPE html>
 <main>
 {view('about', '🏠 Overview, fact-check & how to use', f'{len(CARDS)} sections in two parts. Press <b>/</b> to search, <b>j / k</b> to jump between sections.', '<div class="intro">'+about_html+'</div>')}
 {view('compare', '⚖️ CGHS vs CS(MA) — at a glance', 'Comparison built only from figures stated in the guide.', comp_html)}
+{view('powers', '🏛️ Who has the power? — AMA appointment, delegation of powers, authority matrix', 'Appointing authorities, HoD / Controlling Officer / MoHFW / Central Government powers and money limits, with practice questions.', powers_html)}
 {view('cghs', '🏥 PART 1 — CGHS', f'{ncards1} sections', P1['html'], True)}
 {view('csma', '⚖️ PART 2 — CS(MA) Rules, 1944', f'{ncards2} sections (Rules 1–11, AMA, advance, family, non-admissible items)', P2['html'], True)}
 {view('quick', '📋 Quick reference — every table', f'{len(extras["tables"])} tables from the guide, filterable.', quick_html)}
