@@ -18,6 +18,7 @@ import latest
 import quiz
 import memory
 import superintendent
+import timelimits
 
 SRC, OUT = sys.argv[1], sys.argv[2]
 soup = BeautifulSoup(open(SRC, encoding='utf8').read(), 'lxml')
@@ -392,6 +393,7 @@ for _q in QBANK:
 qdata = json.dumps(QBANK, ensure_ascii=False).replace('</', '<\\/')
 memory_html = memory.build(lambda n: '#' + RCMAP[n])
 nit_html = superintendent.build(lambda n: '#' + RCMAP[n])
+time_html = timelimits.build(lambda n: '#' + RCMAP[n])
 quiz_html = '''<div id="qSetup"><p class="lead"><b id="qBank">0</b> questions: hand-written case and fact questions plus questions generated from the guide’s own tables and trap lists. Each question links back to its section.</p>
 <div class="row"><label>Questions <select id="qCount"><option>10</option><option selected>20</option><option>30</option><option>50</option><option>100</option></select></label>
 <label>Type <select id="qKind"><option value="all">All</option><option value="case">Case scenarios</option><option value="fact">Facts &amp; figures</option><option value="tf">True / false (traps)</option></select></label>
@@ -428,7 +430,7 @@ def nav_html():
             else:
                 o.append(f'<a class="sub" data-card="{v.id}" href="#{v.id}"><b>{esc(v.tag)}</b> {esc(v.title[:60])}</a>')
     o.append('<h4>Study tools</h4>')
-    for v, label in [('nit', '🎓 Superintendent (NIT/IIT) exam map'), ('quiz', '📝 Mock tests & practice'), ('plan', '🗓️ Study plan'), ('memory', '🧠 Memory sheet & timeline'), ('compare2', '↔️ Compare two sections'), ('mystudy', '💾 My notes & progress')]:
+    for v, label in [('time', '⏱️ Time limits — CGHS & CS(MA) separately'), ('nit', '🎓 Superintendent (NIT/IIT) exam map'), ('quiz', '📝 Mock tests & practice'), ('plan', '🗓️ Study plan'), ('memory', '🧠 Memory sheet & timeline'), ('compare2', '↔️ Compare two sections'), ('mystudy', '💾 My notes & progress')]:
         o.append(f'<a class="view" data-view="{v}" href="#{v}">{label}</a>')
     o.append('<h4>Revision tools</h4>')
     for v, label in [('quick', '📋 Quick reference tables'), ('oms', '📜 OM / order register'), ('traps', '⚠️ All exam traps'), ('flash', '🃏 Flashcards'), ('verify', '🔎 Verify list'), ('changelog', '🔄 Amendments & changelog')]:
@@ -469,6 +471,7 @@ page = f'''<!DOCTYPE html>
 {view('powers', '🏛️ Who has the power? — AMA appointment, delegation of powers, authority matrix', 'Appointing authorities, HoD / Controlling Officer / MoHFW / Central Government powers and money limits, with practice questions.', powers_html)}
 {view('cghs', '🏥 PART 1 — CGHS', f'{ncards1} sections', P1['html'], True)}
 {view('csma', '⚖️ PART 2 — CS(MA) Rules, 1944', f'{ncards2} sections (Rules 1–11, AMA, advance, family, non-admissible items)', P2['html'], True)}
+{view('time', '⏱️ Time limits, validity periods and age limits', '', time_html)}
 {view('nit', '🎓 Superintendent (NIT / IIT) exam map & claim processing', '', nit_html)}
 {view('quiz', '📝 Mock tests & practice', '', quiz_html)}
 {view('plan', '🗓️ Study plan', '', plan_html)}

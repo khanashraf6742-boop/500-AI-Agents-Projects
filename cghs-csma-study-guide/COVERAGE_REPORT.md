@@ -2,8 +2,8 @@
 
 Source: `src.html`  →  Output: `index.html`
 
-- Text blocks checked: **2393**, present unchanged: **2363**, intentionally corrected (obsolete/wrong text replaced, old text logged): **30**, unexplained gaps: **0**
-- Corrections logged: **57**; replacement text present in output: **yes**
+- Text blocks checked: **2393**, present unchanged: **2360**, intentionally corrected (obsolete/wrong text replaced, old text logged): **33**, unexplained gaps: **0**
+- Corrections logged: **87**; replacement text present in output: **yes**
 - OM numbers: **16/16** present
 - Dates (dd.mm.yyyy): **63/63** present
 - Rupee amounts: **107/110** present; 3 intentionally replaced (obsolete): ['Rs. 5,35,000', 'Rs.5,35,000', 'Rs.5.35']

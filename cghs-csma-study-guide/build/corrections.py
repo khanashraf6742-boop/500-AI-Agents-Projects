@@ -25,6 +25,20 @@ TEXT_RULES = [
 
 TL_REASON = 'CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.'
 TIME_RULES = [
+    (r'CGHS claim deadline = 3 months \(CS\(MA\) = 6 months\) — yeh difference sabse zyada poocha jaata hai\.', 'CGHS claim deadline = 6 months (OM 01.06.2020); CS(MA) = 6 months — purana 3-month rule obsolete hai.'),
+    (r'CS\(MA\) claim = 6 months \(CGHS = 3 months\)', 'CS(MA) claim = 6 months (CGHS bhi 6 months — OM 01.06.2020)'),
+    (r'CGHS claim deadline: ilaaj/dawai ke 3 months ke andar — uske baad claim entertain NAHI hota \(CS\(MA\) mein yeh 6 months hai — fark yaad rakho!\)', 'CGHS claim deadline: ilaaj/discharge ke 6 months ke andar (OM 01.06.2020) — uske baad sirf condonation se; CS(MA) mein bhi 6 months.'),
+    (r'Ke andar 3 months of ilaaj/dawai purchase — claims \(daave\) beyond 3 months maana NAHI jaata \(entertain NAHI hota\) \(note \(tippani\): CS\(MA\) rules \(niyam\) has a 6-month period — different se CGHS\)', 'Ke andar 6 months of ilaaj/discharge (OM 01.06.2020) — uske baad claims ko condonation chahiye (note: CS(MA) mein bhi 6 months)'),
+    (r'Claim deadline: CS\(MA\) mein 6 months \(CGHS ke 3 months se alag!\)', 'Claim deadline: CS(MA) mein 6 months (CGHS bhi 6 months — OM 01.06.2020)'),
+    (r'CS\(MA\) = 6 months, CGHS = 3 months[^.]*\.', 'CS(MA) = 6 months aur CGHS bhi 6 months (OM 01.06.2020).'),
+    (r'Exam trap: 6 months \(OPD/IPD\), advance case 1 month, appeal 45 days — aur CGHS se fark \(3 vs 6 months\)\.', 'Exam trap: 6 months (OPD/IPD), advance case 1 month, appeal 45 days — CGHS bhi ab 6 months (OM 01.06.2020).'),
+    (r'mukhya note: Different se CGHS \(3 months\)!', 'mukhya note: CGHS jaisa hi 6 months (OM 01.06.2020)!'),
+    (r'CS\(MA\) mein claim 6 mahine mein submit karo — CGHS ke 3 mahine se alag!', 'CS(MA) mein claim 6 mahine mein submit karo — CGHS bhi ab 6 mahine (OM 01.06.2020)!'),
+    (r' — CGHS ka 3 months nahi! Bahut important distinction\.', ' — CGHS ka bhi ab 6 months hai (OM 01.06.2020).'),
+    (r'Submit claim within 3 months of treatment date', 'Submit claim within 6 months of completion of treatment / discharge'),
+    (r'; CGHS = 3 months', '; CGHS = 6 months (OM 01.06.2020)'),
+    (r' \(CGHS = 3 months — different rules!\)', ' (CGHS is also 6 months since OM 01.06.2020)'),
+    (r' \(CGHS = 3 months\)', ' (CGHS is also 6 months since OM 01.06.2020)'),
     (r'Within 3 months of treatment/medicine purchase', 'Within 6 months of completion of treatment / discharge (OM 01.06.2020; earlier 3 months)'),
     (r'claims beyond 3 months NOT entertained', 'only claims after 6 months need condonation of delay'),
     (r'\(Note: CS\(MA\) Rules has a 6-month period — different from CGHS\)', '(CS(MA) Rules also have a 6-month period)'),
@@ -55,6 +69,12 @@ for _rx, _rep in TIME_RULES:
 
 # leaf-level rewrites for claim-deadline statements whose wording is split by bold markup
 LEAF_REWRITES = [
+    (r'^Within 3 months: Submit claim within 6 months', '<strong>Within 6 months:</strong> Submit claim within 6 months of completion of treatment / discharge (OM 01.06.2020)'),
+    (r'^🔴 Critical — 6 Months \(CS\(MA\)\) vs 3 Months \(CGHS\)', '🔴 Critical — Claim time limit: 6 months for both CS(MA) and CGHS (CGHS since OM 01.06.2020)'),
+    (r'^Within 3 months of treatment date$', 'Within <strong>6 months</strong> of completion of treatment / discharge (OM 01.06.2020)'),
+    (r'^Within 3 months of treatment$', '<strong>6 months</strong> of completion of treatment / discharge (OM 01.06.2020)'),
+    (r'^CGHS = 3 months \(CS\(MA\) = 6 months\)', 'CGHS = <strong>6 months</strong> (OM 01.06.2020); CS(MA) = 6 months'),
+    (r'^CS\(MA\) = 6 months — critical difference!', 'CS(MA) = <strong>6 months</strong> (CGHS is also 6 months since OM 01.06.2020)'),
     (r'^CGHS claim deadline: Within 3 months', '<strong>CGHS claim deadline:</strong> within <strong>6 months</strong> of completion of treatment / discharge (OM 01.06.2020; earlier 3 months) — only claims after 6 months need condonation of delay (CS(MA) Rules also have a 6-month period)'),
     (r'^"CGHS claim must be within 3 months" — WRONG!', '"CGHS claim must be within 3 months" — <strong>WRONG!</strong> <strong>6 months</strong> since OM 01.06.2020 (CS(MA) is also 6 months)'),
     (r'^OPD reimbursement: Medicines issued from CGHS WC', '<strong>OPD reimbursement:</strong> Medicines issued from CGHS WC are FREE (no reimbursement needed — directly issued). If they buy OPD medicines from outside after CGHS reference — claim within <strong>6 months</strong> from your department'),

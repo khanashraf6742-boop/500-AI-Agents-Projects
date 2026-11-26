@@ -12,9 +12,69 @@
   "kind": "text"
  },
  {
+  "old": "Hinglish: MRC (Medical Reimbursement Claim) ka poora process. CGHS claim deadline: ilaaj/dawai ke 3 months ke andar — uske baad claim entertain NAHI hota (CS(MA) mein yeh 6 months hai — fark yaad rakho!). Average processing time 21 din (non-empanelled hospital cases mein 60–120 din). Claims BCA (Beneficiary Claim Application) portal par submit hote hain; har stage par SMS updates milte hain; myCGHS app se claim number se track kar sakte ho. OPD medicines ka claim ilaaj wale city mein bhi submit kar sakte ho (home city zaroori nahi) [OM 08.05.2023]. Serving employee apne Department/Ministry mein claim deta hai (CGHS office mein NAHI); pensioner apne registered city ke AD, CGHS ko. Empanelled hospital = cashless (direct settlement); non-empanelled/emergency = pehle khud pay karo, phir claim.",
+  "new": "Hinglish: MRC (Medical Reimbursement Claim) ka poora process. CGHS claim deadline: ilaaj/discharge ke 6 months ke andar (OM 01.06.2020) — uske baad sirf condonation se; CS(MA) mein bhi 6 months.. Average processing time 21 din (non-empanelled hospital cases mein 60–120 din). Claims BCA (Beneficiary Claim Application) portal par submit hote hain; har stage par SMS updates milte hain; myCGHS app se claim number se track kar sakte ho. OPD medicines ka claim ilaaj wale city mein bhi submit kar sakte ho (home city zaroori nahi) [OM 08.05.2023]. Serving employee apne Department/Ministry mein claim deta hai (CGHS office mein NAHI); pensioner apne registered city ke AD, CGHS ko. Empanelled hospital = cashless (direct settlement); non-empanelled/emergency = pehle khud pay karo, phir claim.",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "text"
+ },
+ {
   "old": "Original CGHS claim deadline: Within 3 months of treatment/medicine purchase — claims beyond 3 months NOT entertained (Note: CS(MA) Rules has a 6-month period — different from CGHS)",
   "new": "Original CGHS claim deadline: Within 6 months of completion of treatment / discharge (OM 01.06.2020; earlier 3 months) — only claims after 6 months need condonation of delay (CS(MA) Rules also have a 6-month period)",
   "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found. CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found. CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "text"
+ },
+ {
+  "old": "Hinglish: MRC process ka yeh point: Ke andar 3 months of ilaaj/dawai purchase — claims (daave) beyond 3 months maana NAHI jaata (entertain NAHI hota) (note (tippani): CS(MA) rules (niyam) has a 6-month period — different se CGHS) Exam trap: CGHS claim deadline = 3 months (CS(MA) = 6 months) — yeh difference sabse zyada poocha jaata hai. Important figures/dates: 3 months.",
+  "new": "Hinglish: MRC process ka yeh point: Ke andar 6 months of ilaaj/discharge (OM 01.06.2020) — uske baad claims ko condonation chahiye (note: CS(MA) mein bhi 6 months) Exam trap: CGHS claim deadline = 6 months (OM 01.06.2020); CS(MA) = 6 months — purana 3-month rule obsolete hai. Important figures/dates: 3 months.",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found. CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "text"
+ },
+ {
+  "old": "Hinglish: MRC process ka yeh point: Average 21 days (60 – 120 days ke liye non-empanelled hospital cases) Exam trap: CGHS claim deadline = 3 months (CS(MA) = 6 months) — yeh difference sabse zyada poocha jaata hai. Important figures/dates: 21 days, 120 days.",
+  "new": "Hinglish: MRC process ka yeh point: Average 21 days (60 – 120 days ke liye non-empanelled hospital cases) Exam trap: CGHS claim deadline = 6 months (OM 01.06.2020); CS(MA) = 6 months — purana 3-month rule obsolete hai. Important figures/dates: 21 days, 120 days.",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "text"
+ },
+ {
+  "old": "Hinglish: MRC process ka yeh point: BCA (claim portal) (beneficiary (labharthi) claim (daava) application (aavedan)) portal Exam trap: CGHS claim deadline = 3 months (CS(MA) = 6 months) — yeh difference sabse zyada poocha jaata hai.",
+  "new": "Hinglish: MRC process ka yeh point: BCA (claim portal) (beneficiary (labharthi) claim (daava) application (aavedan)) portal Exam trap: CGHS claim deadline = 6 months (OM 01.06.2020); CS(MA) = 6 months — purana 3-month rule obsolete hai.",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "text"
+ },
+ {
+  "old": "Hinglish: MRC process ka yeh point: Beneficiary (labharthi) receives SMS par har stage of MRC (ilaaj kharcha wapasi daava) processing Exam trap: CGHS claim deadline = 3 months (CS(MA) = 6 months) — yeh difference sabse zyada poocha jaata hai.",
+  "new": "Hinglish: MRC process ka yeh point: Beneficiary (labharthi) receives SMS par har stage of MRC (ilaaj kharcha wapasi daava) processing Exam trap: CGHS claim deadline = 6 months (OM 01.06.2020); CS(MA) = 6 months — purana 3-month rule obsolete hai.",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "text"
+ },
+ {
+  "old": "Hinglish: MRC process ka yeh point: Via myCGHS app app using claim (daava) number; CGHS website shows claims (daave) older than 1 month Exam trap: CGHS claim deadline = 3 months (CS(MA) = 6 months) — yeh difference sabse zyada poocha jaata hai. Important figures/dates: 1 month.",
+  "new": "Hinglish: MRC process ka yeh point: Via myCGHS app app using claim (daava) number; CGHS website shows claims (daave) older than 1 month Exam trap: CGHS claim deadline = 6 months (OM 01.06.2020); CS(MA) = 6 months — purana 3-month rule obsolete hai. Important figures/dates: 1 month.",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "text"
+ },
+ {
+  "old": "Hinglish: MRC process ka yeh point: Sakta hai jama kiya gaya city mein of ilaaj — NAHI necessarily home city [OM (Office Memorandum - sarkari aadesh) 08.05.2023] Exam trap: CGHS claim deadline = 3 months (CS(MA) = 6 months) — yeh difference sabse zyada poocha jaata hai. Important figures/dates: 08.05.2023.",
+  "new": "Hinglish: MRC process ka yeh point: Sakta hai jama kiya gaya city mein of ilaaj — NAHI necessarily home city [OM (Office Memorandum - sarkari aadesh) 08.05.2023] Exam trap: CGHS claim deadline = 6 months (OM 01.06.2020); CS(MA) = 6 months — purana 3-month rule obsolete hai. Important figures/dates: 08.05.2023.",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "text"
+ },
+ {
+  "old": "Hinglish: MRC process ka yeh point: Respective Department/Ministry (NAHI se CGHS office) Exam trap: CGHS claim deadline = 3 months (CS(MA) = 6 months) — yeh difference sabse zyada poocha jaata hai.",
+  "new": "Hinglish: MRC process ka yeh point: Respective Department/Ministry (NAHI se CGHS office) Exam trap: CGHS claim deadline = 6 months (OM 01.06.2020); CS(MA) = 6 months — purana 3-month rule obsolete hai.",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "text"
+ },
+ {
+  "old": "Hinglish: MRC process ka yeh point: AD (Additional Director) (Additional Director (AD)) of CGHS city of registration Exam trap: CGHS claim deadline = 3 months (CS(MA) = 6 months) — yeh difference sabse zyada poocha jaata hai.",
+  "new": "Hinglish: MRC process ka yeh point: AD (Additional Director) (Additional Director (AD)) of CGHS city of registration Exam trap: CGHS claim deadline = 6 months (OM 01.06.2020); CS(MA) = 6 months — purana 3-month rule obsolete hai.",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "text"
+ },
+ {
+  "old": "Hinglish: MRC process ka yeh point: Par empanelled (suchibaddh) hospitals → cashless (seedha hospital ko paisa diya jaata hai — mareez ko jeb se NAHI dena padta) (direct settlement). Non-empanelled/emergency (aapatkaal) → pay pehla then claim (daava) reimbursement (kharcha wapas milna) Exam trap: CGHS claim deadline = 3 months (CS(MA) = 6 months) — yeh difference sabse zyada poocha jaata hai.",
+  "new": "Hinglish: MRC process ka yeh point: Par empanelled (suchibaddh) hospitals → cashless (seedha hospital ko paisa diya jaata hai — mareez ko jeb se NAHI dena padta) (direct settlement). Non-empanelled/emergency (aapatkaal) → pay pehla then claim (daava) reimbursement (kharcha wapas milna) Exam trap: CGHS claim deadline = 6 months (OM 01.06.2020); CS(MA) = 6 months — purana 3-month rule obsolete hai.",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
   "kind": "text"
  },
  {
@@ -132,6 +192,12 @@
   "kind": "text"
  },
  {
+  "old": "Within 3 months: Submit claim within 3 months of treatment date",
+  "new": "Within 3 months: Submit claim within 6 months of completion of treatment / discharge",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "text"
+ },
+ {
   "old": "Rs.5,35,000",
   "new": "Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual), incl. GST [OM 09.11.2026]",
   "reason": "Cochlear implant ceiling Rs.5,35,000 is obsolete: OM 09.11.2026 (F. No. S-367/2026/CGHSHQ/R&H/EHS(8410942)) revised it to Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual) incl. GST and superseded earlier cochlear orders.",
@@ -164,6 +230,12 @@
  {
   "old": "Claim: 6 months mein submit karo (CGHS = 3 months — alag hai!)",
   "new": "Claim: 6 months mein submit karo (CGHS bhi ab 6 months hai — OM 01.06.2020)",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "text"
+ },
+ {
+  "old": "\"CS(MA) claim within 3 months\" — WRONG! CS(MA) = 6 months (CGHS = 3 months — different rules!)",
+  "new": "\"CS(MA) claim within 3 months\" — WRONG! CS(MA) = 6 months (CGHS is also 6 months since OM 01.06.2020)",
   "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
   "kind": "text"
  },
@@ -204,8 +276,50 @@
   "kind": "text"
  },
  {
+  "old": "Hinglish: Rule 9 — counter-signature aur claim submission. AMA ka certificate → Controlling Officer counter-sign karta hai → phir claim process hota hai. Controlling Officer apni authority mein claim reject bhi kar sakta hai (MoHFW se pooche bina). Claim deadline: CS(MA) mein 6 months (CGHS ke 3 months se alag!). Advance liya tha to discharge ke 1 month mein final claim. Insurance + office dono se claim allowed, par total actual se zyada nahi.",
+  "new": "Hinglish: Rule 9 — counter-signature aur claim submission. AMA ka certificate → Controlling Officer counter-sign karta hai → phir claim process hota hai. Controlling Officer apni authority mein claim reject bhi kar sakta hai (MoHFW se pooche bina). Claim deadline: CS(MA) mein 6 months (CGHS bhi 6 months — OM 01.06.2020). Advance liya tha to discharge ke 1 month mein final claim. Insurance + office dono se claim allowed, par total actual se zyada nahi.",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "text"
+ },
+ {
+  "old": "Hinglish: Counter-signature ka yeh point: Medical certificates jaari hua dwara AMA (adhikrit doctor) aur claims (daave) jama kiya gaya dwara sarkari karmchari zaroor counter-signed/verified dwara Controlling Officer Exam trap: CS(MA) claim = 6 months (CGHS = 3 months); advance liya to final claim 1 month mein.",
+  "new": "Hinglish: Counter-signature ka yeh point: Medical certificates jaari hua dwara AMA (adhikrit doctor) aur claims (daave) jama kiya gaya dwara sarkari karmchari zaroor counter-signed/verified dwara Controlling Officer Exam trap: CS(MA) claim = 6 months (CGHS bhi 6 months — OM 01.06.2020); advance liya to final claim 1 month mein.",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "text"
+ },
+ {
+  "old": "Hinglish: Counter-signature ka yeh point: Controlling Officer mein Ministry/Department hai empowered se reject any medical claim (daava) that NAHI karta satisfy genuineness aur other requirements — ke bina consulting MoHFW (Swasthya Mantralaya) Exam trap: CS(MA) claim = 6 months (CGHS = 3 months); advance liya to final claim 1 month mein.",
+  "new": "Hinglish: Counter-signature ka yeh point: Controlling Officer mein Ministry/Department hai empowered se reject any medical claim (daava) that NAHI karta satisfy genuineness aur other requirements — ke bina consulting MoHFW (Swasthya Mantralaya) Exam trap: CS(MA) claim = 6 months (CGHS bhi 6 months — OM 01.06.2020); advance liya to final claim 1 month mein.",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "text"
+ },
+ {
+  "old": "Hinglish: Counter-signature ka yeh point: Cases requiring clarification/interpretation of rules (niyam) ya jahan Controlling Officer hai satisfied claim (daava) deserves consideration mein relaxation → ko bheja jaata hai MoHFW (Swasthya Mantralaya) Exam trap: CS(MA) claim = 6 months (CGHS = 3 months); advance liya to final claim 1 month mein.",
+  "new": "Hinglish: Counter-signature ka yeh point: Cases requiring clarification/interpretation of rules (niyam) ya jahan Controlling Officer hai satisfied claim (daava) deserves consideration mein relaxation → ko bheja jaata hai MoHFW (Swasthya Mantralaya) Exam trap: CS(MA) claim = 6 months (CGHS bhi 6 months — OM 01.06.2020); advance liya to final claim 1 month mein.",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "text"
+ },
+ {
+  "old": "Hinglish: Counter-signature ka yeh point: Claim (daava) submission se Controlling Officer ke andar 6 months of discharge (hospital se chhutti)/ilaaj (under CS(MA) rules (niyam)) Exam trap: CS(MA) claim = 6 months (CGHS = 3 months); advance liya to final claim 1 month mein. Important figures/dates: 6 months.",
+  "new": "Hinglish: Counter-signature ka yeh point: Claim (daava) submission se Controlling Officer ke andar 6 months of discharge (hospital se chhutti)/ilaaj (under CS(MA) rules (niyam)) Exam trap: CS(MA) claim = 6 months (CGHS bhi 6 months — OM 01.06.2020); advance liya to final claim 1 month mein. Important figures/dates: 6 months.",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "text"
+ },
+ {
+  "old": "Hinglish: Counter-signature ka yeh point: Claim (daava) ke liye OPD (bahri rogi — bina bharti hue ilaaj) ilaaj: ke andar 6 months of ilaaj date Exam trap: CS(MA) claim = 6 months (CGHS = 3 months); advance liya to final claim 1 month mein. Important figures/dates: 6 months.",
+  "new": "Hinglish: Counter-signature ka yeh point: Claim (daava) ke liye OPD (bahri rogi — bina bharti hue ilaaj) ilaaj: ke andar 6 months of ilaaj date Exam trap: CS(MA) claim = 6 months (CGHS bhi 6 months — OM 01.06.2020); advance liya to final claim 1 month mein. Important figures/dates: 6 months.",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "text"
+ },
+ {
+  "old": "Hinglish: Counter-signature ka yeh point: Claim (daava) ke liye advance (pehle se di gayi raashi): jama karna final claim (daava) ke andar 1 month of discharge (hospital se chhutti) se hospital (ke case mein advance (pehle se di gayi raashi) drawn) Exam trap: CS(MA) claim = 6 months (CGHS = 3 months); advance liya to final claim 1 month mein. Important figures/dates: 1 month.",
+  "new": "Hinglish: Counter-signature ka yeh point: Claim (daava) ke liye advance (pehle se di gayi raashi): jama karna final claim (daava) ke andar 1 month of discharge (hospital se chhutti) se hospital (ke case mein advance (pehle se di gayi raashi) drawn) Exam trap: CS(MA) claim = 6 months (CGHS bhi 6 months — OM 01.06.2020); advance liya to final claim 1 month mein. Important figures/dates: 1 month.",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "text"
+ },
+ {
   "old": "CS(MA) mein claim 6 mahine mein submit karo — CGHS ke 3 mahine se alag!",
-  "new": "CS(MA) mein claim 6 mahine mein submit karo — CGHS bhi ab 6 mahine hai (OM 01.06.2020)!",
+  "new": "CS(MA) mein claim 6 mahine mein submit karo — CGHS bhi ab 6 mahine (OM 01.06.2020)!",
   "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
   "kind": "text"
  },
@@ -218,6 +332,18 @@
  {
   "old": "Different from CGHS (3 months)!",
   "new": "Same 6-month limit as CGHS (OM 01.06.2020)!",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "text"
+ },
+ {
+  "old": "Hinglish: N.2 — CS(MA) claim ki time limits. OPD claims: treatment ki date se 6 months. IPD claims: discharge se 6 months. IPD jisme advance liya tha: discharge se sirf 1 month. Appeal (rejection ke khilaf): rejection order milne ke 45 din ke andar — Central Government ko. Sabse important: CS(MA) = 6 months, CGHS = 3 months — yeh difference exam ka favourite hai.",
+  "new": "Hinglish: N.2 — CS(MA) claim ki time limits. OPD claims: treatment ki date se 6 months. IPD claims: discharge se 6 months. IPD jisme advance liya tha: discharge se sirf 1 month. Appeal (rejection ke khilaf): rejection order milne ke 45 din ke andar — Central Government ko. Sabse important: CS(MA) = 6 months aur CGHS bhi 6 months (OM 01.06.2020).",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "text"
+ },
+ {
+  "old": "Hinglish: Claim time limit ka yeh row: Yeh table ke column headings hain: claim ka type; time limit (samay seema); mukhya note. Neeche ki har row mein in headings ke hisaab se value di gayi hai - har row ko uske column ke matlab ke saath padho. Exam trap: 6 months (OPD/IPD), advance case 1 month, appeal 45 days — aur CGHS se fark (3 vs 6 months).",
+  "new": "Hinglish: Claim time limit ka yeh row: Yeh table ke column headings hain: claim ka type; time limit (samay seema); mukhya note. Neeche ki har row mein in headings ke hisaab se value di gayi hai - har row ko uske column ke matlab ke saath padho. Exam trap: 6 months (OPD/IPD), advance case 1 month, appeal 45 days — CGHS bhi ab 6 months (OM 01.06.2020).",
   "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
   "kind": "text"
  },
@@ -228,14 +354,50 @@
   "kind": "text"
  },
  {
+  "old": "Hinglish: Claim time limit ka yeh row: claim ka type: OPD (bahri rogi — bina bharti hue ilaaj) ilaaj claims (daave); time limit (samay seema): 6 months se date of ilaaj; mukhya note: Different se CGHS (3 months)! Exam trap: 6 months (OPD/IPD), advance case 1 month, appeal 45 days — aur CGHS se fark (3 vs 6 months). Important figures/dates: 6 months, 3 months.",
+  "new": "Hinglish: Claim time limit ka yeh row: claim ka type: OPD (bahri rogi — bina bharti hue ilaaj) ilaaj claims (daave); time limit (samay seema): 6 months se date of ilaaj; mukhya note: CGHS jaisa hi 6 months (OM 01.06.2020)! Exam trap: 6 months (OPD/IPD), advance case 1 month, appeal 45 days — CGHS bhi ab 6 months (OM 01.06.2020). Important figures/dates: 6 months, 3 months.",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found. CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "text"
+ },
+ {
   "old": "Original Table row 3: IPD (Inpatient) claims | 6 months from date of discharge from hospital | Different from CGHS (3 months)!",
   "new": "Original Table row 3: IPD (Inpatient) claims | 6 months from date of discharge from hospital | Same 6-month limit as CGHS (OM 01.06.2020)!",
   "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
   "kind": "text"
  },
  {
+  "old": "Hinglish: Claim time limit ka yeh row: claim ka type: IPD (bharti hokar ilaaj) (in-patient (IPD)) claims (daave); time limit (samay seema): 6 months se date of discharge (hospital se chhutti) se hospital; mukhya note: Different se CGHS (3 months)! Exam trap: 6 months (OPD/IPD), advance case 1 month, appeal 45 days — aur CGHS se fark (3 vs 6 months). Important figures/dates: 6 months, 3 months.",
+  "new": "Hinglish: Claim time limit ka yeh row: claim ka type: IPD (bharti hokar ilaaj) (in-patient (IPD)) claims (daave); time limit (samay seema): 6 months se date of discharge (hospital se chhutti) se hospital; mukhya note: CGHS jaisa hi 6 months (OM 01.06.2020)! Exam trap: 6 months (OPD/IPD), advance case 1 month, appeal 45 days — CGHS bhi ab 6 months (OM 01.06.2020). Important figures/dates: 6 months, 3 months.",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found. CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "text"
+ },
+ {
+  "old": "Hinglish: Claim time limit ka yeh row: claim ka type: IPD (bharti hokar ilaaj) claim (daava) jahan advance (pehle se di gayi raashi) drawn; time limit (samay seema): 1 month se date of discharge (hospital se chhutti); mukhya note: Shorter deadline jab advance (pehle se di gayi raashi) taken Exam trap: 6 months (OPD/IPD), advance case 1 month, appeal 45 days — aur CGHS se fark (3 vs 6 months). Important figures/dates: 1 month.",
+  "new": "Hinglish: Claim time limit ka yeh row: claim ka type: IPD (bharti hokar ilaaj) claim (daava) jahan advance (pehle se di gayi raashi) drawn; time limit (samay seema): 1 month se date of discharge (hospital se chhutti); mukhya note: Shorter deadline jab advance (pehle se di gayi raashi) taken Exam trap: 6 months (OPD/IPD), advance case 1 month, appeal 45 days — CGHS bhi ab 6 months (OM 01.06.2020). Important figures/dates: 1 month.",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "text"
+ },
+ {
+  "old": "Hinglish: Claim time limit ka yeh row: claim ka type: Appeal against rejection; time limit (samay seema): 45 days se date of receipt of rejection order (aadesh); mukhya note: Appeal se Central Government (Kendriya Sarkar) Exam trap: 6 months (OPD/IPD), advance case 1 month, appeal 45 days — aur CGHS se fark (3 vs 6 months). Important figures/dates: 45 days.",
+  "new": "Hinglish: Claim time limit ka yeh row: claim ka type: Appeal against rejection; time limit (samay seema): 45 days se date of receipt of rejection order (aadesh); mukhya note: Appeal se Central Government (Kendriya Sarkar) Exam trap: 6 months (OPD/IPD), advance case 1 month, appeal 45 days — CGHS bhi ab 6 months (OM 01.06.2020). Important figures/dates: 45 days.",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "text"
+ },
+ {
   "old": "CS(MA) claim deadline = 6 months — CGHS ka 3 months nahi! Bahut important distinction.",
-  "new": "CS(MA) claim deadline = 6 months — CGHS ka bhi ab 6 months hai (OM 01.06.2020)! Bahut important distinction.",
+  "new": "CS(MA) claim deadline = 6 months — CGHS ka bhi ab 6 months hai (OM 01.06.2020).",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "text"
+ },
+ {
+  "old": "\"CS(MA) claims within 3 months\" — ABSOLUTELY WRONG! CS(MA) = 6 months ; CGHS = 3 months",
+  "new": "\"CS(MA) claims within 3 months\" — ABSOLUTELY WRONG! CS(MA) = 6 months ; CGHS = 6 months (OM 01.06.2020)",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "text"
+ },
+ {
+  "old": "CS(MA) claim deadline: 6 months (CGHS = 3 months)",
+  "new": "CS(MA) claim deadline: 6 months (CGHS is also 6 months since OM 01.06.2020)",
   "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
   "kind": "text"
  },
@@ -282,8 +444,20 @@
   "kind": "leaf"
  },
  {
-  "old": "Within 3 months: Submit claim within 3 months of treatment date",
-  "new": "Within 6 months: Submit claim within 6 months of completion of treatment / discharge",
+  "old": "Within 3 months: Submit claim within 6 months of completion of treatment / discharge",
+  "new": "Within 6 months: Submit claim within 6 months of completion of treatment / discharge (OM 01.06.2020)",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "leaf"
+ },
+ {
+  "old": "Within 3 months of treatment",
+  "new": "6 months of completion of treatment / discharge (OM 01.06.2020)",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "leaf"
+ },
+ {
+  "old": "CGHS = 3 months (CS(MA) = 6 months)",
+  "new": "CGHS = 6 months (OM 01.06.2020); CS(MA) = 6 months",
   "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
   "kind": "leaf"
  },
@@ -294,7 +468,13 @@
   "kind": "leaf"
  },
  {
-  "old": "\"CS(MA) claim within 3 months\" — WRONG! CS(MA) = 6 months (CGHS = 3 months — different rules!)",
+  "old": "Within 3 months of treatment date",
+  "new": "Within 6 months of completion of treatment / discharge (OM 01.06.2020)",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "leaf"
+ },
+ {
+  "old": "\"CS(MA) claim within 3 months\" — WRONG! CS(MA) = 6 months (CGHS is also 6 months since OM 01.06.2020)",
   "new": "\"CS(MA) claim within 3 months\" — WRONG! CS(MA) = 6 months (CGHS is also 6 months since OM 01.06.2020)",
   "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
   "kind": "leaf"
@@ -306,20 +486,20 @@
   "kind": "leaf"
  },
  {
-  "old": "\"CS(MA) claims within 3 months\" — ABSOLUTELY WRONG! CS(MA) = 6 months ; CGHS = 3 months",
+  "old": "\"CS(MA) claims within 3 months\" — ABSOLUTELY WRONG! CS(MA) = 6 months ; CGHS = 6 months (OM 01.06.2020)",
   "new": "\"CS(MA) claims within 3 months\" — ABSOLUTELY WRONG! CS(MA) = 6 months ; CGHS is also 6 months (OM 01.06.2020)",
-  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
-  "kind": "leaf"
- },
- {
-  "old": "CS(MA) claim deadline: 6 months (CGHS = 3 months)",
-  "new": "CS(MA) claim deadline: 6 months (CGHS is also 6 months since OM 01.06.2020)",
   "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
   "kind": "leaf"
  },
  {
   "old": "\"CS(MA) claim = 3 months like CGHS\"",
   "new": "\"CS(MA) claim = 3 months\"",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "leaf"
+ },
+ {
+  "old": "CS(MA) = 6 months — critical difference!",
+  "new": "CS(MA) = 6 months (CGHS is also 6 months since OM 01.06.2020)",
   "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
   "kind": "leaf"
  },

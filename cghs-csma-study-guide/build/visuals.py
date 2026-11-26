@@ -106,7 +106,7 @@ V[7] = fig('CGHS referral — which route applies? (OM 28.06.2024 + SOP 02.09.20
 # ---------- PARA 10: MRC ----------
 V[9] = (fig('Medical reimbursement claim (CGHS) — process', vflow([
     ('Treatment / medicine purchase', 's'),
-    ('Submit claim within 3 MONTHS on BCA portal (claims beyond 3 months not entertained)', 'a'),
+    ('Submit claim within 6 MONTHS of completion of treatment / discharge on the BCA portal (OM 01.06.2020; later bills need condonation)', 'a'),
     ('Serving employee → own Department / Ministry   |   Pensioner → AD, CGHS city of registration', 'n'),
     ('Processing — avg 21 days (60–120 days for non-empanelled hospital cases); SMS at every stage; track via myCGHS app', 'n'),
     ('Settlement', 'g')], 'CGHS MRC process', bh=54, gap=26, bw=700))
