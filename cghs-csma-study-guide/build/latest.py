@@ -215,14 +215,12 @@ def latest_view(corrections):
         '<h3>DANICS / AGMUT pensioners (OM 09.01.2026)</h3>' + DANICS_BODY +
         '<h3>DA 63% (DoE OM 29.10.2026)</h3>' + DA_BODY +
         '<h3>Parents / parents-in-law (OM 13.05.2026)</h3>' + PARENTS_BODY +
-        '<h3>Tests above Rs.3,000, 7-day consultation, unlisted items (UPSC OM 11.08.2026)</h3>' + UPSC_BODY +
         '<h3>2025 rate clarifications and transition</h3>' + MRI_BODY +
         '<h3>Generic / branded medicines (OM 16.05.2025)</h3>' + GENERIC_BODY +
         '<h3>CS(MA) delegation to HoDs (OM 05.06.2014)</h3>' + HOD2014_BODY +
         '<h3>Medical advance without package rate (OM 22.09.2021)</h3>' + ADV_BODY +
         '<h3>Pensioners and CS(MA) (OM 12.09.2022)</h3>' + PEN_BODY)
-    sec = ('<h3>Secondary source — not an order</h3><div class="listitem"><span class="tag">Secondary</span>Kendriya Vidyalaya Sangathan FAQ (reproduced by staffnews.in, 2026): private hospitals recognised under CS(MA) Rules are recognised for a fixed period of <b>4 years</b> from the date of issue of the OM; a CS(MA)-covered employee outside a CGHS area has a one-time option to opt for CGHS. '
-           'Consistent with the guide’s other figures (unmarried son below 25, no age limit for unmarried daughter, income ceiling Rs.9,000 + DA, IPD advance 90%) but not itself an order — confirm before quoting.</div>')
+    sec = ''
     corr = ''
     if corrections:
         groups = {}
@@ -244,7 +242,6 @@ def latest_view(corrections):
 # ======================= additions (second research pass, 26.11.2026) =======================
 URL.update({
     'elig': SN + '/2026/09/eligibility-for-availing-cghs-facilities-5-km-radius-limit-removed.html',
-    'upsc': SN + '/2026/08/clarification-regarding-existing-cghs-guidelines.html',
     'mri': SN + '/2026/03/cghs-rates-applicable-for-mri-without-contrast-and-super-specialist.html',
     'generic': SN + '/2025/06/revised-instructions-for-the-issue-of-generic-branded-medicines-at-cghs.html',
     'tms': SN + '/2025/10/transition-to-revised-cghs-rates-2025-and-tms-2-0.html',
@@ -261,17 +258,6 @@ ELIG_BODY = (
     '<p class="vnote"><b>Effect on the exam answer:</b> “CS(MA) applies where CGHS does not” is now only the default. A serving employee outside a CGHS area may choose CGHS once, irrevocably, for the whole family.</p>'
     f'<p class="vnote">Read from the {a("elig", "published text of the OM")}.</p>')
 
-UPSC_BODY = (
-    '<p><b>UPSC OM F. No. D-12015/420/2024-Admn-IV dated 11.08.2026</b> — a department’s OM that relays clarifications obtained from CGHS (HQ) on OM 28.06.2024, the SOP of 02.09.2024 and OM 03.10.2025. '
-    '<span class="tag">Relayed text, not a CGHS OM</span></p>'
-    '<ul><li>Follow-up consultations / investigations / minor procedures: only at the <b>same empanelled hospital</b> as the primary consultation.</li>'
-    '<li>A test prescribed by the specialist of an empanelled hospital costing up to <b>Rs.3,000 each</b> must be done at the same hospital; elsewhere needs prior referral / endorsement from the CGHS Wellness Centre.</li>'
-    '<li>Referral / endorsement is required for CT, MRI, PET and <b>any investigation costing over Rs.3,000</b>.</li>'
-    '<li>Each consultation is valid for <b>7 days</b> if it pertains to the same specialty.</li>'
-    '<li>Eye consultation fee includes refraction, tonometry and fundus examination.</li>'
-    '<li><b>Prior permission of the Department / Office</b> is mandatory for an unlisted investigation / procedure advised by a specialist of an empanelled hospital.</li></ul>'
-    f'<p class="vnote">Read from the {a("upsc", "published text")}. Confirm against the CGHS Directorate text before quoting.</p>')
-
 MRI_BODY = (
     '<p><b>CGHS Directorate OM F. No. 5-16/CGHS(HQ)/HEC/2024(Part I)/I/38850429/2026 dated 24.03.2026</b> — clarification, effective <i>ab initio</i>, forming part of OM 03.10.2025: code <b>RI134</b> reads “MRI Dorsal / Dorso-Lumbar Spine / Cervical / Cervico-Dorsal Spine – <b>Without Contrast</b>”; for code <b>CN003</b> (OPD consultation) “Super Specialist” means DM / MCh / DNB-SS or an equivalent qualification as per National Medical Commission norms.</p>'
     '<p><b>Transition to the 2025 rates — OM 12.10.2025</b> (F. No. 5-16/CGHS(HQ)/HEC/2024 Part I): Revised Rates apply from <b>00:00 hrs on 13.10.2025</b>; all new registrations only on <b>TMS 2.0</b> (none on TMS 1.0 after that time); surgical / radiotherapy packages booked before 13.10.2025 continue at <b>old rates</b> until completed; ongoing medical management started earlier continues in the same case with services from 13.10.2025 billed at revised rates; no beneficiary is to be sent back to CGHS only to obtain a new referral.</p>'
@@ -285,7 +271,6 @@ GENERIC_BODY = (
 CALLOUTS[0] = CALLOUTS.get(0, []) + [box('Who can join CGHS — 5 km rule removed (OM 17.09.2026)', ELIG_BODY)]
 CALLOUTS[16] = CALLOUTS.get(16, []) + [box('CS(MA) vs CGHS — one-time option (OM 17.09.2026)', ELIG_BODY)]
 CALLOUTS[17] = CALLOUTS.get(17, []) + [box('Rule 1 coverage — see OM 17.09.2026', '<p>A serving employee posted in a CGHS-covered area (district HQ limits where a Wellness Centre is situated) is mandatorily under CGHS and outside CS(MA); one outside such an area may opt once, irrevocably, for CGHS for the whole family; otherwise CS(MA) continues. Details: the update box in the CS(MA) preamble and the Latest orders tab.</p>')]
-CALLOUTS[7] = CALLOUTS.get(7, []) + [box('Tests above Rs.3,000, 7-day consultation, unlisted items (UPSC OM 11.08.2026, relaying CGHS HQ)', UPSC_BODY)]
 CALLOUTS[6] = CALLOUTS.get(6, []) + [box('Generic / branded medicines (OM 16.05.2025)', GENERIC_BODY)]
 CALLOUTS[8] = CALLOUTS.get(8, []) + [box('2025 rate clarifications & transition (OM 24.03.2026 / 12.10.2025)', MRI_BODY)]
 
@@ -293,7 +278,6 @@ ORDERS += [
     ('16.05.2025', 'Z.15025/117/2017/DIR/CGHS/EHS(3132722)/I/3767573/2025', 'Generic / branded medicines at Wellness Centres (3-step rule)', 'generic'),
     ('12.10.2025', '5-16/CGHS(HQ)/HEC/2024(Part I)/I/3809236/2025', 'Transition to revised CGHS rates 2025 and TMS 2.0 (effective 13.10.2025)', 'tms'),
     ('24.03.2026', '5-16/CGHS(HQ)/HEC/2024(Part I)/I/38850429/2026', 'Clarification: code RI134 (MRI without contrast); super specialist = DM/MCh/DNB-SS', 'mri'),
-    ('11.08.2026', 'UPSC D-12015/420/2024-Admn-IV (relays CGHS HQ)', 'Same-hospital tests up to Rs.3,000; endorsement above; consultation valid 7 days (relayed text)', 'upsc'),
     ('17.09.2026', 'Z.16025/227/2026/CGHS-III/EHS(8421134)', '5 km criterion removed; one-time option CS(MA) → CGHS; mandatory CGHS in covered area', 'elig'),
 ]
 ORDERS.sort(key=lambda o: tuple(reversed(o[0].split('.'))))

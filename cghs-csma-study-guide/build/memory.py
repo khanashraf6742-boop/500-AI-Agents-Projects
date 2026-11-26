@@ -19,7 +19,6 @@ NUMS = [
  ('Coverage', 'CS(MA) vs CGHS', 'Mandatory CGHS within covered area (district HQ limits); one-time irrevocable option for others (OM 17.09.2026)', 16),
  ('Referral & approvals', 'Specialist referral', '3 months · max 3 specialists · max 6 consultations', 7),
  ('Referral & approvals', 'Government hospital (AIIMS, INIs, Tata Memorial…)', 'No referral at all, even for unlisted items', 7),
- ('Referral & approvals', 'Tests', 'Same hospital up to Rs.3,000 each; endorsement for CT / MRI / PET or above Rs.3,000 (relayed CGHS HQ text)', 7),
  ('Referral & approvals', 'STC-type cases (OM 01.09.2026)', 'AD CGHS + 3-member LTC · deficiencies in 3 working days · decision in 15 working days', 7),
  ('Money & time limits', 'Claim deadline', 'CGHS 6 months (OM 01.06.2020; earlier 3) · CS(MA) 6 months (1 month from discharge if IPD advance drawn)', 29),
  ('Money & time limits', 'Advance', 'IPD 90% · OPD 90% only if estimate > Rs.10,000 · TB 80% or Rs.36,000 · sanction in 10 days', 29),
