@@ -28,7 +28,7 @@ OVERVIEW = fig('CGHS vs CS(MA) Rules 1944 — side-by-side (figures as stated in
      ['Family income test', 'Dependent: income &lt; Rs.9,000 + DA / month', 'Same (OM 08.11.2016 extends it to CS(MA))'],
      ['Parents / Parents-in-law', 'One-time irrevocable choice [OM 13.05.2026]', 'Extended to CS(MA) [OM 28.03.2024]; one-time choice [OM 13.05.2026]'],
      ['Legal basis', 'Executive scheme — no separate statute; governed by MoHFW guidelines, OMs, circulars (established 1954)', 'Statutory Rules (notified 1 Jan 1944) — legally enforceable rights'],
-     ['Who is covered', 'Employees in CGHS-covered cities (~80 cities); pensioners (if enrolled)', 'Serving employees in areas NOT covered by CGHS; pensioners EXCLUDED'],
+     ['Who is covered', 'Serving employees posted in a CGHS-covered area (mandatory); pensioners (if enrolled); serving employees outside such areas who exercised the one-time option (OM 17.09.2026)', 'Serving employees outside CGHS-covered areas who have NOT opted for CGHS; pensioners EXCLUDED'],
     ]), 'Take the exact wording of every cell from the section it points to — this table is a revision aid, not a substitute for the rule text.')
 
 # ---------- PARA 3: family eligibility ----------

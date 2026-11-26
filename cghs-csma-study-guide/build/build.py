@@ -15,6 +15,8 @@ import visuals
 import powers
 import corrections
 import latest
+import quiz
+import memory
 
 SRC, OUT = sys.argv[1], sys.argv[2]
 soup = BeautifulSoup(open(SRC, encoding='utf8').read(), 'lxml')
@@ -237,9 +239,9 @@ def render_card(k, src_card, extra_cls=''):
     inner += ''.join(clean_misc(x) for x in k.extra)
     return (f'<details class="card {extra_cls}" id="{k.id}" open>'
             f'<summary class="{k.color}"><span class="rtag">{esc(k.tag)}</span>'
-            f'<div class="rinfo"><h2>{esc(k.title)}</h2><div class="rom">{esc(k.om)}</div></div>'
+            f'<div class="rinfo"><h2>{esc(k.title)}</h2><div class="rom">{esc(k.om)}</div>{"<span class=sbadge>🆕 updated with 2026 orders</span>" if k.rc in latest.CALLOUTS else ""}</div>'
             f'<span class="cardtools"><button class="bBm" aria-label="Bookmark">☆</button><button class="bStudy">Mark studied</button></span></summary>'
-            f'<div class="cbody">{visual_html}{upd}{inner}</div></details>')
+            f'<div class="cbody">{visual_html}{upd}{inner}<div class="notes"><label for="n-{k.id}">📝 My notes</label><textarea id="n-{k.id}" data-note="{k.id}" rows="3" placeholder="Your notes for this section (saved in this browser)…"></textarea></div></div></details>')
 
 def render_qa(el, k):
     strip_attrs(el); convert_hinglish(el); mark_semantics(el); wrap_tables(el)
@@ -287,7 +289,7 @@ for P in parts:
 about_html = ('<div class="notice-box"><h3>🔔 Currency &amp; obsolete content — read this first</h3><ul>'
   '<li>The original guide’s text was current to <b>21 July 2026</b>. Orders to <b>09.11.2026</b> were read in full and incorporated — see <a href="#latest">Latest orders</a> (e.g. OMs of 25.06.2026, 01.09.2026, 26.10.2026, 09.11.2026) — and wrong / obsolete figures were corrected with the old wording kept on that tab.</li>'
   '<li>Superseded rates and orders are NOT presented as current in the rule text; where the guide itself records a correction (e.g. hearing-aid rates, HoD ceiling) it is listed in the <a href="#changelog">changelog</a>.</li>'
-  '<li>New: <a href="#powers">Who has the power?</a> — who appoints the AMA, delegation of powers, authority matrix and practice questions.</li></ul></div>') + ''.join(clean_misc(x) for x in about_items)
+  '<li>Study tools: <a href="#quiz">mock tests</a> (275 questions, timer, weak-area report) · <a href="#plan">study plan</a> · <a href="#memory">memory sheet &amp; timeline</a> · <a href="#compare2">compare two sections</a> · <a href="#mystudy">notes &amp; progress export</a> · ⚡ Revision mode · spaced-repetition flashcards. Green “🆕 UPDATE” boxes mark content added from 2026 orders.</li><li>New: <a href="#powers">Who has the power?</a> — who appoints the AMA, delegation of powers, authority matrix and practice questions.</li></ul></div>') + ''.join(clean_misc(x) for x in about_items)
 
 # ---------------------------------------------------------------- 5. derived views
 def card_link(k):
@@ -375,6 +377,33 @@ verify_html = ''.join(vr)
 RCMAP = {k.rc: k.id for k in CARDS if getattr(k, 'rc', None) is not None}
 powers_html = powers.build(lambda n: '#' + RCMAP[n])
 latest_html = latest.latest_view(CORR_LOG)
+RCPART = {k.rc: k.part for k in CARDS if getattr(k, 'rc', None) is not None}
+RCTITLE = {k.rc: k.title for k in CARDS if getattr(k, 'rc', None) is not None}
+QBANK = quiz.build(extras, RCMAP, RCPART, RCTITLE, esc)
+for _q in QBANK:
+    if _q.get('p') not in ('cghs', 'csma'):
+        _q['p'] = 'cghs'
+qdata = json.dumps(QBANK, ensure_ascii=False).replace('</', '<\\/')
+memory_html = memory.build(lambda n: '#' + RCMAP[n])
+quiz_html = '''<div id="qSetup"><p class="lead"><b id="qBank">0</b> questions: hand-written case and fact questions plus questions generated from the guide’s own tables and trap lists. Each question links back to its section.</p>
+<div class="row"><label>Questions <select id="qCount"><option>10</option><option selected>20</option><option>30</option><option>50</option><option>100</option></select></label>
+<label>Type <select id="qKind"><option value="all">All</option><option value="case">Case scenarios</option><option value="fact">Facts &amp; figures</option><option value="tf">True / false (traps)</option></select></label>
+<label>Part <select id="qPart"><option value="all">Both</option><option value="cghs">CGHS</option><option value="csma">CS(MA)</option></select></label>
+<label>Mode <select id="qMode"><option value="exam">Exam (feedback at the end)</option><option value="practice">Practice (instant feedback)</option></select></label>
+<label>Timer <select id="qTime"><option value="0">None</option><option value="10">10 min</option><option value="20">20 min</option><option value="30">30 min</option><option value="45">45 min</option></select></label>
+<button id="qStart" class="on">Start test</button></div><div id="qHist"></div></div>
+<div id="qRun" class="hide"><div class="row"><b id="qProg"></b><span id="qTimer"></span><button id="qFinish">Finish</button></div>
+<div class="qbox"><p id="qText" class="qtext"></p><div id="qOpts"></div><div id="qFeedback"></div></div>
+<div class="row"><button id="qPrev">◀ Prev</button><button id="qNext">Next ▶</button></div></div>
+<div id="qResult" class="hide"><div id="qResultBody"></div><div class="row"><button id="qRetryWrong">Retry only the wrong ones</button><button id="qAgain" class="on">New test</button></div></div>'''
+plan_html = '''<p class="lead">Choose how many days you have. Sections are spread by length; the last day is for revision. Progress follows the “Mark studied” buttons.</p>
+<div class="row"><label>Days <select id="planDays"><option value="7">7</option><option value="14" selected>14</option><option value="21">21</option><option value="30">30</option></select></label><button id="bPlan" class="on">Create plan</button></div><div id="planOut"></div>'''
+mystudy_html = '''<p class="lead">Everything is stored in this browser only. Export a file to move your progress to another device or to keep a backup.</p>
+<div class="row"><button id="bExport" class="on">⬇ Export progress</button><label class="btn">⬆ Import progress <input id="fImport" type="file" accept="application/json" hidden></label><button id="bReset">🗑 Reset everything</button></div>
+<h3>My notes</h3><div id="notesList"></div>'''
+compare_html = '''<p class="lead">Pick any two sections to read them side by side (Hinglish layers are left out here).</p>
+<div class="row"><select id="cmpA" aria-label="First section"></select><select id="cmpB" aria-label="Second section"></select></div>
+<div class="cmpgrid"><div id="cmpOutA"></div><div id="cmpOutB"></div></div>'''
 
 # flashcards
 fc_json = json.dumps(extras['flash'], ensure_ascii=False).replace('</', '<\\/')
@@ -391,6 +420,9 @@ def nav_html():
                 o.append(f'<h4 style="margin-top:8px;text-transform:none;letter-spacing:0">{esc(v[:62])}</h4>')
             else:
                 o.append(f'<a class="sub" data-card="{v.id}" href="#{v.id}"><b>{esc(v.tag)}</b> {esc(v.title[:60])}</a>')
+    o.append('<h4>Study tools</h4>')
+    for v, label in [('quiz', '📝 Mock tests & practice'), ('plan', '🗓️ Study plan'), ('memory', '🧠 Memory sheet & timeline'), ('compare2', '↔️ Compare two sections'), ('mystudy', '💾 My notes & progress')]:
+        o.append(f'<a class="view" data-view="{v}" href="#{v}">{label}</a>')
     o.append('<h4>Revision tools</h4>')
     for v, label in [('quick', '📋 Quick reference tables'), ('oms', '📜 OM / order register'), ('traps', '⚠️ All exam traps'), ('flash', '🃏 Flashcards'), ('verify', '🔎 Verify list'), ('changelog', '🔄 Amendments & changelog')]:
         o.append(f'<a class="view" data-view="{v}" href="#{v}">{label}</a>')
@@ -399,6 +431,7 @@ def nav_html():
 # ---------------------------------------------------------------- 7. assemble
 css = open(os.path.join(HERE, 'assets/style.css'), encoding='utf8').read()
 js = open(os.path.join(HERE, 'assets/app.js'), encoding='utf8').read()
+js2 = open(os.path.join(HERE, 'assets/tools.js'), encoding='utf8').read()
 
 def view(vid, title, lead, content, tools=False):
     t = ('<div class="toolbar"><button data-act="expand">Expand all</button><button data-act="collapse">Collapse all</button></div>' if tools else '')
@@ -417,7 +450,7 @@ page = f'''<!DOCTYPE html>
   <h1>CGHS + CS(MA) 1944</h1>
   <div class="grow"><input id="q" type="search" placeholder="Search rule no., OM no., keyword, amount…  ( / )" aria-label="Search the guide" autocomplete="off"><div id="results" role="listbox"></div></div>
   <div id="prog" title="Sections studied"><i></i></div><span id="progt" style="font-size:12px"></span>
-  <button id="bHing">🗣️ Hinglish</button><button id="bFm" aria-label="Smaller text">A−</button><button id="bFp" aria-label="Larger text">A+</button><button id="bTheme" aria-label="Toggle theme">🌙</button><button id="bPrint" aria-label="Print">🖨️</button>
+  <button id="bRev" title="Hide long text, keep boxes, tables, traps and diagrams">⚡ Revision</button><button id="bHing">🗣️ Hinglish</button><button id="bFm" aria-label="Smaller text">A−</button><button id="bFp" aria-label="Larger text">A+</button><button id="bTheme" aria-label="Toggle theme">🌙</button><button id="bPrint" aria-label="Print">🖨️</button>
 </header>
 <div id="scrim"></div>
 <div id="layout">
@@ -429,11 +462,16 @@ page = f'''<!DOCTYPE html>
 {view('powers', '🏛️ Who has the power? — AMA appointment, delegation of powers, authority matrix', 'Appointing authorities, HoD / Controlling Officer / MoHFW / Central Government powers and money limits, with practice questions.', powers_html)}
 {view('cghs', '🏥 PART 1 — CGHS', f'{ncards1} sections', P1['html'], True)}
 {view('csma', '⚖️ PART 2 — CS(MA) Rules, 1944', f'{ncards2} sections (Rules 1–11, AMA, advance, family, non-admissible items)', P2['html'], True)}
+{view('quiz', '📝 Mock tests & practice', '', quiz_html)}
+{view('plan', '🗓️ Study plan', '', plan_html)}
+{view('memory', '🧠 Memory sheet & timeline', '', memory_html)}
+{view('compare2', '↔️ Compare two sections', '', compare_html)}
+{view('mystudy', '💾 My notes & progress', '', mystudy_html)}
 {view('quick', '📋 Quick reference — every table', f'{len(extras["tables"])} tables from the guide, filterable.', quick_html)}
 {view('oms', '📜 OM / order register', 'All dated orders mentioned, sortable by date.', oms_html)}
 {view('traps', '⚠️ Exam traps', '', traps_html)}
 {view('flash', '🃏 Flashcards', f'{len(extras["flash"])} cards generated from traps and tables. Tap the card to reveal.', '''<div class="row"><select id="fkind" aria-label="Card type"><option value="all">All cards</option><option value="trap">Exam traps</option><option value="table">Table facts</option></select>
-<select id="fonly" aria-label="Filter"><option value="all">All</option><option value="unknown">Not yet known</option><option value="known">Known</option></select>
+<select id="fonly" aria-label="Filter"><option value="all">All</option><option value="due">Due now (spaced repetition)</option><option value="mastered">Mastered</option></select>
 <label><input type="checkbox" id="fshuf" checked> shuffle</label><span id="fcount"></span></div>
 <div id="fcard" role="button" tabindex="0" aria-live="polite"></div>
 <div class="row"><button id="fPrev">◀ Prev</button><button id="fNo">✗ Still learning</button><button id="fKnow">✓ Know it</button><button id="fNext">Next ▶</button><button id="fReset">Reset</button></div>''')}
@@ -441,9 +479,11 @@ page = f'''<!DOCTYPE html>
 {view('changelog', '🔄 Amendments & changelog', '', changelog_html)}
 </main></div>
 <script id="fcdata" type="application/json">{fc_json}</script>
+<script id="qdata" type="application/json">{qdata}</script>
 <script>{js}</script>
+<script>{js2}</script>
 </body></html>'''
 
 os.makedirs(os.path.dirname(os.path.abspath(OUT)), exist_ok=True)
 open(OUT, 'w', encoding='utf8').write(page)
-print(f'wrote {OUT}: {len(page)//1024} KB, cards={len(CARDS)}, traps={len(extras["traps"])}, tables={len(extras["tables"])}, flash={len(extras["flash"])}, om={len(rows)}, verify={len(vseen)+len(MANUAL)}, changelog={len(cl)}', file=sys.stderr)
+print(f'wrote {OUT}: {len(page)//1024} KB, cards={len(CARDS)}, traps={len(extras["traps"])}, tables={len(extras["tables"])}, flash={len(extras["flash"])}, questions={len(QBANK)}, om={len(rows)}, verify={len(vseen)+len(MANUAL)}, changelog={len(cl)}', file=sys.stderr)

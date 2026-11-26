@@ -14,3 +14,12 @@ comparison tables (all facts taken from the source guide); `build/assets/` holds
 
 `verify_coverage.py` checks that every text block, OM number, date, rupee amount, rule reference
 and GD item in the source appears in the Overview / CGHS / CS(MA) views of the output.
+
+## Features
+Sidebar + search, per-section notes, bookmarks and progress, flashcards with spaced repetition, mock tests
+(case / facts / true-false, exam or practice mode, timer, weak-area report), study plan, memory sheet and
+order timeline, compare-two-sections tool, revision mode, dark mode, print stylesheet, export / import of progress.
+
+`build/corrections.py` replaces obsolete or wrong figures from the source and logs each change
+(`build/corrections_log.json`); `build/latest.py` holds the 2026 orders read from primary text;
+`build/quiz.py` holds the question bank generator.

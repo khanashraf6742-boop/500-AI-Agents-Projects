@@ -69,10 +69,13 @@ $$('[data-filter]').forEach(inp=>inp.addEventListener('input',()=>{const t=inp.v
 $$('table.sortable th').forEach((th,ci)=>th.addEventListener('click',()=>{const tb=th.closest('table').tBodies[0];const rows=Array.from(tb.rows);const asc=th.dataset.asc!=='1';th.dataset.asc=asc?'1':'0';rows.sort((a,b)=>{const x=(a.cells[ci].dataset.k||a.cells[ci].textContent),y=(b.cells[ci].dataset.k||b.cells[ci].textContent);return asc?x.localeCompare(y,undefined,{numeric:true}):y.localeCompare(x,undefined,{numeric:true})});rows.forEach(r=>tb.appendChild(r))}));
 /* flashcards */
 const FC=JSON.parse($('#fcdata').textContent);let deck=[],pos=0,flipped=false;
-function build(){const kind=$('#fkind').value,only=$('#fonly').value;deck=FC.map((f,i)=>Object.assign({},f,{i})).filter(f=>(kind==='all'||f.t===kind)&&(only==='all'||(only==='unknown'?known[f.i]!==1:known[f.i]===1)));if($('#fshuf').checked)deck.sort(()=>Math.random()-.5);pos=0;show()}
-function show(){const c=$('#fcard');const kc=Object.values(known).filter(v=>v===1).length;if(!deck.length){c.innerHTML='<small>No cards in this selection</small>';$('#fcount').textContent='0 cards';return}const f=deck[pos];flipped=false;c.innerHTML=`<small>${f.t==='trap'?'EXAM TRAP — right or wrong?':'RECALL'} · ${f.s}</small><div>${f.q}</div><small style="margin-top:14px">tap to reveal</small>`;$('#fcount').textContent=`${pos+1}/${deck.length} · known ${kc}/${FC.length}`}
+const st=i=>{const v=known[i];return (v&&typeof v==='object')?v:(v===1?{b:2,d:0}:null)};
+const due=i=>{const v=st(i);return !v||v.d<=Date.now()};
+const mastered=i=>{const v=st(i);return !!v&&v.b>=3};
+function build(){const kind=$('#fkind').value,only=$('#fonly').value;deck=FC.map((f,i)=>Object.assign({},f,{i})).filter(f=>(kind==='all'||f.t===kind)&&(only==='all'||(only==='due'?due(f.i):mastered(f.i))));if($('#fshuf').checked)deck.sort(()=>Math.random()-.5);pos=0;show()}
+function show(){const c=$('#fcard');const kc=FC.reduce((n,_,i)=>n+(mastered(i)?1:0),0);if(!deck.length){c.innerHTML='<small>No cards in this selection</small>';$('#fcount').textContent='0 cards';return}const f=deck[pos];flipped=false;c.innerHTML=`<small>${f.t==='trap'?'EXAM TRAP — right or wrong?':'RECALL'} · ${f.s}</small><div>${f.q}</div><small style="margin-top:14px">tap to reveal</small>`;$('#fcount').textContent=`${pos+1}/${deck.length} · mastered ${kc}/${FC.length} · due ${FC.reduce((n,_,i)=>n+(due(i)?1:0),0)}`}
 $('#fcard').onclick=()=>{if(!deck.length)return;const f=deck[pos];flipped=!flipped;$('#fcard').innerHTML=flipped?`<small>ANSWER · <a href="#${f.c}">open section</a></small><div>${f.a}</div>`:`<small>${f.s}</small><div>${f.q}</div>`};
-function mark(v){if(!deck.length)return;known[deck[pos].i]=v;LS.set('known',known);pos=(pos+1)%deck.length;show()}
+function mark(v){if(!deck.length)return;const i=deck[pos].i,cur=st(i),days=[0,1,3,7,16];if(v===1){const b=Math.min((cur?cur.b:0)+1,4);known[i]={b,d:Date.now()+days[b]*864e5}}else{known[i]={b:0,d:Date.now()}};LS.set('known',known);pos=(pos+1)%deck.length;show()}
 $('#fKnow').onclick=()=>mark(1);$('#fNo').onclick=()=>mark(0);
 $('#fNext').onclick=()=>{pos=(pos+1)%Math.max(1,deck.length);show()};$('#fPrev').onclick=()=>{pos=(pos-1+deck.length)%Math.max(1,deck.length);show()};
 $('#fReset').onclick=()=>{if(confirm('Reset known/unknown status of all flashcards?')){known={};LS.set('known',known);build()}};
