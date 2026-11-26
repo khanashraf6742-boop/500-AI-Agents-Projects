@@ -199,7 +199,7 @@ def latest_view(corrections):
     rows = ''.join(f'<tr><td>{d}</td><td>{escape(f)}</td><td>{escape(s)}</td><td><a href="{URL[k]}" rel="noopener">read</a></td></tr>' for d, f, s, k in ORDERS)
     reg = ('<div class="tblwrap"><table class="cmp"><caption>Orders read in full from the primary text (2026)</caption><thead><tr><th>Date</th><th>File / OM no.</th><th>Subject</th><th>Text</th></tr></thead><tbody>' + rows + '</tbody></table></div>')
     intro = ('<div class="notice-box"><h3>📅 How current is this?</h3><p>Orders up to <b>09.11.2026</b> found for CGHS / CS(MA) were read and incorporated (searched 25.11.2026). '
-             'The texts were read from copies of the official OMs hosted on staffnews.in; the MoHFW / CGHS sites could not be opened from this environment (HTTP 502), so nothing was cross-checked there. '
+             'The texts were read from copies of the official OMs hosted on staffnews.in. <b>None was read on mohfw.gov.in</b>: when checked on 26.11.2026 the legacy MoHFW host (main.mohfw.gov.in) could not be reached from the research environment (proxy error 502), and the new site (www.mohfw.gov.in) returned no documents for CS(MA) or CGHS in its document store. '
              'Not found: any order on AMA appointment / re-verification, and the CS(MA) Rules PDF — those items stay on the <a href="#verify">Verify tab</a>.</p></div>')
     sections = (
         '<h3>Who can join CGHS — 5 km rule removed (OM 17.09.2026)</h3>' + ELIG_BODY +
