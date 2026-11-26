@@ -25,6 +25,9 @@ TEXT_RULES = [
 
 TL_REASON = 'CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.'
 TIME_RULES = [
+    (r'(?s)(OM 01\.06\.2020.*?)\s*Important figures/dates: 3 months\.', r'\1 Important figures/dates: 6 months.'),
+    (r'(?s)(Ke andar 6 months of ilaaj/discharge.*?)Important figures/dates: 3 months\.', r'\1Important figures/dates: 6 months.'),
+    (r'Important figures/dates: 6 months, 3 months\.', 'Important figures/dates: 6 months.'),
     (r'CGHS claim deadline = 3 months \(CS\(MA\) = 6 months\) — yeh difference sabse zyada poocha jaata hai\.', 'CGHS claim deadline = 6 months (OM 01.06.2020); CS(MA) = 6 months — purana 3-month rule obsolete hai.'),
     (r'CS\(MA\) claim = 6 months \(CGHS = 3 months\)', 'CS(MA) claim = 6 months (CGHS bhi 6 months — OM 01.06.2020)'),
     (r'CGHS claim deadline: ilaaj/dawai ke 3 months ke andar — uske baad claim entertain NAHI hota \(CS\(MA\) mein yeh 6 months hai — fark yaad rakho!\)', 'CGHS claim deadline: ilaaj/discharge ke 6 months ke andar (OM 01.06.2020) — uske baad sirf condonation se; CS(MA) mein bhi 6 months.'),
@@ -62,6 +65,8 @@ TIME_RULES = [
     (r'CGHS = 3 months — alag hai!', 'CGHS bhi ab 6 months hai — OM 01.06.2020'),
     (r'CGHS ke 3 mahine se alag!', 'CGHS bhi ab 6 mahine hai (OM 01.06.2020)!'),
     (r'CGHS ka 3 months nahi!', 'CGHS ka bhi ab 6 months hai (OM 01.06.2020)!'),
+    # post-pass: runs after the phrase conversions above
+    (r'(?s)(OM 01\.06\.2020.*?)Important figures/dates: 3 months\.', r'\1Important figures/dates: 6 months.'),
 ]
 for _rx, _rep in TIME_RULES:
     TEXT_RULES.append((_rx, _rep, TL_REASON))
