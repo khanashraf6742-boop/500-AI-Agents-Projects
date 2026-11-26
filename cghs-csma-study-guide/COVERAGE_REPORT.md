@@ -18,7 +18,7 @@ Source: `src.html`  →  Output: `index.html`
 - amendment boxes: 12 → 12
 - trap boxes: 30 → 30
 - key boxes: 6 → 6
-- tables: 27 → 39
+- tables: 27 → 40
 - Hinglish paired units: 805 → 805
 - Hinglish blocks: 133 → 133
 

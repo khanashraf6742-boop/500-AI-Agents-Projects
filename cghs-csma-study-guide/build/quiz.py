@@ -148,6 +148,28 @@ HAND = [
   'For life, subject to dependency conditions and Board assessment (DGHS for CS(MA))', ['Only till 25', 'Only if he is married', 'Not at all'], 'Does not extend to his spouse or children.', 2, 'case'),
  ('What does the cochlear implant ceiling cover (OM 09.11.2026)?',
   'Rs.7,00,000 pre-lingual / Rs.6,00,000 post-lingual, unilateral, package including implant, surgery, mapping and therapy', ['Only the implant', 'Rs.5,35,000 always', 'Actual cost without limit'], 'Second side after 1 year; upgradation after 3 years at 50%.', 10, 'case'),
+
+ # ---- 2025-26 rates / billing / vaccines
+ ('OPD consultation at Rs.700 under the revised CGHS rates is admissible only for:',
+  'Super Specialists with a recognised DM / MCh qualification (OM 13.01.2026)', ['Any specialist', 'Any MBBS doctor', 'Only AYUSH doctors'], 'In-patient cases: at most two consultations a day per specialist.', 8, 'fact'),
+ ('For IPD cases, how many consultations per day per specialist are admissible?',
+  'A maximum of two', ['One', 'Three', 'No limit'], 'OM 13.01.2026, as per CGHS norms.', 8, 'fact'),
+ ('Noida and Gurugram are treated, for rate purposes, at par with:',
+  'Delhi — X / Tier I (OM 09.10.2025)', ['Tier II', 'Tier III', 'Chandigarh'], 'Goa and Port Blair are Y / Tier II; Panchkula and Mohali are at par with Chandigarh (Y).', 8, 'fact'),
+ ('A “Super Speciality Hospital” for the +15% category must have:',
+  '200 or more beds, NABH (or equivalent) accreditation and CGHS-empanelled facilities for all listed super-specialties', ['Any 50 beds', 'Only NABL accreditation', 'Only a cardiac unit'], 'Annexure V of OM 03.10.2025.', 8, 'fact'),
+ ('Sitting MPs’ medical claims are settled by:',
+  'The Secretary General of Lok Sabha / Rajya Sabha, irrespective of monetary limits (OM 11.07.2025)', ['The CGHS Director', 'MoHFW with IFD', 'The Additional Director, CGHS'], 'Such cases need not be referred to MoHFW.', 9, 'fact'),
+ ('Which vaccines are admissible under CGHS (reply of 02.12.2025)?',
+  'Hepatitis B, influenza and Leprovac, for high-risk individuals on specialist recommendation countersigned by the HoD', ['All adult vaccines', 'HPV only', 'None'], 'Other preventive vaccines are not admissible unless part of treatment.', 12, 'fact'),
+ ('A hospital bills glucometer strips and ECG electrodes separately. Under Annexure IV these are:',
+  'Not billable separately — included in the test / ward charge', ['Admissible at actuals', 'Payable by the patient', 'Admissible with HoD approval'], 'Neither billed to CGHS nor collected from the beneficiary.', 12, 'fact'),
+ ('Charges for a separate attendant (ayah / ward boy) in a CGHS bill are:',
+  'Not reimbursable (the one attendant bed in a private ward is included)', ['Reimbursable at actuals', 'Reimbursable up to Rs.1,000 a day', 'Reimbursable with permission'], 'Annexure IV of OM 03.10.2025.', 12, 'fact'),
+ ('Under the credit / cashless table, pensioners of autonomous bodies (yellow strip) get:',
+  'Treatment on payment at CGHS rates; reimbursement from their own department', ['Cashless treatment', 'Credit through the BCA', 'Nothing'], 'Annexure VII of OM 03.10.2025.', 4, 'fact'),
+ ('CGHS contribution is being regularly deducted from an employee’s salary but he never applied for a card. The 2004 MoHFW OM says:',
+  'The office must ensure a card is issued; the benefit should not be denied merely for non-application', ['He gets no benefit until he applies', 'He must pay twice', 'MoHFW must issue the card'], 'Relayed in CPWD OM 07.04.2025.', 4, 'case'),
 ]
 
 

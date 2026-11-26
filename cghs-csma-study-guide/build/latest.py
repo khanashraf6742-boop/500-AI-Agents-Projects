@@ -217,6 +217,13 @@ def latest_view(corrections):
         '<h3>Parents / parents-in-law (OM 13.05.2026)</h3>' + PARENTS_BODY +
         '<h3>2025 rate clarifications and transition</h3>' + MRI_BODY +
         '<h3>Generic / branded medicines (OM 16.05.2025)</h3>' + GENERIC_BODY +
+        '<h3>OPD consultation fee clarification (OM 13.01.2026)</h3>' + OPD_BODY +
+        '<h3>Tier mapping, super-speciality definition and credit / cashless table</h3>' + TIER_BODY +
+        '<h3>Billing guidelines — Annexure IV and vaccines</h3>' + BILL_BODY +
+        '<h3>Sitting MPs’ claims (OM 11.07.2025)</h3>' + MP_BODY +
+        '<h3>Generic prescribing (DGHS order 07.04.2026)</h3>' + GENC_BODY +
+        '<h3>CGHS card where contribution is deducted (OM 15.06.2004)</h3>' + SERV_BODY +
+        '<h3>Claims routes and grievance mechanisms (Lok Sabha replies)</h3>' + LS_BODY +
         '<h3>CS(MA) delegation to HoDs (OM 05.06.2014)</h3>' + HOD2014_BODY +
         '<h3>Medical advance without package rate (OM 22.09.2021)</h3>' + ADV_BODY +
         '<h3>Pensioners and CS(MA) (OM 12.09.2022)</h3>' + PEN_BODY)
@@ -338,3 +345,91 @@ ORDERS += [
     ('12.09.2022', 'S.14028/30/2022-EHS', 'Pensioners not covered by CS(MA); FMA / CGHS / both options', 'pen2022'),
 ]
 ORDERS.sort(key=lambda o: tuple(reversed(o[0].split('.'))))
+
+
+# ======================= fourth research pass (26.11.2026): staffnews CGHS category — rates annexures, billing, MPs, vaccines =======================
+URL.update({
+    'opdfee': SN + '/2026/01/clarification-regarding-opd-consultation-fees.html',
+    'tier': SN + '/2026/01/cghs-rates-applicable-for-treatment-city-class-tier-mapping-in-terms-of-hra-continuation.html',
+    'annIV': SN + '/2025/10/admissible-and-non-admissible-items-billing-guidelines-cghs-rates-annexure-iv.html',
+    'annV': SN + '/2025/10/super-speciality-hospitals-definition-of-category.html',
+    'annVII': SN + '/2025/10/summary-table-on-eligibility-for-credit-cashless-treatment.html',
+    'mp': SN + '/2025/07/delegation-of-authority-to-the-secretaries-of-lok-sabha-rajya-sabha-secretariat.html',
+    'gencomp': SN + '/2026/04/compliance-of-prescription-of-generic-medicines.html',
+    'vacc': SN + '/2025/12/implementation-of-cervical-cancer-vaccination.html',
+    'serv': SN + '/2025/04/issuance-of-cghs-serving-card-upon-deduction-of-monthly-contribution.html',
+    'timely': SN + '/2026/08/timely-treatment-and-reimbursement-of-claims.html',
+    'physio': SN + '/2025/07/recruitment-of-physiotherapists-in-cghs-wellness-centres.html',
+})
+
+OPD_BODY = (
+    '<p><b>OM File No. S.11030/168/2025-EHS(8378444) dated 13.01.2026</b> — clarification on OPD consultation charges under the revised CGHS rate list:</p>'
+    '<ul><li>OPD consultation at <b>Rs.700</b> is admissible only for consultations by <b>Super Specialists (DM / MCh)</b> in CGHS-empanelled hospitals, who hold a recognised DM/MCh qualification and consult in the concerned super-specialty discipline; the Rs.350 rate applies to other consultations.</li>'
+    '<li>For <b>in-patient</b> cases a maximum of <b>two consultations per day per specialist</b> is admissible, as per CGHS norms.</li>'
+    '<li>The CGHS Directorate OM of 24.03.2026 later reads “Super Specialist” in code CN003 as DM / MCh / DNB-SS or an equivalent qualification recognised by the National Medical Commission.</li></ul>'
+    f'<p class="vnote">Read from the {a("opdfee", "published text of the OM")}.</p>')
+
+TIER_BODY = (
+    '<p><b>CGHS Directorate OM F. No. 5-16/CGHS(HQ)/HEC/2024 (Part I)/I/3808906/2025 dated 09.10.2025</b> — city-class / tier mapping (partial modification of Annexure 1 of OM 03.10.2025, in line with the Department of Expenditure HRA continuation orders):</p>'
+    '<ul><li>At par with <b>Delhi (X / Tier I)</b>: Faridabad, Ghaziabad, Noida, Gurugram.</li>'
+    '<li>Jalandhar Cantt. at par with Jalandhar (Y / Tier II); <b>Goa and Port Blair</b> at <b>Y / Tier II</b> rates.</li>'
+    '<li>Panchkula and S.A.S. Nagar (Mohali) at par with Chandigarh (Y / Tier II).</li>'
+    '<li>All other contents of OM 03.10.2025, including annexures, remain unchanged.</li></ul>'
+    '<p><b>Annexure V (OM 03.10.2025) — “Super Speciality Hospital” (the +15% category):</b> 200 or more beds; mandatorily accredited by NABH or an equivalent body (JCI, ACHS or any body approved by ISQua); and CGHS-empanelled facilities for <b>all</b> of: nephrology &amp; urology (incl. renal transplantation), neurosurgery, cardiothoracic surgery, medical oncology, surgical oncology, radiation oncology, transplant facilities, endocrinology, specialised orthopaedics incl. joint replacement, gastroenterology &amp; GI-surgery / transplantation.</p>'
+    + cmp(['Beneficiary category (Annexure VII, OM 03.10.2025)', 'Credit / cashless?', 'Bills go to / payment authority'], [
+        ['Pensioners (green strip), ex-MPs, ex-Governors, freedom fighters', 'Yes', 'Credit bills online to the Bill Clearing Agency; paid by CGHS (physical bills kept 5 years)'],
+        ['Sitting MPs (red strip)', 'Yes', 'HCO submits directly to the Lok Sabha / Rajya Sabha Secretariat (copy kept 5 years)'],
+        ['Serving CGHS / DGHS / MoHFW employees and dependants (blue strip)', 'Yes', 'Physical bills in duplicate — CGHS employees: AD of the CGHS city of treatment; DGHS / MoHFW employees: their Department; paid by HOD/HOO'],
+        ['Serving employees of other Departments (blue strip)', 'In emergency, on a letter from the HOO/HOD certifying entitlement', 'Bills as stated in that letter; paid by HOD/HOO of the beneficiary’s Department'],
+        ['Serving and pensioners of autonomous bodies (yellow strip)', 'No — treatment on payment at CGHS rates', 'Reimbursement from their own department'],
+        ['Pensioners of Air India (orange strip)', 'Yes', 'Through the BCA decided by the authorities (currently UTIITSL); paid by AIAHL'],
+        ['Accredited journalists (yellow strip)', 'No — payment basis at CGHS rates', '—'],
+    ], 'Credit / cashless eligibility and payment authority')
+    + f'<p class="vnote">Read from the {a("tier", "tier-mapping OM")}, {a("annV", "Annexure V")} and {a("annVII", "Annexure VII")}.</p>')
+
+BILL_BODY = (
+    '<p><b>Annexure IV (Billing Guidelines) to CGHS OM 03.10.2025</b> — this is the current admissible / non-admissible billing guidance for empanelled hospitals:</p>'
+    '<ul><li><b>Consumables:</b> included in surgical package rates (no separate charge); in non-surgical cases with no package rate, reasonable use may be billed under consumables; vague entries such as “consumables kit” / “procedure kit” are disallowed.</li>'
+    '<li><b>Non-admissible (beneficiary pays):</b> toiletries and personal-use items; cosmetics; non-medical services (telephone, TV, internet, attendant food, carry bags); attendant charges (ayah / ward boy, extra attendant bedding except the one bed in a private ward); mortuary / cremation charges; extra bedding beyond norm; the <b>difference for implants / prostheses above what CGHS covers</b> (only with prior consent).</li>'
+    '<li><b>Not to be billed separately at all</b> (part of standard charges): glucometer strips, ECG electrodes, ventilator circuits / consumables, ward facilities (air / water / alpha bed, routine air-conditioning, infusion pumps, DVT pump, pulse oximeter / basic monitors, record photocopies), medical records / films / CD copies, vacutainers and syringes for investigations.</li>'
+    '<li><b>Table of common non-admissible items (21):</b> home visit / consultation charges; bed pan; urine container / urobag; moisturizer; underpad, sanitary pad, bath wipes; room fresheners; hand sanitizers, mouthwash, depilatory creams, hand wash; <b>spectacles / contact lenses after eye surgery</b>; attendant food and mineral water; telephone / email / internet; mortuary sheet; protein supplements, sugar-free tablets, sweeteners; baby feeding bottles, formula, baby food; toiletries kit; baby set; barber / beauty services; welcome kit, carry bags; <b>vaccinations not part of treatment</b>; cosmetic procedures (e.g. LASIK for refractive error alone); tests or medicines irrelevant to the diagnosis on record; equipment repair / maintenance charges. Items 22–27 (e.g. attendant bed in a private ward, nurse administration of injections / infusions, tracheostomy care, NG feeding, IV cannulation) are <b>included</b> in ward / package / nursing charges.</li></ul>'
+    '<p class="vnote">The list is illustrative and covers analogous items.</p>'
+    '<p><b>Vaccines — official reply, Rajya Sabha Unstarred Q. 267 (02.12.2025):</b> under extant CGHS guidelines vaccines are not admissible <b>except Hepatitis B, influenza and Leprovac for high-risk individuals</b>, on a specialist’s recommendation with justification, countersigned by the Head of Department of the concerned specialty of the Government hospital.</p>'
+    f'<p class="vnote">Read from the {a("annIV", "published text of Annexure IV")} and the {a("vacc", "Rajya Sabha reply")}.</p>')
+
+MP_BODY = (
+    '<p><b>CGHS OM F. No. Misc-29/25-26/H.Cell/CGHS(HQ)/EHS(8341458) dated 11.07.2025</b> — re-iterating OM No. 3749/2005/CGHS(P) dated 26.04.2006: the <b>Secretary General of Lok Sabha / Rajya Sabha</b> can reimburse the medical claims of <b>sitting MPs irrespective of monetary limits, even in relaxation of CGHS guidelines</b>; such cases need not be referred to MoHFW or CGHS.</p>'
+    f'<p class="vnote">Read from the {a("mp", "published text of the OM")}.</p>')
+
+GENC_BODY = (
+    '<p><b>DGHS Office Order F. No. Z.28017/27/2023-SAS-III(FTS-8216801) dated 07.04.2026</b> (continuing the order of 12.05.2023): prescription of <b>generic medicines</b> must be strictly followed in Central Government hospitals, CGHS Wellness Centres and polyclinics — heads to monitor periodically for 100% generic-prescription compliance and send a brief quarterly update to DGHS; deviations are viewed seriously.</p>'
+    f'<p class="vnote">Read from the {a("gencomp", "published text of the order")}.</p>')
+
+SERV_BODY = (
+    '<p><b>MoHFW OM F. No. S-6252/2003-2004-R&amp;H/CGHS/CGHS(P) dated 15.06.2004</b> (reproduced in CPWD OM 07.04.2025): CGHS is <b>compulsory</b> for Central Government employees whose recorded residence is in an area covered by a CGHS dispensary; benefits accrue from the date the employee <b>applies for a CGHS card</b>, but where the office is <b>regularly deducting the CGHS contribution</b> it is the office’s responsibility to ensure a card is issued, and the benefit cannot be denied merely because the employee did not apply; employees who do not apply despite written intimation are to be reported to senior officers.</p>'
+    f'<p class="vnote">Read from the {a("serv", "CPWD OM reproducing the 2004 OM")} — relayed text. See also OM 17.09.2026 on mandatory coverage.</p>')
+
+LS_BODY = (
+    '<p><b>Lok Sabha Unstarred Q. No. 1081 answered 24.07.2026 (MoHFW):</b> reimbursement of claims of <b>serving</b> beneficiaries is done through their respective administrative Departments / Ministries; claims of <b>pensioner</b> beneficiaries are reimbursed by CGHS. Claims can be tracked on the CGHS web portal and the <b>MyCGHS 2.0</b> app with the Claim ID generated at submission; dashboards in the CGHS HMIS module let Additional Directors and CMOs i/c monitor claims and processing days. '
+    'Grievance routes: CGHS Grievance Portal, CPGRAMS, toll-free helpline / e-mail, complaint boxes at Wellness Centres, and the Local / Zonal Advisory Committees (LAC / ZAC).</p>'
+    '<p><b>Lok Sabha Unstarred Q. No. 1088 answered 25.07.2025:</b> physiotherapy services can be availed at any public health facility or through CGHS-empanelled private HCOs; <b>domiciliary physiotherapy</b> is available as per OM No. S-11011/24/2011-CGHS(P) dated 01.06.2011.</p>'
+    f'<p class="vnote">Read from the {a("timely", "Lok Sabha reply 1081")} and the {a("physio", "Lok Sabha reply 1088")} — official parliamentary answers.</p>')
+
+CALLOUTS[8] = CALLOUTS.get(8, []) + [box('OPD consultation Rs.700 / Rs.350 clarified (OM 13.01.2026)', OPD_BODY), box('Tier mapping, super-speciality definition, credit / cashless table (OM 09.10.2025; Annexures V, VII of OM 03.10.2025)', TIER_BODY)]
+CALLOUTS[12] = CALLOUTS.get(12, []) + [box('Current billing guidelines — Annexure IV of OM 03.10.2025; vaccines', BILL_BODY)]
+CALLOUTS[6] = CALLOUTS.get(6, []) + [box('100% generic prescribing (DGHS order 07.04.2026)', GENC_BODY)]
+CALLOUTS[9] = CALLOUTS.get(9, []) + [box('Sitting MPs’ claims — Secretary General of Lok Sabha / Rajya Sabha (OM 11.07.2025)', MP_BODY), box('Who reimburses, tracking and grievance routes (Lok Sabha replies 2025–26)', LS_BODY)]
+CALLOUTS[4] = CALLOUTS.get(4, []) + [box('Card issue where contribution is deducted (MoHFW OM 15.06.2004, as reproduced 2025)', SERV_BODY)]
+
+ORDERS += [
+    ('15.06.2004', 'S-6252/2003-2004-R&H/CGHS/CGHS(P) (reproduced in CPWD OM 07.04.2025)', 'CGHS card must be issued where contribution is deducted; benefits accrue from application', 'serv'),
+    ('11.07.2025', 'Misc-29/25-26/H.Cell/CGHS(HQ)/EHS(8341458)', 'Secretary General LS/RS: sitting MPs’ claims irrespective of monetary limit', 'mp'),
+    ('03.10.2025', 'Annexures IV, V, VII of OM 5-16/CGHS(HQ)/HEC/2024 (Part I)', 'Billing guidelines; super-speciality hospital definition; credit/cashless table', 'annIV'),
+    ('09.10.2025', '5-16/CGHS(HQ)/HEC/2024 (Part I)/I/3808906/2025', 'City tier mapping (Noida, Gurugram etc. at X; Goa, Port Blair at Y)', 'tier'),
+    ('02.12.2025', 'Rajya Sabha Unstarred Q. 267 (MoHFW reply)', 'Vaccines admissible only: Hepatitis B, influenza, Leprovac (high-risk)', 'vacc'),
+    ('13.01.2026', 'S.11030/168/2025-EHS(8378444)', 'OPD Rs.700 only for DM/MCh super specialists; max 2 IPD consultations a day per specialist', 'opdfee'),
+    ('07.04.2026', 'Z.28017/27/2023-SAS-III(FTS-8216801) (DGHS)', '100% generic prescribing in Central Govt hospitals and Wellness Centres', 'gencomp'),
+    ('24.07.2026', 'Lok Sabha Unstarred Q. 1081 (MoHFW reply)', 'Claims routes, MyCGHS 2.0 tracking, grievance mechanisms', 'timely'),
+]
+ORDERS.sort(key=lambda o: tuple(reversed(o[0].split('.'))))
+l_src = None

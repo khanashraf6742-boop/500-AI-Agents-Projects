@@ -33,6 +33,9 @@ NUMS = [
  ('Rates', 'October 2025 framework', 'Non-NABH −15% · Tier II −10% · Tier III −20% · general ward −5% · private +5%', 8),
  ('Rates', 'Consultations 2023', 'OPD Rs.350 · super-specialty Rs.700 · ICU Rs.5,400 all-inclusive', 8),
  ('Rates', 'Multiple procedures', '100% / 50% / 25%', 8),
+ ('Rates', 'OPD consultation', 'Rs.700 only for DM/MCh super specialists, Rs.350 otherwise (OM 13.01.2026); IPD max 2 consultations a day per specialist', 8),
+ ('Rates', 'Tier mapping (OM 09.10.2025)', 'Noida, Gurugram, Faridabad, Ghaziabad = X; Goa, Port Blair = Y; Panchkula, Mohali = Chandigarh (Y)', 8),
+ ('Billing', 'Vaccines admissible', 'Hepatitis B, influenza, Leprovac — high-risk, specialist + HoD countersign', 12),
  ('Devices', 'Cochlear implant (OM 09.11.2026)', 'Rs.7,00,000 pre-lingual · Rs.6,00,000 post-lingual (incl. GST)', 10),
  ('Devices', 'Hearing aids (OM 01.12.2020)', 'Digital BTE Rs.8,000 · Digital ITC/CIC Rs.9,000 per ear', 24),
 ]
