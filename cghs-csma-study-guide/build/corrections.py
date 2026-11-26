@@ -22,6 +22,52 @@ TEXT_RULES = [
      'DA 63% from 01.07.2026 is no longer “expected”: it was notified by DoE OM dated 29.10.2026.'),
 ]
 
+
+TL_REASON = 'CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.'
+TIME_RULES = [
+    (r'Within 3 months of treatment/medicine purchase', 'Within 6 months of completion of treatment / discharge (OM 01.06.2020; earlier 3 months)'),
+    (r'claims beyond 3 months NOT entertained', 'only claims after 6 months need condonation of delay'),
+    (r'\(Note: CS\(MA\) Rules has a 6-month period — different from CGHS\)', '(CS(MA) Rules also have a 6-month period)'),
+    (r'claim within 3 months from your department', 'claim within 6 months from your department'),
+    (r'claim reimbursement from your department within 3 months', 'claim reimbursement from your department within 6 months'),
+    (r'Claim submitted within 3 months of treatment/purchase date', 'Claim submitted within 6 months of completion of treatment / discharge'),
+    (r'within 3 months; CGHS rates applicable', 'within 6 months; CGHS rates applicable'),
+    (r'Within 3 months: Submit claim within 3 months of treatment date', 'Within 6 months: Submit claim within 6 months of completion of treatment / discharge'),
+    (r'"CGHS claim within 6 months"', '"CGHS claim must be within 3 months"'),
+    (r'CGHS = 3 months \(CS\(MA\) = 6 months — different!\)', 'CGHS = 6 months (OM 01.06.2020; the old 3-month limit is obsolete)'),
+    (r'CGHS = 3 months \(CS\(MA\) = 6 months\)', 'CGHS = 6 months (OM 01.06.2020); CS(MA) = 6 months'),
+    (r'\(CS\(MA\) = 6 months — different!\)', '(CS(MA) = 6 months)'),
+    (r'CS\(MA\) = 6 months — different!', 'CS(MA) = 6 months; CGHS is also 6 months since OM 01.06.2020'),
+    (r'CS\(MA\) = 6 months \(CGHS = 3 months — different rules!\)', 'CS(MA) = 6 months (CGHS is also 6 months since OM 01.06.2020)'),
+    (r'CS\(MA\) = 6 months ; CGHS = 3 months', 'CS(MA) = 6 months; CGHS = 6 months (OM 01.06.2020)'),
+    (r'CS\(MA\) = 6 months \(CGHS = 3 months\)', 'CS(MA) = 6 months (CGHS is also 6 months since OM 01.06.2020)'),
+    (r'CS\(MA\) = 6 months \(CGHS = 3 months — different rules!\)', 'CS(MA) = 6 months'),
+    (r'CGHS claim: 3 months', 'CGHS claim: 6 months'),
+    (r'\[Note: This is different from CGHS where limit is 3 months\]', '[CGHS limit is also 6 months since OM 01.06.2020]'),
+    (r'Different from CGHS \(3 months\)!', 'Same 6-month limit as CGHS (OM 01.06.2020)!'),
+    (r'CGHS = 3 months — alag hai!', 'CGHS bhi ab 6 months hai — OM 01.06.2020'),
+    (r'CGHS ke 3 mahine se alag!', 'CGHS bhi ab 6 mahine hai (OM 01.06.2020)!'),
+    (r'CGHS ka 3 months nahi!', 'CGHS ka bhi ab 6 months hai (OM 01.06.2020)!'),
+]
+for _rx, _rep in TIME_RULES:
+    TEXT_RULES.append((_rx, _rep, TL_REASON))
+
+
+# leaf-level rewrites for claim-deadline statements whose wording is split by bold markup
+LEAF_REWRITES = [
+    (r'^CGHS claim deadline: Within 3 months', '<strong>CGHS claim deadline:</strong> within <strong>6 months</strong> of completion of treatment / discharge (OM 01.06.2020; earlier 3 months) — only claims after 6 months need condonation of delay (CS(MA) Rules also have a 6-month period)'),
+    (r'^"CGHS claim must be within 3 months" — WRONG!', '"CGHS claim must be within 3 months" — <strong>WRONG!</strong> <strong>6 months</strong> since OM 01.06.2020 (CS(MA) is also 6 months)'),
+    (r'^OPD reimbursement: Medicines issued from CGHS WC', '<strong>OPD reimbursement:</strong> Medicines issued from CGHS WC are FREE (no reimbursement needed — directly issued). If they buy OPD medicines from outside after CGHS reference — claim within <strong>6 months</strong> from your department'),
+    (r'^Claim submitted within 3 months of treatment/purchase date', 'Claim submitted within <strong>6 months</strong> of completion of treatment / discharge'),
+    (r'^Within 3 months: Submit claim within 3 months of treatment date', '<strong>Within 6 months:</strong> Submit claim within 6 months of completion of treatment / discharge'),
+    (r'^CGHS claim: 3 months \| IPD advance', 'CGHS claim: <strong>6 months</strong> | IPD advance: 90% | Within: 10 days'),
+    (r'^"CS\(MA\) claim within 3 months" — WRONG!', '"CS(MA) claim within 3 months" — <strong>WRONG!</strong> CS(MA) = <strong>6 months</strong> (CGHS is also 6 months since OM 01.06.2020)'),
+    (r'^"CS\(MA\) claim = 3 months like CGHS" — WRONG!', '"CS(MA) claim = 3 months" — <strong>WRONG!</strong> CS(MA) = <strong>6 months</strong> (CGHS is also 6 months since OM 01.06.2020)'),
+    (r'^"CS\(MA\) claim = 3 months like CGHS"$', '"CS(MA) claim = 3 months"'),
+    (r'^"CS\(MA\) claims within 3 months" — ABSOLUTELY WRONG!', '"CS(MA) claims within 3 months" — <strong>ABSOLUTELY WRONG!</strong> CS(MA) = <strong>6 months</strong>; CGHS is also 6 months (OM 01.06.2020)'),
+    (r'^CS\(MA\) claim deadline: 6 months \(CGHS = 3 months\)', 'CS(MA) claim deadline: <strong>6 months</strong> (CGHS is also 6 months since OM 01.06.2020)'),
+]
+
 PENS_REASON = ('The guide showed pensioners’ general MRC settled by “Head of CGHS covered city up to Rs.10 lakh”. The Rs.10 lakh HoD ceiling (OM 16.02.2026) is for Heads of Departments of Ministries/Departments. '
                'For CGHS pensioners and other eligible CGHS beneficiaries the financial powers are those in CGHS OM No. Z.15025/14/2/DIR/CGHS dated 25.06.2026: Additional Director, CGHS city/zone Rs.15 lakh; Director, CGHS Rs.25 lakh; '
                'Additional Secretary & DG, CGHS Rs.50 lakh; above Rs.50 lakh → MoHFW with IFD concurrence.')
@@ -69,6 +115,21 @@ def apply(soup, ws):
             old = ws(leaf.get_text(' ', strip=True))
             st.clear(); st.append('7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual), incl. GST [OM 09.11.2026]')
             log.append(dict(old=old, new=ws(leaf.get_text(' ', strip=True)), reason=TEXT_RULES[0][2], kind='text'))
+
+    # ---- 1c. leaf rewrites (claim time limit)
+    from bs4 import BeautifulSoup as _BS
+    for el in body.find_all(['li', 'p', 'td', 'th']):
+        if el.find(['li', 'p', 'td', 'th']):
+            continue
+        t = ws(el.get_text(' ', strip=True))
+        for rx, new_html in LEAF_REWRITES:
+            if re.search(rx, t):
+                el.clear()
+                frag = _BS('<x>' + new_html + '</x>', 'lxml').find('x')
+                for ch in list(frag.children):
+                    el.append(ch)
+                log.append(dict(old=t, new=ws(el.get_text(' ', strip=True)), reason=TL_REASON, kind='leaf'))
+                break
 
     # ---- 2. pensioner general-MRC row (table) and its Hinglish paired units
     for tr in body.find_all('tr'):

@@ -21,7 +21,7 @@ NUMS = [
  ('Referral & approvals', 'Government hospital (AIIMS, INIs, Tata Memorial…)', 'No referral at all, even for unlisted items', 7),
  ('Referral & approvals', 'Tests', 'Same hospital up to Rs.3,000 each; endorsement for CT / MRI / PET or above Rs.3,000 (relayed CGHS HQ text)', 7),
  ('Referral & approvals', 'STC-type cases (OM 01.09.2026)', 'AD CGHS + 3-member LTC · deficiencies in 3 working days · decision in 15 working days', 7),
- ('Money & time limits', 'Claim deadline', 'CGHS 3 months · CS(MA) 6 months (1 month from discharge if IPD advance drawn)', 29),
+ ('Money & time limits', 'Claim deadline', 'CGHS 6 months (OM 01.06.2020; earlier 3) · CS(MA) 6 months (1 month from discharge if IPD advance drawn)', 29),
  ('Money & time limits', 'Advance', 'IPD 90% · OPD 90% only if estimate > Rs.10,000 · TB 80% or Rs.36,000 · sanction in 10 days', 29),
  ('Money & time limits', 'Appeal', '45 days to the Central Government', 19),
  ('Money & time limits', 'HoD ceiling (serving employees)', 'Rs.10 lakh without IFD (OM 16.02.2026); earlier Rs.2L → Rs.5L', 29),
@@ -41,7 +41,7 @@ NUMS = [
 # memory aids (written for this guide — not quotes from any order)
 AIDS = [
  ('3-6-3', 'Referral: 3 months, 6 consultations, 3 specialists.'),
- ('3 vs 6', 'CGHS claims in 3 months; CS(MA) in 6 months (CS-six).'),
+ ('6 + 1', 'Final claims: six months for both CGHS and CS(MA); one month from discharge if an IPD advance was drawn.'),
  ('90-80-36', 'IPD advance 90%, TB advance 80% or Rs.36,000.'),
  ('2 → 5 → 10', 'HoD ceiling: Rs.2 lakh, then 5, now 10 lakh.'),
  ('15 – 25 – 50', 'CGHS ladder: AD, Director, AS&DG (lakh).'),
@@ -53,6 +53,7 @@ AIDS = [
 
 # key orders for the timeline: (date, short label, rc-link)
 TIMELINE = [
+ ('01.06.2020', 'CGHS final-claim limit raised from 3 to 6 months', 9),
  ('01.12.2020', 'Hearing-aid rates revised (Digital BTE / ITC-CIC)', 24),
  ('12.04.2023', 'Consultation and room-rent rates revised', 8),
  ('26.07.2023', 'Parents OR parents-in-law choice for male and female employees', 3),

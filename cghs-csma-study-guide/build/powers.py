@@ -81,7 +81,7 @@ def build(ref):
         ['Authorise treatment abroad without prior approval; amend the Rule 11(3) Table', '<b>Central Government</b>', '11(7): only where prior approval was not feasible (e.g. emergency abroad); 11(4): additions / deletions by Gazette notification', r11],
         ['Sponsor a CGHS card application', 'Head of Department / Head of Office', 'Card issued by the Additional Director (AD), CGHS of the city', R(4, 'Para 5')],
         ['Issue a CGHS specialist referral', 'Medical Officer of a CGHS Wellness Centre', 'Valid 3 months; ≤ 3 specialists; ≤ 6 consultations; no referral needed at Govt hospitals', para8],
-        ['Receive a pensioner’s CGHS claim', 'AD (Additional Director), CGHS city of registration', 'Claim within 3 months of treatment', mrc],
+        ['Receive a pensioner’s CGHS claim', 'AD (Additional Director), CGHS city of registration', 'Claim within 6 months of completion of treatment / discharge (OM 01.06.2020)', mrc],
     ]
     matrix = ('<div class="row"><input class="filterbox" data-filter="#powtab tbody tr" placeholder="Filter: e.g. HoD, MoHFW, appeal, Rs.10 lakh…" aria-label="Filter authority matrix"></div>'
               '<div class="tblwrap"><table id="powtab" class="cmp"><caption>Authority matrix — who decides what</caption><thead><tr><th scope="col">Decision / power</th><th scope="col">Authority</th><th scope="col">Condition / limit</th><th scope="col">Section</th></tr></thead><tbody>'
@@ -89,7 +89,7 @@ def build(ref):
 
     # ---- delegation compare: CGHS vs CS(MA) claims
     deadlines = fig('Claims & appeals — time limits that decide “who can still approve”', cmp(['Item', 'CGHS', 'CS(MA)'], [
-        ['Claim deadline', '3 months', '6 months (1 month from discharge if IPD advance drawn)'],
+        ['Claim deadline', '6 months from completion of treatment / discharge (OM 01.06.2020)', '6 months (1 month from discharge if IPD advance drawn)'],
         ['Serving employee’s claim goes to', 'Own Department / Ministry', 'Controlling Officer (counter-signature, Rule 9)'],
         ['Pensioner’s claim goes to', 'AD, CGHS city of registration', 'Pensioners are excluded from CS(MA)'],
         ['Appeal against rejection', '—', '45 days to Central Government'],

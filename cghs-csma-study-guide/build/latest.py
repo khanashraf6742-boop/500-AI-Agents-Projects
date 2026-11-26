@@ -203,6 +203,7 @@ def latest_view(corrections):
              'Not found: any order on AMA appointment / re-verification, and the CS(MA) Rules PDF — those items stay on the <a href="#verify">Verify tab</a>.</p></div>')
     sections = (
         '<h3>Who can join CGHS — 5 km rule removed (OM 17.09.2026)</h3>' + ELIG_BODY +
+        '<h3>CGHS final-claim time limit — 6 months (OM 01.06.2020)</h3>' + TL_BODY +
         '<h3>Financial powers — CGHS (OM 25.06.2026)</h3>' + DELEG_BODY +
         '<h3>HoD ceiling (OM 16.02.2026)</h3>' + HOD_BODY +
         '<h3>Decentralised STC approvals (OM 01.09.2026)</h3>' + STC_BODY +
@@ -216,7 +217,10 @@ def latest_view(corrections):
         '<h3>Parents / parents-in-law (OM 13.05.2026)</h3>' + PARENTS_BODY +
         '<h3>Tests above Rs.3,000, 7-day consultation, unlisted items (UPSC OM 11.08.2026)</h3>' + UPSC_BODY +
         '<h3>2025 rate clarifications and transition</h3>' + MRI_BODY +
-        '<h3>Generic / branded medicines (OM 16.05.2025)</h3>' + GENERIC_BODY)
+        '<h3>Generic / branded medicines (OM 16.05.2025)</h3>' + GENERIC_BODY +
+        '<h3>CS(MA) delegation to HoDs (OM 05.06.2014)</h3>' + HOD2014_BODY +
+        '<h3>Medical advance without package rate (OM 22.09.2021)</h3>' + ADV_BODY +
+        '<h3>Pensioners and CS(MA) (OM 12.09.2022)</h3>' + PEN_BODY)
     sec = ('<h3>Secondary source — not an order</h3><div class="listitem"><span class="tag">Secondary</span>Kendriya Vidyalaya Sangathan FAQ (reproduced by staffnews.in, 2026): private hospitals recognised under CS(MA) Rules are recognised for a fixed period of <b>4 years</b> from the date of issue of the OM; a CS(MA)-covered employee outside a CGHS area has a one-time option to opt for CGHS. '
            'Consistent with the guide’s other figures (unmarried son below 25, no age limit for unmarried daughter, income ceiling Rs.9,000 + DA, IPD advance 90%) but not itself an order — confirm before quoting.</div>')
     corr = ''
@@ -291,5 +295,62 @@ ORDERS += [
     ('24.03.2026', '5-16/CGHS(HQ)/HEC/2024(Part I)/I/38850429/2026', 'Clarification: code RI134 (MRI without contrast); super specialist = DM/MCh/DNB-SS', 'mri'),
     ('11.08.2026', 'UPSC D-12015/420/2024-Admn-IV (relays CGHS HQ)', 'Same-hospital tests up to Rs.3,000; endorsement above; consultation valid 7 days (relayed text)', 'upsc'),
     ('17.09.2026', 'Z.16025/227/2026/CGHS-III/EHS(8421134)', '5 km criterion removed; one-time option CS(MA) → CGHS; mandatory CGHS in covered area', 'elig'),
+]
+ORDERS.sort(key=lambda o: tuple(reversed(o[0].split('.'))))
+
+
+# ======================= third research pass (26.11.2026): claim limits, CS(MA) delegation, advance, pensioners =======================
+URL.update({
+    'tl2020': SN + '/2020/06/revision-of-time-limit-for-submission-of-final-claims.html',
+    'hod2014': SN + '/2021/12/delegation-of-powers-to-heads-of-departments-for-permission-and-approval-under-cs-ma-rules.html',
+    'adv2021': SN + '/2021/10/grant-of-medical-advance-for-all-treatment-opd-and-ipd-under-cghs-csms-rules.html',
+    'pen2022': SN + '/2022/09/reimbursement-of-medical-claims-to-pensioners-under-csma-rules-1944.html',
+    'pen2016': SN + '/2020/07/reimbursement-of-medical-claims-to-pensioners-residing-in-non-cghs-areas.html',
+})
+
+TL_BODY = (
+    '<p><b>CGHS OM File No. 1-60/2017-CGHS/C&amp;P/EHS (e-signed 01.06.2020)</b> — “Revision of time limit for submission of final claims for reimbursement of medical expenses under CGHS”.</p>'
+    '<ul><li>Earlier CGHS guidelines: <b>3 months</b>. Revised to <b>6 months</b>.</li>'
+    '<li>Only cases where bills are submitted <b>after 6 months</b> from the date of completion of treatment / discharge from hospital need to be taken up for <b>condonation</b>; the power of condonation and other terms are as in OM No. S.14025/8/99-MS dated 25.05.1999.</li></ul>'
+    '<p class="vnote"><b>Correction made:</b> the guide’s “CGHS = 3 months; CS(MA) = 6 months — different!” is obsolete. Both CGHS and CS(MA) final claims are now 6 months (CS(MA): 6 months from discharge / treatment; 1 month from discharge where an IPD advance was drawn). No later revision was found; confirm on the CGHS site before quoting.</p>'
+    f'<p class="vnote">Read from the {a("tl2020", "published text of the OM")}.</p>')
+
+HOD2014_BODY = (
+    '<p><b>MoHFW OM No. S.14025/01/2014-MS dated 05.06.2014</b> (IFD concurrence CD No. 335 dated 28.05.2014) — delegation to Heads of Departments for CS(MA) beneficiaries. '
+    '<span class="tag">Read in a Department of Posts letter of 25.11.2021 that reproduces it</span></p>'
+    '<ul><li>A serving employee covered under CS(MA) who is being treated at a Government hospital and wants treatment in a <b>private hospital recognised under CGHS / CS(MA)</b>: the <b>Head of Department may grant permission</b> for indoor treatment on the prescription of the concerned AMA.</li>'
+    '<li>Heads of Departments may <b>decide reimbursement of emergency treatment</b> at a private hospital / nursing home / clinic, subject to <b>item-wise ceiling</b> as per CGHS / CS(MA) rates.</li>'
+    '<li>Departments / Ministries settle all cases with <b>no relaxation of rules</b> where entitlement is worked out from the prescribed rate list: Heads up to <b>Rs.2,00,000</b>; above that (still per rate list) in consultation with the Internal Finance Division; only cases needing <b>relaxation of rules</b> go to MoHFW.</li></ul>'
+    '<p class="vnote">The letter adds that MoHFW (ID No. S.14025/35/2021-EHS dated 29.10.2021) clarified that the 2014 OM remains valid for CS(MA) beneficiaries, and that the Rs.5 lakh enhancement of OM 23.11.2016 was noted as applying to CGHS beneficiary cases. '
+    'OM 16.02.2026 now sets the HoD ceiling at <b>Rs.10 lakh</b> for settlement “under CGHS or CS(MA) Rules”.</p>'
+    f'<p class="vnote">Read from the {a("hod2014", "Department of Posts letter reproducing the OM")} — relayed text.</p>')
+
+ADV_BODY = (
+    '<p><b>MoHFW OM No. Z.15025/8/2021/DIR/CGHS (signed 22.09.2021)</b> — medical advance where <b>no package rate</b> is prescribed (refers to OM No. 14025/18/2015-MS/EHSS dated 17.10.2016: 90% advance for all treatment, OPD and IPD):</p>'
+    '<ul><li>Admissible amount is computed <b>item-wise at CGHS rates</b>; for items with no CGHS rate, <b>AIIMS rates</b>; if there is none, the <b>actual estimate</b>.</li>'
+    '<li>The hospital seeking the advance must give an <b>item-wise break-up</b> of the estimate; <b>90%</b> of the admissible amount so arrived at is advanced.</li>'
+    '<li>Other terms of the 17.10.2016 OM are unchanged.</li></ul>'
+    f'<p class="vnote">Read from the {a("adv2021", "published text of the OM")}.</p>')
+
+PEN_BODY = (
+    '<p><b>MoHFW OM File No. S.14028/30/2022-EHS dated 12.09.2022</b> — reimbursement of medical claims to pensioners under CS(MA) Rules (as directed by CATs / courts):</p>'
+    '<ul><li>Retired Government officials are <b>not covered</b> by the CS(MA) Rules (an earlier OM No. S.14025/23/2013-MS-EHSS dated 29.09.2016 said the same: the Rules “are not applicable to pensioners”).</li>'
+    '<li>Pensioners residing in <b>non-CGHS areas</b> have three options: (1) <b>FMA</b> in lieu of OPD; (2) <b>CGHS (OPD &amp; IPD)</b> by registering at the nearest CGHS-covered city with the required subscription; (3) <b>FMA for OPD and CGHS for IPD</b> with subscription.</li>'
+    '<li>Ministries / Departments are to defend CAT / court cases in this light and need not refer them to MoHFW; retiring employees are to be made aware of the position.</li></ul>'
+    '<p class="vnote">This confirms the guide’s statement that pensioners are excluded from CS(MA) (the guide cites Rule 1 Note 2(iv); the OM calls it a note below Rule 2).</p>'
+    f'<p class="vnote">Read from the {a("pen2022", "published text of the OM")} and the {a("pen2016", "DoT copy reproducing the 2016 OM")}.</p>')
+
+CALLOUTS[9] = CALLOUTS.get(9, []) + [box('CGHS final-claim time limit is 6 months (OM 01.06.2020) — replaces the 3-month rule', TL_BODY), box('Medical advance where no package rate exists (OM 22.09.2021)', ADV_BODY)]
+CALLOUTS[29] = CALLOUTS.get(29, []) + [box('CS(MA) delegation to HoDs — OM 05.06.2014 (permissions, emergencies, limit)', HOD2014_BODY), box('Medical advance where no package rate exists (OM 22.09.2021)', ADV_BODY)]
+CALLOUTS[22] = CALLOUTS.get(22, []) + [box('HoD permission for private-hospital treatment & emergency reimbursement (OM 05.06.2014)', HOD2014_BODY)]
+CALLOUTS[17] = CALLOUTS.get(17, []) + [box('Pensioners are outside CS(MA) — their three options (OM 12.09.2022)', PEN_BODY)]
+CALLOUTS[25] = CALLOUTS.get(25, []) + [box('Claim time limit — CGHS and CS(MA) are both 6 months', '<p>CGHS final claims were also moved to 6 months by OM 01.06.2020 (see the update box in the CGHS reimbursement section). A delay beyond 6 months needs condonation.</p>')]
+
+ORDERS += [
+    ('05.06.2014', 'S.14025/01/2014-MS (relayed by DoP letter 25.11.2021)', 'CS(MA): HoD permission, emergency reimbursement; Rs.2 lakh limit, IFD above, relaxation → MoHFW', 'hod2014'),
+    ('29.09.2016', 'S.14025/23/2013-MS-EHSS (as reproduced in a DoT letter)', 'CS(MA) Rules not applicable to pensioners; options for pensioners', 'pen2016'),
+    ('01.06.2020', '1-60/2017-CGHS/C&P/EHS', 'CGHS final-claim time limit revised from 3 to 6 months; condonation only after 6 months', 'tl2020'),
+    ('22.09.2021', 'Z.15025/8/2021/DIR/CGHS', 'Medical advance where no package rate: item-wise CGHS rate → AIIMS rate → actual estimate; 90%', 'adv2021'),
+    ('12.09.2022', 'S.14028/30/2022-EHS', 'Pensioners not covered by CS(MA); FMA / CGHS / both options', 'pen2022'),
 ]
 ORDERS.sort(key=lambda o: tuple(reversed(o[0].split('.'))))

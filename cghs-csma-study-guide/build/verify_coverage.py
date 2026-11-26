@@ -40,7 +40,8 @@ import json, os
 LOGF = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'corrections_log.json')
 corr = json.load(open(LOGF)) if os.path.exists(LOGF) else []
 old_all = alnum(' '.join(c['old'] for c in corr))
-new_ok = all(alnum(c['new'][:120]) in hay for c in corr)
+_olds = {alnum(x['old']) for x in corr}
+new_ok = all(alnum(c['new'][:120]) in hay for c in corr if alnum(c['new']) not in _olds)
 missing_raw = [t for t in leaves if alnum(t) not in hay]
 # a leaf that was intentionally corrected (its text sits inside a logged 'old' string) is not a gap
 corrected_leaves = [t for t in missing_raw if alnum(t) in old_all]

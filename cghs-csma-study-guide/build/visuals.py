@@ -19,7 +19,7 @@ V = {}
 OVERVIEW = fig('CGHS vs CS(MA) Rules 1944 — side-by-side (figures as stated in the guide)', cmp(
     ['Point', 'CGHS', 'CS(MA) Rules, 1944'],
     [
-     ['Claim deadline', '<b>3 months</b> of treatment / medicine purchase', '<b>6 months</b> (OPD: from treatment; IPD: from discharge); <b>1 month</b> from discharge if advance drawn (IPD)'],
+     ['Claim deadline', '<b>6 months</b> from completion of treatment / discharge (OM 01.06.2020; earlier 3 months); delay beyond 6 months needs condonation', '<b>6 months</b> (OPD: from treatment; IPD: from discharge); <b>1 month</b> from discharge if advance drawn (IPD)'],
      ['Who refers', 'Medical Officer of a CGHS Wellness Centre (specialist referral valid 3 months)', 'AMA (Authorised Medical Attendant) — Rule 5'],
      ['Consultation cap', 'Max <b>6 consultations</b>, max <b>3 specialists</b> per 3-month referral', '<b>4 consultations within 10 days</b> per spell of illness (AYUSH/Homoeopathy: up to 40 days)'],
      ['Where serving employees claim', 'Own Department/Ministry (not CGHS office); pensioners → AD, CGHS of city of registration', 'Controlling Authority (Rule 9); appeal within <b>45 days</b> to Central Government'],
@@ -179,7 +179,7 @@ V[29] = (fig('Medical advance', cmp(['Treatment', 'Advance', 'Condition'], [
         ['TB (&gt; 3 months)', '80% of estimate OR Rs.36,000 — whichever is less', 'Treatment duration exceeds 3 months']]),
         'Sanctioned within 10 days · ordinarily one advance per illness · recovered from final claim.')
     + fig('Claim deadlines (CS(MA)) vs CGHS', hbar([
-        ('IPD, advance drawn', 1, '1 month from discharge'), ('CGHS (all claims)', 3, '3 months'),
+        ('IPD, advance drawn', 1, '1 month from discharge'), ('CGHS (final claims)', 6, '6 months (OM 01.06.2020)'),
         ('CS(MA) OPD / IPD', 6, '6 months (from treatment / discharge)')], 'Claim deadline comparison', w=900, label_w=190, maxv=6, color='a'))
     + fig('HoD settlement ceiling — history', hbar([
         ('Original', 2, 'Rs.2 lakh'), ('OM 23.11.2016', 5, 'Rs.5 lakh'), ('OM 16.02.2026', 10, 'Rs.10 lakh (no IFD consultation)')], 'HoD ceiling history', w=900, label_w=150, maxv=10, color='g'),

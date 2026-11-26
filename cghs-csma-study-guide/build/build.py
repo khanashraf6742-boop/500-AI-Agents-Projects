@@ -17,6 +17,7 @@ import corrections
 import latest
 import quiz
 import memory
+import superintendent
 
 SRC, OUT = sys.argv[1], sys.argv[2]
 soup = BeautifulSoup(open(SRC, encoding='utf8').read(), 'lxml')
@@ -367,6 +368,11 @@ for a_, b_ in [
     ('AMA appointment — OM number', 'The guide says the Head of Department appoints private practitioners as AMA (Rule 2(a) GD(2)) but cites no OM number. The CS(MA) Rules PDF and the MoHFW CS(MA) page (orders list, AMA re-verification OM, verification proforma) could not be opened from this environment (HTTP 502). A CSIR policy document found in search says Supplementary Rule 2(10) allows a private registered practitioner to be appointed AMA for a class of employees where adequate doctors are unavailable — consistent with the guide, but not read at the source.'),
     ('Pensioners’ emergency claims', 'The guide says emergency claims within prescribed rates for pensioners are settled by the Head of the CGHS-covered city with no financial limit. OM 25.06.2026 gives the Additional Director / Director / AS&DG financial powers for CGHS claims generally and does not mention an “emergency, no limit” category; treat the “no limit” statement for pensioners as unconfirmed.'),
     ('Pre-16.02.2026 statements', 'Statements in older sections that quote “Rs.5 lakh” for the HoD / IFD threshold have already been corrected in the guide; if you see one elsewhere, Rs.10 lakh (OM 16.02.2026) is the current HoD figure.'),
+    ('CGHS 6-month claim limit', 'Based on CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (01.06.2020), read in full; no later revision was found. The original guide’s “CGHS 3 months / CS(MA) 6 months” statements were replaced. Confirm on the CGHS site, because a later circular may exist that was not published on the sites searched.'),
+    ('HoD limit for CS(MA) before 2026', 'A Department of Posts letter (25.11.2021) relays MoHFW’s clarification that the Rs.2 lakh OM of 05.06.2014 stays valid for CS(MA) and that the Rs.5 lakh step of 23.11.2016 was noted for CGHS beneficiary cases. The guide’s single history line (Rs.2L → 5L → 10L) may therefore not describe CS(MA) before 2026. Since OM 16.02.2026 the Rs.10 lakh limit is stated for “CGHS or CS(MA) Rules”.'),
+    ('Autonomous institutes (NIT / IIT)', 'No Ministry of Education or MoHFW order on how NITs and IITs apply CS(MA) / CGHS or on their delegation of financial powers was found. The NIT Sikkim guideline shows an institute applying CS(MA) rules through Board of Governors decisions. Use your Institute’s own rules for local procedure.'),
+    ('Syllabus sources', 'NIT Warangal (2025) pattern was read for the Superintendent post. NIT Raipur 2026 is quoted from a search summary only. The IIT Bhubaneswar paper is from 2013. Always check the advertisement for your exam.'),
+    ('AMA lists', 'A staffnews item shows CGEWCC Dehradun publishing an AMA list for 01.10.2026 – 30.09.2027, which fits Rule 2(a)(A)(iv) (Chairman of the CGEWCC) and annual re-verification; the item itself was not opened.'),
     ('Orders after 09.11.2026', 'The search for new orders was made on 25.11.2026. Anything issued later, or not published on the sites searched, is not included.'),
 ]:
     vr.append(f'<div class="listitem"><span class="tag">Unverified</span><b>{esc(a_)}</b><br>{esc(b_)}</div>')
@@ -385,6 +391,7 @@ for _q in QBANK:
         _q['p'] = 'cghs'
 qdata = json.dumps(QBANK, ensure_ascii=False).replace('</', '<\\/')
 memory_html = memory.build(lambda n: '#' + RCMAP[n])
+nit_html = superintendent.build(lambda n: '#' + RCMAP[n])
 quiz_html = '''<div id="qSetup"><p class="lead"><b id="qBank">0</b> questions: hand-written case and fact questions plus questions generated from the guide’s own tables and trap lists. Each question links back to its section.</p>
 <div class="row"><label>Questions <select id="qCount"><option>10</option><option selected>20</option><option>30</option><option>50</option><option>100</option></select></label>
 <label>Type <select id="qKind"><option value="all">All</option><option value="case">Case scenarios</option><option value="fact">Facts &amp; figures</option><option value="tf">True / false (traps)</option></select></label>
@@ -421,7 +428,7 @@ def nav_html():
             else:
                 o.append(f'<a class="sub" data-card="{v.id}" href="#{v.id}"><b>{esc(v.tag)}</b> {esc(v.title[:60])}</a>')
     o.append('<h4>Study tools</h4>')
-    for v, label in [('quiz', '📝 Mock tests & practice'), ('plan', '🗓️ Study plan'), ('memory', '🧠 Memory sheet & timeline'), ('compare2', '↔️ Compare two sections'), ('mystudy', '💾 My notes & progress')]:
+    for v, label in [('nit', '🎓 Superintendent (NIT/IIT) exam map'), ('quiz', '📝 Mock tests & practice'), ('plan', '🗓️ Study plan'), ('memory', '🧠 Memory sheet & timeline'), ('compare2', '↔️ Compare two sections'), ('mystudy', '💾 My notes & progress')]:
         o.append(f'<a class="view" data-view="{v}" href="#{v}">{label}</a>')
     o.append('<h4>Revision tools</h4>')
     for v, label in [('quick', '📋 Quick reference tables'), ('oms', '📜 OM / order register'), ('traps', '⚠️ All exam traps'), ('flash', '🃏 Flashcards'), ('verify', '🔎 Verify list'), ('changelog', '🔄 Amendments & changelog')]:
@@ -462,6 +469,7 @@ page = f'''<!DOCTYPE html>
 {view('powers', '🏛️ Who has the power? — AMA appointment, delegation of powers, authority matrix', 'Appointing authorities, HoD / Controlling Officer / MoHFW / Central Government powers and money limits, with practice questions.', powers_html)}
 {view('cghs', '🏥 PART 1 — CGHS', f'{ncards1} sections', P1['html'], True)}
 {view('csma', '⚖️ PART 2 — CS(MA) Rules, 1944', f'{ncards2} sections (Rules 1–11, AMA, advance, family, non-admissible items)', P2['html'], True)}
+{view('nit', '🎓 Superintendent (NIT / IIT) exam map & claim processing', '', nit_html)}
 {view('quiz', '📝 Mock tests & practice', '', quiz_html)}
 {view('plan', '🗓️ Study plan', '', plan_html)}
 {view('memory', '🧠 Memory sheet & timeline', '', memory_html)}

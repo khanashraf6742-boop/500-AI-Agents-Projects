@@ -6,6 +6,24 @@
   "kind": "text"
  },
  {
+  "old": "CGHS claim deadline: Within 3 months of treatment/medicine purchase — claims beyond 3 months NOT entertained (Note: CS(MA) Rules has a 6-month period — different from CGHS)",
+  "new": "CGHS claim deadline: Within 3 months of treatment/medicine purchase — only claims after 6 months need condonation of delay (CS(MA) Rules also have a 6-month period)",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found. CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "text"
+ },
+ {
+  "old": "Original CGHS claim deadline: Within 3 months of treatment/medicine purchase — claims beyond 3 months NOT entertained (Note: CS(MA) Rules has a 6-month period — different from CGHS)",
+  "new": "Original CGHS claim deadline: Within 6 months of completion of treatment / discharge (OM 01.06.2020; earlier 3 months) — only claims after 6 months need condonation of delay (CS(MA) Rules also have a 6-month period)",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found. CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found. CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "text"
+ },
+ {
+  "old": "\"CGHS claim within 6 months\" — WRONG! CGHS = 3 months (CS(MA) = 6 months — different!)",
+  "new": "\"CGHS claim must be within 3 months\" — WRONG! CGHS = 3 months (CS(MA) = 6 months)",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "text"
+ },
+ {
   "old": "Rs.5,35,000",
   "new": "Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual), incl. GST [OM 09.11.2026]",
   "reason": "Cochlear implant ceiling Rs.5,35,000 is obsolete: OM 09.11.2026 (F. No. S-367/2026/CGHSHQ/R&H/EHS(8410942)) revised it to Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual) incl. GST and superseded earlier cochlear orders.",
@@ -102,9 +120,27 @@
   "kind": "text"
  },
  {
+  "old": "IPD reimbursement: If hospitalized at empanelled hospital with CGHS referral → cashless treatment. If paid out of pocket → claim reimbursement from your department within 3 months. Reimbursement at CGHS rates or actual — whichever is less",
+  "new": "IPD reimbursement: If hospitalized at empanelled hospital with CGHS referral → cashless treatment. If paid out of pocket → claim reimbursement from your department within 6 months. Reimbursement at CGHS rates or actual — whichever is less",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "text"
+ },
+ {
+  "old": "Serving employees submit MRC to own department; within 3 months; CGHS rates applicable",
+  "new": "Serving employees submit MRC to own department; within 6 months; CGHS rates applicable",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "text"
+ },
+ {
   "old": "Rs.5,35,000",
   "new": "Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual), incl. GST [OM 09.11.2026]",
   "reason": "Cochlear implant ceiling Rs.5,35,000 is obsolete: OM 09.11.2026 (F. No. S-367/2026/CGHSHQ/R&H/EHS(8410942)) revised it to Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual) incl. GST and superseded earlier cochlear orders.",
+  "kind": "text"
+ },
+ {
+  "old": "\"CGHS claim within 6 months\"",
+  "new": "\"CGHS claim must be within 3 months\"",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
   "kind": "text"
  },
  {
@@ -117,6 +153,18 @@
   "old": "Max stents: 3 | Cochlear: Rs.5,35,000 | IVF: 3 cycles, Rs.65K/cycle",
   "new": "Max stents: 3 | Cochlear: Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual), incl. GST [OM 09.11.2026] | IVF: 3 cycles, Rs.65K/cycle",
   "reason": "Cochlear implant ceiling Rs.5,35,000 is obsolete: OM 09.11.2026 (F. No. S-367/2026/CGHSHQ/R&H/EHS(8410942)) revised it to Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual) incl. GST and superseded earlier cochlear orders.",
+  "kind": "text"
+ },
+ {
+  "old": "GD(6) — Claim time limit: Final claim for reimbursement of medical expenses (CS(MA)) to be submitted within 6 months of discharge from hospital or within 6 months of treatment taken (OPD). [Note: This is different from CGHS where limit is 3 months]",
+  "new": "GD(6) — Claim time limit: Final claim for reimbursement of medical expenses (CS(MA)) to be submitted within 6 months of discharge from hospital or within 6 months of treatment taken (OPD). [CGHS limit is also 6 months since OM 01.06.2020]",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "text"
+ },
+ {
+  "old": "Claim: 6 months mein submit karo (CGHS = 3 months — alag hai!)",
+  "new": "Claim: 6 months mein submit karo (CGHS bhi ab 6 months hai — OM 01.06.2020)",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
   "kind": "text"
  },
  {
@@ -156,6 +204,42 @@
   "kind": "text"
  },
  {
+  "old": "CS(MA) mein claim 6 mahine mein submit karo — CGHS ke 3 mahine se alag!",
+  "new": "CS(MA) mein claim 6 mahine mein submit karo — CGHS bhi ab 6 mahine hai (OM 01.06.2020)!",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "text"
+ },
+ {
+  "old": "Different from CGHS (3 months)!",
+  "new": "Same 6-month limit as CGHS (OM 01.06.2020)!",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "text"
+ },
+ {
+  "old": "Different from CGHS (3 months)!",
+  "new": "Same 6-month limit as CGHS (OM 01.06.2020)!",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "text"
+ },
+ {
+  "old": "Original Table row 2: OPD treatment claims | 6 months from date of treatment | Different from CGHS (3 months)!",
+  "new": "Original Table row 2: OPD treatment claims | 6 months from date of treatment | Same 6-month limit as CGHS (OM 01.06.2020)!",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "text"
+ },
+ {
+  "old": "Original Table row 3: IPD (Inpatient) claims | 6 months from date of discharge from hospital | Different from CGHS (3 months)!",
+  "new": "Original Table row 3: IPD (Inpatient) claims | 6 months from date of discharge from hospital | Same 6-month limit as CGHS (OM 01.06.2020)!",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "text"
+ },
+ {
+  "old": "CS(MA) claim deadline = 6 months — CGHS ka 3 months nahi! Bahut important distinction.",
+  "new": "CS(MA) claim deadline = 6 months — CGHS ka bhi ab 6 months hai (OM 01.06.2020)! Bahut important distinction.",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "text"
+ },
+ {
   "old": "Rs.5,35,000/- [Government Decision / OM under Rule 8(2)]",
   "new": "Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual), incl. GST [OM 09.11.2026] [Government Decision / OM under Rule 8(2)]",
   "reason": "Cochlear implant ceiling Rs.5,35,000 is obsolete: OM 09.11.2026 (F. No. S-367/2026/CGHSHQ/R&H/EHS(8410942)) revised it to Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual) incl. GST and superseded earlier cochlear orders.",
@@ -172,6 +256,72 @@
   "new": "Cochlear implant: Rs. 7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual), incl. GST [OM 09.11.2026]",
   "reason": "Cochlear implant ceiling Rs.5,35,000 is obsolete: OM 09.11.2026 (F. No. S-367/2026/CGHSHQ/R&H/EHS(8410942)) revised it to Rs.7,00,000 (pre-lingual) / Rs.6,00,000 (post-lingual) incl. GST and superseded earlier cochlear orders.",
   "kind": "text"
+ },
+ {
+  "old": "CGHS claim deadline: Within 3 months of treatment/medicine purchase — only claims after 6 months need condonation of delay (CS(MA) Rules also have a 6-month period)",
+  "new": "CGHS claim deadline: within 6 months of completion of treatment / discharge (OM 01.06.2020; earlier 3 months) — only claims after 6 months need condonation of delay (CS(MA) Rules also have a 6-month period)",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "leaf"
+ },
+ {
+  "old": "\"CGHS claim must be within 3 months\" — WRONG! CGHS = 3 months (CS(MA) = 6 months)",
+  "new": "\"CGHS claim must be within 3 months\" — WRONG! 6 months since OM 01.06.2020 (CS(MA) is also 6 months)",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "leaf"
+ },
+ {
+  "old": "OPD reimbursement: Medicines issued from CGHS WC are FREE (no reimbursement needed — directly issued). If they buy OPD medicines from outside after CGHS reference — claim within 3 months from your department",
+  "new": "OPD reimbursement: Medicines issued from CGHS WC are FREE (no reimbursement needed — directly issued). If they buy OPD medicines from outside after CGHS reference — claim within 6 months from your department",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "leaf"
+ },
+ {
+  "old": "Claim submitted within 3 months of treatment/purchase date",
+  "new": "Claim submitted within 6 months of completion of treatment / discharge",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "leaf"
+ },
+ {
+  "old": "Within 3 months: Submit claim within 3 months of treatment date",
+  "new": "Within 6 months: Submit claim within 6 months of completion of treatment / discharge",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "leaf"
+ },
+ {
+  "old": "CGHS claim: 3 months | IPD advance: 90% | Within: 10 days",
+  "new": "CGHS claim: 6 months | IPD advance: 90% | Within: 10 days",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "leaf"
+ },
+ {
+  "old": "\"CS(MA) claim within 3 months\" — WRONG! CS(MA) = 6 months (CGHS = 3 months — different rules!)",
+  "new": "\"CS(MA) claim within 3 months\" — WRONG! CS(MA) = 6 months (CGHS is also 6 months since OM 01.06.2020)",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "leaf"
+ },
+ {
+  "old": "\"CS(MA) claim = 3 months like CGHS\" — WRONG! CS(MA) = 6 months",
+  "new": "\"CS(MA) claim = 3 months\" — WRONG! CS(MA) = 6 months (CGHS is also 6 months since OM 01.06.2020)",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "leaf"
+ },
+ {
+  "old": "\"CS(MA) claims within 3 months\" — ABSOLUTELY WRONG! CS(MA) = 6 months ; CGHS = 3 months",
+  "new": "\"CS(MA) claims within 3 months\" — ABSOLUTELY WRONG! CS(MA) = 6 months ; CGHS is also 6 months (OM 01.06.2020)",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "leaf"
+ },
+ {
+  "old": "CS(MA) claim deadline: 6 months (CGHS = 3 months)",
+  "new": "CS(MA) claim deadline: 6 months (CGHS is also 6 months since OM 01.06.2020)",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "leaf"
+ },
+ {
+  "old": "\"CS(MA) claim = 3 months like CGHS\"",
+  "new": "\"CS(MA) claim = 3 months\"",
+  "reason": "CGHS final-claim time limit is no longer 3 months: CGHS OM File No. 1-60/2017-CGHS/C&P/EHS (e-signed 01.06.2020) revised it to 6 months from completion of treatment / discharge; only bills submitted after 6 months need condonation of delay (power of condonation as in OM S.14025/8/99-MS dated 25.05.1999). No later revision was found.",
+  "kind": "leaf"
  },
  {
   "old": "🔧 General MRC — pensioners [corrected] | Head of CGHS covered city | Up to | Rs.10 lakhs",
